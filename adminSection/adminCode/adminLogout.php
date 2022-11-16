@@ -22,5 +22,5 @@ unset ($_SESSION["admin_id"]);
 unset ($_SESSION["adminUsername"]);
 unset ( $_SESSION["admin_unique_id"]);
 
-header('Location: ../../website/index.php?message=LogOut');
+header('Location: ../../website/index.php?message=Inserterd Successfully');
 ?>  

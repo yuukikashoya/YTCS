@@ -168,7 +168,9 @@ if(mysqli_num_rows($query) > 0){
 
 
   </script>
-
+  <script>
+$('html,body').animate({scrollTop: document.body.scrollHeight},"fast");
+  </script>
 
 
 
