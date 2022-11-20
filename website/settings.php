@@ -58,8 +58,10 @@ include"../code/status.php";
           <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICE<span class="caret"></span><i class="fas fa-bell"></i></a> 
              <ul class="dropdown-menu"> 
               <li><a href="booking.php">Booking</a></li> 
-              <li><a href="chat.php">Chat</a></li> 
-              <li><a href="services.html">Other Services</a></li> 
+			  <li><a href="gallery.php">GALLERY</a></li> 
+
+              <li><a href="services.php">Other Services</a></li> 
+
              </ul> 
              </li> 	
          <li><a href="#">NOTIFICATIONS</a></li>                  		 
@@ -218,18 +220,6 @@ else{
 	</div>
 </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </div>

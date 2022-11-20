@@ -1,11 +1,12 @@
 <?php
+include"../database/connecting_to_DB.php";
 session_start();
 ?>
 <!DOCTYPE html>
 <html>
     <head>
   <meta charset="utf-8">
-  <title>Homepage</title>
+  <title>Gallery</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -15,6 +16,7 @@ session_start();
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 <link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/chat.css">
     </head>
    
     <body>
@@ -68,64 +70,36 @@ session_start();
        </ul>
      </nav>
              <!-- Slideshow container -->
+
+
+             <?php
+				$sql_query1 = "SELECT * FROM img";
+				
+				$result1 = $conn -> query($sql_query1);
+				
+				while($row1 = $result1 -> fetch_assoc()){
+					$img_id  = $row1['img_id'];
+			?>
+ 
+           <div class="container kek center">
+
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+             <h2>  
+                <span class="label label-default">  <?php echo $row1['img_name'];?></span> 
+             </h2>
+                <br/> 
+                <img class="len" src="../adminSection/images/<?php echo $row1['file'];?>">
+            </details> 
+            </div>
+             </div>
+                </div>
+            
+                <?php		
+				}
+			?>     
   
-  <!-- The dots/circles -->
-  <div class="wala" >
-  <br>
-  <img class="img13" src="Add a subheading.png" style="height: 60%; weight: 60%;">
-     <h1>Yani and Tin-tin Catering Service</h1><h3>A taste you'll remember.</h3><br><br>
-
-
-
-<!--  
-  <div class="main form-popup"  id="myForm"> 
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button> 	
-   
-		<input type="checkbox" id="chk" aria-hidden="true">
-
-			<div class="signup">
-				<form method="POST" action="../code/register.php">
-					<label for="chk" aria-hidden="true">Sign up</label>
-          <input type="text" name="name" placeholder="Full Name" required="">
-					<input type="text" name="username" placeholder="User name" required="">
-          <input type="text" name="address" placeholder="address" required="">
-          <input type="number" name="contact" placeholder="contact" required="">
-          <input type="date" id="birthday" name="birthday">
-          <input type="text" name="email" placeholder="Email" required="">
-					<input type="password" name="password" placeholder="Password" required="">
-          <input type="password" name="confirm" placeholder="Confirm password" required="">
-					<button  type="submit" name="submit">Sign up</button>
-				</form>
-			</div>
-
-			<div class="login">
-				<form method="POST" action="../code/login.php">
-					<label for="chk" aria-hidden="true">Login</label>
-					<input type="text" name="username" placeholder="User Name" required="">
-					<input type="password" name="password" placeholder="Password" required="">
-					<button type="submit" name="submit1">Login</button>
-				</form>
-			</div>
-	</div>
--->
-
-
-      
-  </div>
-  <div class="nah">
-  <span class="forda">
- 
-    <br><br<br><br><br><br><br>
-    <h2>“One of the very nicest things about life<br> is the way we must regularly stop <br>whatever it is we are doing and devote our <br>attention to eating.”<br>
-– Luciano Pavarotti </h2> </span>
-<span class=" us">
-<a href="booking.php"><button class="button-81 " role="button">Book  Now</button></a></span>
-<br><br<br>
- 
-</div>
-
-<br><br><br><br><br><br>
-
+  
     </body>
     <footer>
   <div class="pap">	 

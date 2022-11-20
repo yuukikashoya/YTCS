@@ -1023,5 +1023,7 @@ table td.expand {
  
       min-height: 100%;
     }
-
-  
+.idHeader{
+  width: 10px;
+}
+    

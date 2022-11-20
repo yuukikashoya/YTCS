@@ -58,7 +58,7 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
         <li>
           <a href="display.php" >
             <i class='	bx bx-list-ul' ></i>
-            <span class="links_name">Display</span>
+            <span class="links_name">Booking</span>
           </a>
         </li>
         <li>
@@ -73,7 +73,12 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
             <span class="links_name">Chat</span>
           </a>
         </li>
-
+        <li>
+          <a href="adminGallery.php" >
+            <i class='	bx bx-chat' ></i>
+            <span class="links_name">Gallery</span>
+          </a>
+        </li>
         <li>
           <a href="../adminCode/adminLogout.php">
             <i class='	bx bx-log-out' ></i>
@@ -209,10 +214,10 @@ function myFunction() {
   <table id="table" class="table table-bordered ">
   <thead>
   <tr>
-  <th  >Admin ID</th>
+  <th  class="idHeader">Admin ID</th>
 <th >Name</th>
 <th >Username</th>
-<th>Delete</Address></th>
+<th  style="width: 20px;">Delete</Address></th>
 
   </tr>
   </thead>

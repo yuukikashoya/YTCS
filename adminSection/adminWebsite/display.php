@@ -55,7 +55,7 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
         <li>
           <a href="display.php" class="active">
             <i class='	bx bx-list-ul' ></i>
-            <span class="links_name">Display</span>
+            <span class="links_name">Booking</span>
           </a>
         </li>
         <li>
@@ -70,7 +70,12 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
             <span class="links_name">Chat</span>
           </a>
         </li>
-
+        <li>
+          <a href="adminGallery.php" >
+            <i class='	bx bx-chat' ></i>
+            <span class="links_name">Gallery</span>
+          </a>
+        </li>
 
         <li>
           <a href="../adminCode/adminLogout.php">
@@ -120,14 +125,14 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
 
 <div class="container  center  home-content" id="top">
      
-<!-- Booking -->
+<!-- gallery -->
 
 <div  class=" jumbotron jumbotron-fluid outerdiv">
 <h3> <span class="label label-default">Booking List</span>  </h3>
   <table  class="table table-bordered  poit" id="Booking">
   <thead>
   <tr>
-<th  scope="col">Service ID</th>
+<th  scope="col" class="idHeader">Service ID</th>
 <th scope="col">Client Username</th>
 <th scope="col">Client Name</th>
 <th scope="col">Client  Email</Address></th>
@@ -137,7 +142,7 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
 <th scope="col">Time</th>
 <th scope="col">Day</th>
 <th scope="col">location</th>
-<th scope="col">View</th>
+<th scope="col"  style="width: 20px;">View</th>
 
 
 
@@ -191,15 +196,15 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
   <table id="client" class="table table-bordered ">
   <thead>
   <tr>
-<th>Client ID</th>
+<th class="idHeader">Client ID</th>
 <th>Client Name</th>
 <th>Client Username</th>
 <th>Client  Address</Address></th>
 <th>Contact</th>
 <th>Birthday</th>
 <th>Email</th>
-<th>Status</th>
-<th>Chat</th>
+<th  style="width: 30px;">Status</th>
+<th  style="width: 20px;">Chat</th>
 
 
 
@@ -251,6 +256,10 @@ sidebarBtn.onclick = function() {
   sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
 }
  </script>
+
+
+
+
     </body>
     </html>
 
