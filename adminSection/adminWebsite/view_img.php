@@ -14,6 +14,7 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
 
     <!-- <meta http-equiv="refresh" content="5"> -->
 
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -41,12 +42,14 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
 
 
 
-    <link rel="stylesheet" href="../adminCSS/pog.css">
-    <link rel="stylesheet" href="../adminCSS/chat.css">
+
+  <link rel="stylesheet" href="../adminCSS/pog.css">
+  <link rel="stylesheet" href="../adminCSS/listchat.css">
+    
    
     </head>
  
-    <body class="WebContainer" >
+    <body class="WebContainer">
 
 
       <div class="sidebar">
@@ -79,6 +82,8 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
             <span class="links_name">Gallery</span>
           </a>
         </li>
+
+
         <li>
           <a href="../adminCode/adminLogout.php">
             <i class='	bx bx-log-out' ></i>
@@ -86,14 +91,15 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
           </a>
         </li>
 
-        
       
       
       </ul>
   </div>
 
 
-<section class="home-section " >
+
+
+<section class="home-section ">
     <nav>
 
       <div class="sidebar-button">
@@ -102,78 +108,57 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
    
     </nav>
 
-
-<div class="container  center  home-content" id="top">
-<div  class="jumbotron jumbotron-fluid outerdiv">
-<h3> <span class="label label-default">Upload</span>  </h3>
-                        <form enctype="multipart/form-data" method="POST" class="left" action="../adminCode/add_img.php" >
-
-                        <label >image Name</label><br>
-                   
-                        <input Name='image_name' type="text" class="name" placeholder="Name"><br>
-                        <label >Upload Photo:</label><br>
- 
-                      <input type="file" name="file" >
-     
-                                    <input type="submit" class="btn btn-primary" name="add_image">
-                        </form>
-
-</div>
-
-
-<!-- gallery -->
-
-<div  class=" jumbotron jumbotron-fluid outerdiv center">
-<h3> <span class="label label-default">Gallery List</span>  </h3>
-  <table  class="table table-bordered center poit" id="Gallery">
-  <thead>
-  <tr>
-<th  scope="col" class="idHeader">Gallery ID</th>
-<th scope="col">Gallery Name</th>
-<th scope="col" style="width: 30px;">View</th>
-<th scope="col" style="width: 30px;">Delete</th>
+<div class="container  center  home-content" >
 
 
 
 
-  </tr>
-  </thead>
-  <?php
-				$sql_query1 = "SELECT * FROM img";
-				
-				$result1 = $conn -> query($sql_query1);
-				
-				while($row1 = $result1 -> fetch_assoc()){
-					$img_id =  $row1['img_id'];
-			?>
-
-    <tr>
-<td  scope="row"><?php echo $row1['img_id'];?></td>
-<td  scope="row"><?php echo $row1['img_name'];?></td>
 
 
+<?php
+		$img_id  = $_GET['img_id'];
+		$sql_query = "SELECT * FROM img WHERE img_id ='$img_id ' ";
+		
+		$result = $conn -> query($sql_query);
+		
+		while($row = $result -> fetch_assoc()){
+			$img_id  = $row['img_id'];
+	?>
 
-<td class="center"> 	<a href="view_img.php?img_id=<?php echo $img_id; ?>"> <iconify-icon icon="carbon:view-filled"style='font-size:25px;color:black'></iconify-icon></a></td>
-<td class="center"> 	<a href="../adminCode/delete_image.php?img_id=<?php echo $img_id; ?>"> <iconify-icon icon="material-symbols:delete-forever"style='font-size:25px;color:red'></iconify-icon></a></td>
-<?php		
-				}
-			?>
-    </tr>
+                <div class="jumbotron jumbotron-fluid">
+
+                <img  class="len" src="../images/<?php echo $row['file'];?>"><br><br>
+                <form method="POST"  action="../adminCode/adminedit.php" >
+                <input type="hidden" value="<?php echo $row['img_id'];?>" name="img_id" readonly>
+<h1>
+<input type="text" value="<?php echo $row['img_name'];?>" class="center headeredit" name="img_name">
+</h1>
+                <input type="submit" class="ch" value="Rename" name="submit">
+              
+                <input type="button" class="jkl" value="Go back!" onclick="history.back()">
+                <input type="button" class="del" value="Delete" onclick="window.location.href='../adminCode/delete_image.php?img_id=<?php echo $img_id; ?>'">
+   
+              </form>
+               
+                    </div>        
+        
+  
+	<?php
+		}
+		
+		$conn->close();
+	?>
+	
+
+	</div>
+        </section>
 
 
-</table>
 
 
-</div>
-
-
-
-
-  </div>
-  </section>
-        <script>
-
-
+    </body>
+    </html>
+<script>
    let sidebar = document.querySelector(".sidebar");
 let sidebarBtn = document.querySelector(".sidebarBtn");
 sidebarBtn.onclick = function() {
@@ -181,17 +166,8 @@ sidebarBtn.onclick = function() {
   if(sidebar.classList.contains("active")){
   sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
 }else
-  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+  side
+  barBtn.classList.replace("bx-menu-alt-right", "bx-menu");
 }
-$(document).ready(function(){  
-
-
-$('#Gallery').DataTable(); 
-
-});  
-
- </script>
-
-    </body>
-    </html>
-
+$('html,body').animate({scrollTop: document.body.scrollHeight},"fast");
+</script>
