@@ -95,7 +95,7 @@ else{
       </div>
       <div class="flip-card-back">
         <h1>Event Packages</h1> 
-        <button class="button-74" role="button">Learn More</button>
+        <a class="button-74" role="button" href="Event_Planning.php">Learn More</a>
         <p></p>
       </div>
     </div>
@@ -109,7 +109,7 @@ else{
       </div>
       <div class="flip-card-back">
         <h1>Photography</h1> 
-        <button class="button-74" role="button">Learn More</button>
+        <a class="button-74" role="button" href="Photography.html">Learn More</a>
         <p></p>
       </div>
     </div>
@@ -138,7 +138,7 @@ else{
           </div>
           <div class="flip-card-back">
             <h1>Invitations and Giveaways</h1> 
-            <button class="button-74" role="button">Learn More</button>
+            <a class="button-74" role="button" href="Invitations_and_Giveaways.php">Learn More</a>
             <p></p>
           </div>
         </div>

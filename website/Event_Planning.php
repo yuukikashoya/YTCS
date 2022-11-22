@@ -1,3 +1,7 @@
+<?php 
+session_start()
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,57 +56,69 @@
         <img class="img2" src="https://i.pinimg.com/736x/e9/60/86/e96086161caad546aba41b027daacee4.jpg">		 		 
       <h4 class="title"> Yani and Tin-tin Catering Service</h4> 
         
-        <ul>
+      <ul>
         
-          <li><a href="index.php"><i class="fas fa-home"></i></a></li>
-          <li><a href="design_about.php">ABOUT</a></li> 
-          <li><a href="#">GALLERY</a></li> 
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICE</a> 
-            <ul class="dropdown-menu"> 
-              <li><a href="booking.php">Booking</a></li> 
-              <li><a href="chat.php">Chat</a></li> 
-              <li><a href="services.html">Other Services</a></li> 
-             </ul> 
-             </li> 	
-         <li><a href="#">NOTIFICATIONS</a></li>                  		 
-         <li class="dropdown"> 
-         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fas fa-align-justify"></i></a> 
-             <ul class="dropdown-menu">           
-                 <li><a href="#">Settings</a></li>  
-                 <li><a href="../code/logout.php">Logout</a></li> 
-             </ul> 
-         </li>
-       </ul>      
+        <li><a href="index.php"><i class="fas fa-home"></i></a></li>
+        <li><a href="design_about.php">ABOUT</a></li> 
+        <li><a href="gallery.php">GALLERY</a></li> 
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICE</a> 
+          <ul class="dropdown-menu"> 
+            <li><a href="booking.php">Booking</a></li> 
+            <li><a href="chat.php">Chat</a></li> 
+            <li><a href="services.php">Other Services</a></li> 
+           </ul> 
+           </li> 	
+       <li><a href="#">NOTIFICATIONS</a></li>                  		 
+       <li class="dropdown"> 
+       <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fas fa-align-justify"></i></a> 
+           <ul class="dropdown-menu">           
+           <?php
+
+if(!isset($_SESSION['login'])){ //if login in session is not set
+
+echo '<li><a href="login.php">Login <br> sign up</a></li> ';
+}
+else{
+echo '  <li><a href="settings.php">Settings</a></li>  ';
+echo '  <li><a href="../code/logout.php">Logout</a></li> ';
+}
+
+            ?>
+           </ul> 
+       </li>
+     </ul>      
+
+  
   </nav>
 <center>
 <div class="p1">
     <h1>Package Deals</h1>
     <div class="quotes">
-      <div class="card">
+      <a class="card" href="#weddings">
         <div class="box box1">
           <img class="event img123" src="https://www.beaches.com/blog/content/images/2019/11/Beach-Wedding-Detail-Aisle-Flowers-1.jpg" style="width: 300px; height: 300px;">
           <h2>Weddings</h2>
         </div>
         <div class="bg"></div>
-      </div>
-      <div class="card">
+      </a>
+      <a class="card" href="#birthday">
         <div class="box box2">
           <img class="event img123" src="https://cdn.greenvelope.com/blog/wp-content/uploads/AdobeStock_133800814-scaled.jpeg" style="width: 300px; height: 300px;">
           <h2>Birthdays</h2>
         </div>
         <div class="bg"></div>
-      </div>
-      <div class="card">
+      </a>
+      <a class="card" href="#org">
         <div class="box box3">
           <img class="event img123" src="https://www.panachemiddleeast.com/blog/wp-content/uploads/2017/03/2-1-1024x710.jpg" style="width: 300px; height: 300px;">
           <h2>Organization Events</h2>
         </div>
         <div class="bg"></div>
-      </div>
+      </a>
     </div>
   </div>
 </center>
-<div class="weddings">
+<div class="weddings" id="weddings">
 <h1>Weddings</h1>
 <center><p>Wedding events were consider to be a hassle work for a upcoming married couples
 It is fonding to provide a service that our catering business could provide in order the<br>
@@ -141,7 +157,7 @@ celebrant itself won't needed much to hassle for the fulfillment of their dream 
 </div>`
 </div>
 <br>
-<div class="birthday">
+<div class="birthday" id="birthday">
 <h1>Birthdays</h1>
 <center><p>Birthdays are the special occasions which people celebrate with friends and family.
   As this special day comes just once a year, the significance of this day augments
@@ -182,8 +198,8 @@ celebrant itself won't needed much to hassle for the fulfillment of their dream 
   </div>
 </div>
 </div>
-<div class="birthday">
-  <h1>Birthdays</h1>
+<div class="birthday" id="org">
+  <h1>Organizational Events</h1>
   <center><p>Birthdays are the special occasions which people celebrate with friends and family.
     As this special day comes just once a year, the significance of this day augments
      naturally. <br>No other day can be better than Birthdays to inspire and motivate the 
