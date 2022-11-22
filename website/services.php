@@ -94,7 +94,7 @@ else{
         <img src="https://d12m9erqbesehq.cloudfront.net/wp-content/uploads/sites/2/2018/11/16112551/event-planner.jpg" alt="Avatar" style="width:300px;height:300px;">
       </div>
       <div class="flip-card-back">
-        <h1>Event Planning</h1> 
+        <h1>Event Packages</h1> 
         <button class="button-74" role="button">Learn More</button>
         <p></p>
       </div>
@@ -115,20 +115,7 @@ else{
     </div>
   </div>
         </div>
-  <div class="column">
-  <div class="flip-card">
-    <div class="flip-card-inner">
-      <div class="flip-card-front">
-        <img src="../img/beat.jpg" alt="Avatar" style="width:300px;height:300px;">
-      </div>
-      <div class="flip-card-back">
-        <h1>Hair and Make-up</h1> 
-        <button class="button-74" role="button">Learn More</button>
-        <p></p>
-      </div>
-    </div>
-  </div>
-  </div>
+
   <div class="column">
      <div class="flip-card">
        <div class="flip-card-inner">
