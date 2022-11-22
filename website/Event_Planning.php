@@ -150,11 +150,14 @@ celebrant itself won't needed much to hassle for the fulfillment of their dream 
   <li>An Events Planner is assigned to facilitate the planning and execution of your event</li>
   <li>Choice of complimentary wedding essentials</li>
   <h3>This package starts at<span>P 1,300 per head</span></h3>
+
 </div>
+<br><br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <a class="buttonm text-white "href="booking.php">Book Now</a>
 <div class="packs1" style="background:transparent;">
-  
+ 
 </div>
-</div>`
+</div>
 </div>
 <br>
 <div class="birthday" id="birthday">
@@ -184,7 +187,7 @@ celebrant itself won't needed much to hassle for the fulfillment of their dream 
     <li>Choice of complimentary wedding essentials</li>
     <h3>This package starts at P 1,100 per head</h3> 
   </div>
-  <br> b
+  <br> 
   <div class="packs1">
     <p>The ideal catering package for soon-to-wed couples for a minimum of 100 guests, which includes:</p>
     <li>Full-Service Catering</li>
@@ -192,7 +195,8 @@ celebrant itself won't needed much to hassle for the fulfillment of their dream 
     <li>An Events Planner is assigned to facilitate the planning and execution of your event</li>
     <li>Choice of complimentary wedding essentials</li>
     <h3>This package starts at<span>P 1,300 per head</span></h3>
-  </div>
+  </div><br><br><br>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <a class="buttonm text-white " href="booking.php">Book Now</a>
   <div class="packs1" style="background:transparent;">
   
   </div>
@@ -225,7 +229,7 @@ celebrant itself won't needed much to hassle for the fulfillment of their dream 
       <li>Choice of complimentary wedding essentials</li>
       <h3>This package starts at P 1,100 per head</h3> 
     </div>
-    <br> b
+    <br> 
     <div class="packs1">
       <p>The ideal catering package for soon-to-wed couples for a minimum of 100 guests, which includes:</p>
       <li>Full-Service Catering</li>
@@ -233,7 +237,8 @@ celebrant itself won't needed much to hassle for the fulfillment of their dream 
       <li>An Events Planner is assigned to facilitate the planning and execution of your event</li>
       <li>Choice of complimentary wedding essentials</li>
       <h3>This package starts at<span>P 1,300 per head</span></h3>
-    </div>
+    </div><br><br><br>
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <a class="buttonm text-white "href="booking.php">Book Now</a>
     <div class="packs1" style="background:transparent;">
     
     </div>
