@@ -34,11 +34,12 @@ session_start();
 nav ul{
   float: right;
   margin-right: 30px;
+  text-decoration: none;
 }
 nav ul li{
   display: inline-block;
   transition: all .2s ease;
-  
+  text-decoration: none;
 }
 nav ul li a{
   color: black;
@@ -49,11 +50,13 @@ nav ul li a{
   background: #eab995;
   transition: all .5s ease;
   border-radius: 25px;
+  text-decoration: none;
 }
 nav ul li a:hover{
   color: black;
   background-color: white;
   box-shadow: 0 0 10px blue;
+  text-decoration: none;
 }
 nav ul ul{
   position: absolute;
@@ -61,12 +64,14 @@ nav ul ul{
   border-top: 3px solid #23dbdb;
   opacity: 0;
   visibility: hidden;
+  text-decoration: none;
 }
 nav ul li:hover > ul{
   top: 70px;
   opacity: 50;
   visibility: visible;
   transition: .3s linear;
+  text-decoration: none;
 }
 nav ul ul li{
   width: auto;
@@ -74,20 +79,25 @@ nav ul ul li{
   position: relative;
   border: 1px solid #042331;
   border-top: none;
+  text-decoration: none;
 }
 nav ul ul li a{
   line-height: 50px;
+  text-decoration: none;
 }
 nav ul ul ul{
   border-top: none;
+  text-decoration: none;
 }
 nav ul ul ul li{
   position: relative;
   top: -70px;
   left: 150px;
+  text-decoration: none;
 }
 nav ul ul li a i{
   margin-left: 45px;
+  text-decoration: none;
 }
 * {box-sizing:border-box}
 
@@ -195,5 +205,17 @@ nav ul ul li a i{
   </p>
     
     </div>
-</body>
+    </body>
+    <footer>
+  <div class="pap">	 
+  <h1 class="hi"> <img class="img2" src="https://i.pinimg.com/736x/e9/60/86/e96086161caad546aba41b027daacee4.jpg">	Yani and Tin-tin Catering Service</h1><h3>A taste you'll remember.</h3>
+     </div>
+  <p><img class="img2" src="https://cdn-icons-png.flaticon.com/512/49/49354.png"><img class="img2" src="https://www.freepnglogos.com/uploads/black-email-logo-png-0.png"><br>
+    <a href="">Menu<br></a><a href="">Gallery</a><br><a href="">About</a><br><a href="">FAQs</a></p><br>
+  <h3>Contact Us</h3>
+  <p><i class="fa fa-phone"></i>Mobile: 09663955462<br> 09319919517<br>
+  <i class="material-icons">&#xe0be;</i>Email: <a href="">myadmin.123@gmail.com</a>
+  </p>
+
+</footer>
 </html>

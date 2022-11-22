@@ -780,8 +780,9 @@ display: inline-block;
 .wala{
   background: url('../img/pud2.png');
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 40vh;
+  background-size: 100% 100%;
+  background-position: center;
+  height: 50vh;
   width: 100%;
   text-align: center;
   justify-content: center;
@@ -839,13 +840,12 @@ h3{
 
 
 .nah{
-  background-color: #eab995;
   text-align: left;
   font-family: Centaur;
   margin-left: auto;
   margin-right: auto;
   height: 100px;
-  margin-bottom: 10em;
+  margin-bottom: 5em;
 }
 
 
@@ -862,6 +862,7 @@ float: left;
  padding-bottom: 100px;
  display: inline-block;
  padding-right: 300px;
+ padding-left: 10em;
 height: 50px;
 float: right;
 

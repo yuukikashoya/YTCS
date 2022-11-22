@@ -71,10 +71,10 @@ session_start();
   
   <!-- The dots/circles -->
   <div class="wala" >
-  <br>
+    <br>
   <img class="img13" src="Add a subheading.png" style="height: 60%; weight: 60%;">
      <h1>Yani and Tin-tin Catering Service</h1><h3>A taste you'll remember.</h3><br><br>
-
+            </div>
 
 
 <!--  
@@ -120,7 +120,7 @@ session_start();
 – Luciano Pavarotti </h2> </span>
 <span class=" us">
 <a href="booking.php"><button class="button-81 " role="button">Book  Now</button></a></span>
-<br><br<br>
+
  
 </div>
 
