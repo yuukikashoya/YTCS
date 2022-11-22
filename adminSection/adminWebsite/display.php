@@ -133,11 +133,7 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
   <thead>
   <tr>
 <th  scope="col" class="idHeader">Service ID</th>
-<th scope="col">Client Username</th>
 <th scope="col">Client Name</th>
-<th scope="col">Client  Email</Address></th>
-<th scope="col">Contact</th>
-<th scope="col">Bundle</th>
 <th scope="col">PAX</th>
 <th scope="col">Time</th>
 <th scope="col">Day</th>
@@ -159,11 +155,7 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
 
     <tr>
 <td  scope="row"><?php echo $row1['service_id'];?></td>
-<td  scope="row"><?php echo $row1['client_username'];?></td>
 <td  scope="row"><?php echo $row1['client_name'];?></td>
-<td  scope="row"><?php echo $row1['email'];?></td>
-<td  scope="row"><?php echo $row1['contact'];?></td>
-<td   scope="row"><?php echo $row1['bundle'];?></td>
 <td  scope="row"><?php echo $row1['pax'];?></td>
 
 <td><?php echo $row1['time_start'] , '-', $row1['time_ends'] ;?></td>
