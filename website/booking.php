@@ -65,12 +65,35 @@ else{
      </nav>
     
     <div class="center">
-    <div class="testbox">
+    <div class="testbox center">
         <form class="aform" method="POST" action="../code/service.php">
           <div class="banner">
             <img class="wallpaper" src="https://img.buzzfeed.com/buzzfeed-static/static/2020-09/23/19/enhanced/19b0de03aa06/enhanced-22720-1600888307-24.jpg?crop=492:351;0,0&output-format=jpg&output-quality=auto">
           </div>
           <h2>Booking Form</h2>
+          <div class="item " >
+            <p>Event Pakage</p>
+          
+            <input type="radio" name="Event" id="Birthday" value="Birthday"/>
+             <label for="Birthday">Birthday</label>
+            <input type="radio" name="contact"  id="Weddings" value="Weddings"/>
+             <label for="Weddings">Weddings</label>
+            <input type="radio" name="Event"   id="Organizzational" value="Organizzational Event"/>
+           <label for="Organizzational">Organizzational Event</label>
+        
+        
+          </div>
+          <div class="item " >
+            <p>Photography Pakage</p>
+          
+            <input type="radio" name="Photography" id="x" value="yes"/>
+             <label for="x ">yes</label>
+            <input type="radio" name="Photography"  id="z" value="no"/>
+             <label for="z">no</label>
+
+        
+        
+          </div>
           <div class="item">
             <p>Phone</p>
             <input type="number" name="contact"/>
