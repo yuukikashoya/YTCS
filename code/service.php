@@ -16,10 +16,11 @@ if(isset($_POST['submit']))   {
  $street = $_POST['street'];
  $city = $_POST['city'];
  $zip = $_POST['zip'];
- $bundle = 'school time';
+ $bundle = $_POST['Event'];
+ $Photography = $_POST['Photography'];
 
 
-$query_customer = " INSERT INTO service VALUES ('','$username','$name','$email','$contact','$bundle','$pax','$time_start','$time_ends','$date','$street','$city','$zip')";
+$query_customer = " INSERT INTO service VALUES ('','$username','$name','$email','$contact','$bundle','$pax','$time_start','$time_ends','$date','$street','$city','$zip','$Photography')";
 
 if ($conn->query($query_customer) === TRUE){
 
