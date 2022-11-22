@@ -76,7 +76,7 @@ else{
           
             <input type="radio" name="Event" id="Birthday" value="Birthday"/>
              <label for="Birthday">Birthday</label>
-            <input type="radio" name="contact"  id="Weddings" value="Weddings"/>
+            <input type="radio" name="Event"  id="Weddings" value="Weddings"/>
              <label for="Weddings">Weddings</label>
             <input type="radio" name="Event"   id="Organizzational" value="Organizzational Event"/>
            <label for="Organizzational">Organizzational Event</label>
@@ -122,7 +122,7 @@ else{
             </div>
           </div>
           <div class="btn-block">
-            <button type="submit" class="submit" name="submit">Submit</button>
+            <button type="submit" class="button-78" name="submit">Submit</button>
           </div>
         </form>
       </div>
