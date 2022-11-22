@@ -573,11 +573,38 @@ html, body {
     font-family: Ink free;
     font-size: 20px;
   }
+  .title1{
+    color: black;
+    font-weight: bold;
+    text-align: right;
+    font-family: Harrington;
+    font-size: 50px;
+    padding-bottom: 4em;
+    padding-top: 4em;
+    padding-right: 2em;
+  }
+  .nemo{
+    background-color: white;
+  }
   .services{
     text-align: center;
     display: flex;
     align-items: center;
     background-color: #000;
+  }
+  .photo{
+    background: url('https://www.10wallpaper.com/wallpaper/1366x768/1306/Old_camera-Life_photography_HD_wallpaper_1366x768.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+  .photo1{
+    color: white; 
+    padding-top: 8em;   
+    padding-left: 2.5em;
+    padding-bottom: 20em;
+    font-size: 20px;
   }
   /* .left{  
 display: inline-block;
@@ -772,7 +799,7 @@ h3{
   cursor: pointer;
   display: inline-block;
   font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-  font-size: 1.1rem;
+  font-size: 2.1rem;
   font-weight: 600;
   line-height: 1;
   padding: 1rem 1.6rem;
@@ -796,7 +823,6 @@ h3{
 
 
   .button-81 {
-    font-size: 1.125rem;
     padding: 1rem 2rem;
  
   }
