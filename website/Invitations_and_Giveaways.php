@@ -1,3 +1,6 @@
+<?php 
+session_start()
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,27 +56,39 @@
         <img class="img2" src="https://i.pinimg.com/736x/e9/60/86/e96086161caad546aba41b027daacee4.jpg">		 		 
       <h4 class="title"> Yani and Tin-tin Catering Service</h4> 
         
-        <ul>
+      <ul>
         
-          <li><a href="index.php"><i class="fas fa-home"></i></a></li>
-          <li><a href="design_about.php">ABOUT</a></li> 
-          <li><a href="#">GALLERY</a></li> 
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICE</a> 
-            <ul class="dropdown-menu"> 
-              <li><a href="booking.php">Booking</a></li> 
-              <li><a href="chat.php">Chat</a></li> 
-              <li><a href="services.html">Other Services</a></li> 
-             </ul> 
-             </li> 	
-         <li><a href="#">NOTIFICATIONS</a></li>                  		 
-         <li class="dropdown"> 
-         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fas fa-align-justify"></i></a> 
-             <ul class="dropdown-menu">           
-                 <li><a href="#">Settings</a></li>  
-                 <li><a href="../code/logout.php">Logout</a></li> 
-             </ul> 
-         </li>
-       </ul>      
+        <li><a href="index.php"><i class="fas fa-home"></i></a></li>
+        <li><a href="design_about.php">ABOUT</a></li> 
+        <li><a href="gallery.php">GALLERY</a></li> 
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICE</a> 
+          <ul class="dropdown-menu"> 
+            <li><a href="booking.php">Booking</a></li> 
+            <li><a href="chat.php">Chat</a></li> 
+            <li><a href="services.php">Other Services</a></li> 
+           </ul> 
+           </li> 	
+       <li><a href="#">NOTIFICATIONS</a></li>                  		 
+       <li class="dropdown"> 
+       <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fas fa-align-justify"></i></a> 
+           <ul class="dropdown-menu">           
+           <?php
+
+if(!isset($_SESSION['login'])){ //if login in session is not set
+
+echo '<li><a href="login.php">Login <br> sign up</a></li> ';
+}
+else{
+echo '  <li><a href="settings.php">Settings</a></li>  ';
+echo '  <li><a href="../code/logout.php">Logout</a></li> ';
+}
+
+            ?>
+           </ul> 
+       </li>
+     </ul>      
+
+    
   </nav>
 
   <div class="invititle">
