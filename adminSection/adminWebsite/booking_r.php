@@ -136,8 +136,9 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
              <p  ><b>Date:</b> <?php echo $row['date'];?></p>
              <p  ><b>Location:</b>   <?php echo $row['street'] , '. ', $row['city'] , '. postal code ',$row['postal_zip_code'] ;?></p>
 
+             <input type="button" class="jkl" value="Done" onclick="window.location.href='../adminCode/delete_image.php?img_id=<?php echo $img_id; ?>'">
+             <input type="button" class="aw" value="Go back!" onclick="history.back()">
 
-           
                     </div>        
         
   
