@@ -28,7 +28,7 @@ nav ul li a{
   padding: 8px 25px;
   line-height: 50px;
   font-size: 20px;
-  background: #eab995;
+  background: #db6a1a;
   transition: all .5s ease;
   border-radius: 25px;
   text-decoration: none;
@@ -36,7 +36,7 @@ nav ul li a{
 nav ul li a:hover{
   color: black;
   background-color: white;
-  box-shadow: 0 0 10px blue;
+  box-shadow: 0 0 30px rgb(186, 104, 30);
   text-decoration: none;
 }
 nav ul ul{
@@ -804,7 +804,7 @@ h3{
 
 /* CSS */
 .button-81 {
-  background-color: #fff;
+  background-color: rgb(201, 100, 23);
   border: 0 solid #e2e8f0;
   border-radius: 1.5rem;
   box-sizing: border-box;
