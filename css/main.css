@@ -702,11 +702,8 @@ display: inline-block;
       clear: both;
       position: relative;
       margin-top: -90px;
-      columns: 50px 3;
-     
+      columns: 50px 3;    
       position: relative;
-    
-     
     }
   /* .maximg{
     max-height: 300px;
