@@ -9,8 +9,11 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
 
 <html>
     <head>
-    <title>Display</title>
+    <title>Gallery</title>
     <meta charset="utf-8">
+
+    <!-- <meta http-equiv="refresh" content="5"> -->
+
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -39,7 +42,10 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
 
 
 
-    <link rel="stylesheet" href="../adminCSS/pog.css">
+
+  <link rel="stylesheet" href="../adminCSS/pog.css">
+  <link rel="stylesheet" href="../adminCSS/listchat.css">
+    
    
     </head>
  
@@ -53,7 +59,7 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
     </div>
       <ul class="nav-links">
         <li>
-          <a href="display.php" class="active">
+          <a href="display.php"  class="active">
             <i class='	bx bx-list-ul' ></i>
             <span class="links_name">Booking</span>
           </a>
@@ -71,11 +77,12 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
           </a>
         </li>
         <li>
-          <a href="adminGallery.php" >
-            <i class='	bx bx-chat' ></i>
+          <a href="adminGallery.php">
+            <i class='	bx bx-camera' ></i>
             <span class="links_name">Gallery</span>
           </a>
         </li>
+
 
         <li>
           <a href="../adminCode/adminLogout.php">
@@ -83,33 +90,11 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
             <span class="links_name">Log out</span>
           </a>
         </li>
-        <div class="logo-details">
-        <i class='	bx bx-select-multiple' ></i>
-    
-      <span class="logo_name">Options</span>
-    </div>
-    <li>
-          <a href="#top">
-            <i class='	bx bx-table' ></i>
-            <span class="links_name">Booking</span>
-          </a>
-        </li>
-        <li>
-          <a href="#client">
-            <i class='	bx bx-table' ></i>
-            <span class="links_name">client</span>
-          </a>
-        </li>
 
-    
-        
       
       
       </ul>
   </div>
-
- 
-
 
 
 
@@ -123,121 +108,56 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
    
     </nav>
 
-<div class="container  center  home-content" id="top">
-     
-<!-- gallery -->
-
-<div  class=" jumbotron jumbotron-fluid outerdiv">
-<h3> <span class="label label-default">Booking List</span>  </h3>
-  <table  class="table table-bordered  poit" id="Booking">
-  <thead>
-  <tr>
-<th  scope="col" class="idHeader">Service ID</th>
-<th scope="col">Client Name</th>
-<th scope="col">PAX</th>
-<th scope="col">Time</th>
-<th scope="col">Day</th>
-<th scope="col">location</th>
-<th scope="col"  style="width: 20px;">View</th>
-
-
-
-  </tr>
-  </thead>
-  <?php
-				$sql_query1 = "SELECT * FROM service";
-				
-				$result1 = $conn -> query($sql_query1);
-				
-				while($row1 = $result1 -> fetch_assoc()){
-					$service_id = $row1['service_id'];
-			?>
-
-    <tr>
-<td  scope="row"><?php echo $row1['service_id'];?></td>
-<td  scope="row"><?php echo $row1['client_name'];?></td>
-<td  scope="row"><?php echo $row1['pax'];?></td>
-
-<td><?php echo $row1['time_start'] , '-', $row1['time_ends'] ;?></td>
-<td><?php echo $row1['date'];?></td>
-<td><?php echo $row1['street'] , '. ', $row1['city'] , '. postal code ',$row1['postal_zip_code'] ;?></td>
-
-
-<td class="center"><a href="booking_r.php?service_id=<?php echo $service_id; ?>"> <iconify-icon icon="carbon:view-filled"style='font-size:25px;color:black'></iconify-icon></a></td>
-
-<?php		
-				}
-			?>
-    </tr>
-
-
-</table>
-
-
-</div>
-
-
-
-<!-- client -->
+<div class="container  center  home-content" >
 
 
 
 
-<div  class="jumbotron jumbotron-fluid outerdiv">
-<h3> <span class="label label-default">User List</span>  </h3>
-  <table id="client" class="table table-bordered ">
-  <thead>
-  <tr>
-<th class="idHeader">Client ID</th>
-<th>Client Name</th>
-<th>Client Username</th>
-<th>Client  Address</Address></th>
-<th>Contact</th>
-<th>Birthday</th>
-<th>Email</th>
-<th  style="width: 30px;">Status</th>
-<th  style="width: 20px;">Chat</th>
 
 
+<?php
+		$service_id  = $_GET['service_id'];
+		$sql_query = "SELECT * FROM service WHERE service_id ='$service_id ' ";
+		
+		$result = $conn -> query($sql_query);
+		
+		while($row = $result -> fetch_assoc()){
+			$service_id  = $row['service_id'];
+	?>
 
-  </tr>
-  </thead>
-  <?php
-				$sql_query1 = "SELECT * FROM client";
-				
-				$result1 = $conn -> query($sql_query1);
-				
-				while($row1 = $result1 -> fetch_assoc()){
-					$client_id = $row1['client_id'];
-			?>
+                <div class="jumbotron jumbotron-fluid">
 
-    <tr>
-<td ><?php echo $row1['client_id'];?></td>
-<td ><?php echo $row1['client_name'];?></td>
-<td ><?php echo $row1['client_username'];?></td>
-<td ><?php echo $row1['address'];?></td>
-<td ><?php echo $row1['contact'];?></td>
-<td><?php echo $row1['birthday'];?></td>
-<td class="dor"><?php echo $row1['email'];?></td>
-<td><?php echo $row1['status'];?></td>
-<td class="center"> 	<a href="adminChat.php?client_id=<?php echo $client_id; ?>">  <i class='	bx bx-chat' style='font-size:25px;color:black'></i></a></td>
+ <h3><span class="label label-default" style="text-align: center;">User </span></h3>
+             <h1  > <?php echo $row['client_name'];?></h1>
+             <p  ><b>email:</b> <?php echo $row['email'];?> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>contact:</b>: <?php echo $row['contact'];?></p>
+             <h3><span class="label label-default" style="text-align: center;">Bundle </span></h3>
+             <p  ><b>Bundle:</b> <?php echo $row['bundle'];?>  &nbsp;&nbsp;&nbsp; <b>Pax:</b>: <?php echo $row['pax'];?> &nbsp;&nbsp;&nbsp; <b>Photography:</b>: <?php echo $row['photo'];?></p>
+             <p  ><b>Time Start:</b> <?php echo $row['time_start'];?> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Time Ends:</b>: <?php echo $row['time_ends'];?></p>
+             <p  ><b>Date:</b> <?php echo $row['date'];?></p>
+             <p  ><b>Location:</b>   <?php echo $row['street'] , '. ', $row['city'] , '. postal code ',$row['postal_zip_code'] ;?></p>
 
-<?php		
-				}
-			?>
-    </tr>
+             <input type="button" class="jkl" value="Done" onclick="window.location.href='../adminCode/delete_image.php?img_id=<?php echo $img_id; ?>'">
+             <input type="button" class="aw" value="Go back!" onclick="history.back()">
 
+                    </div>        
+        
+  
+	<?php
+		}
+		
+		$conn->close();
+	?>
+	
 
-</table>
-
-
-
-</div>
-
-
-  </div>
+	</div>
         </section>
-        <script>
+
+
+
+
+    </body>
+    </html>
+<script>
    let sidebar = document.querySelector(".sidebar");
 let sidebarBtn = document.querySelector(".sidebarBtn");
 sidebarBtn.onclick = function() {
@@ -245,27 +165,8 @@ sidebarBtn.onclick = function() {
   if(sidebar.classList.contains("active")){
   sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
 }else
-  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+  side
+  barBtn.classList.replace("bx-menu-alt-right", "bx-menu");
 }
- </script>
-
-
-
-
-    </body>
-    </html>
-
-
-
-
-
-
-
-    <script>  
- $(document).ready(function(){  
-   
-      $('#Booking').DataTable(); 
-      $('#client').DataTable(); 
-    
- });  
- </script>  
+$('html,body').animate({scrollTop: document.body.scrollHeight},"fast");
+</script>
