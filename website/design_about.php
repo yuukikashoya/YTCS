@@ -102,11 +102,14 @@ nav ul ul li a i{
 * {box-sizing:border-box}
 
     body{
-      background-color: #f3d8c4;
+      background: url('https://img.freepik.com/premium-photo/healthy-food-background-concept-healthy-food-fresh-vegetables-nuts-fruits-stone-background-top-view-copy-space_187166-21326.jpg?w=2000');
     }
     h1{
-      text-align: center;
+      text-align: right;
+      color: white;
+      padding-right: 6em;
     }
+
     /* .container1{
       height: 20%;
 
@@ -119,11 +122,14 @@ nav ul ul li a i{
 
     }
     p{
-      font-size: 18px;
+      font-size: 21px;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       font-weight: bold;
-  text-align: center;
+  text-align: justify;
       padding-top: 30px;
+      margin-right: 2em;
+      margin-left: 4em;
+      color: white;
     
  
     }
@@ -131,6 +137,9 @@ nav ul ul li a i{
       width: 400px;
       border-style: solid;
       box-shadow: 10px 10px 5px grey;
+      float: left;
+      margin-left: 8em;
+      margin-right: 15em; 
     }
     .title{
       color: white;
@@ -139,7 +148,19 @@ nav ul ul li a i{
       font-family: Arial;
     
     }
-    
+    .map{
+      border-style: solid;
+      /* box-shadow: 10px 10px 5px grey; */
+      float: right;
+      margin-left: 8em;
+      margin-right: 2em;
+      padding-top: 40px;   
+      padding-bottom: 40px;    
+    }
+    .ummmm{
+      background: url('https://wallpaperaccess.com/full/5196643.jpg'); 
+      background-size: 100% 100%;  
+    }
 </style>
 
 </head>
@@ -205,5 +226,15 @@ nav ul ul li a i{
   </p>
     
     </div>
+    <div class="ummmm">
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d220.9606822557443!2d123.75840021998812!3d13.19886645151466!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sph!4v1669300050382!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <p style="color: black; font-size: 30px;  ">Location<br>Zone 7. Tinago St. Bigaa, Legazpi city. Albay<br>
+    Postal code: 4501<br>
+  Contact No.<br>
+  Mobile: 09663955462<br>
+  09319919517<br>
+  Email: myadmin.123@gmail.com<br><br><br></p>
+    </div>
+
     </body>
 </html>
