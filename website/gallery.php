@@ -19,7 +19,7 @@ session_start();
 <link rel="stylesheet" href="../css/chat.css">
     </head>
    
-    <body>
+    <body class="ourgallery">
       <nav>
         <img class="img2" src="Add a subheading.png">		 		 
       <h4 class="title"> YTCS</h4>
@@ -83,12 +83,12 @@ session_start();
  
            <div class="container kek center">
 
-            <div class="jumbotron jumbotron-fluid">
+            <div >
                 <div class="container">
              <h2>  
                 <span class="label label-default">  <?php echo $row1['img_name'];?></span> 
              </h2>
-                <br/> 
+
                 <img class="len" src="../adminSection/images/<?php echo $row1['file'];?>">
             </details> 
             </div>

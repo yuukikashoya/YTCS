@@ -4,10 +4,14 @@
   border-radius: 50%;
 }
 nav{
-  height: 70px;
-  background: black;
-  background-size: 120px;
-  box-shadow: 0 3px 15px rgba(0,0,0,.4);
+  height: 50px;
+  background: url('../img/pud2.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  /* background-position: center; */
+  /* background: transparent; */
+  /* background-size: 120px; */
+  /* box-shadow: 0 3px 15px rgba(0,0,0,.4); */
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-decoration: none;
 }
@@ -17,28 +21,29 @@ nav ul{
   text-decoration: none;
 }
 nav ul li{
-  display: inline-block;
+  display: inline-block; 
   transition: all .2s ease;
   text-decoration: none;
   
 }
 nav ul li a{
-  color: black;
+  color: rgb(255, 255, 255);
   display: block;
-  padding: 8px 25px;
-  line-height: 50px;
-  font-size: 20px;
-  background: #db6a1a;
+  padding: 5px 15px;
+  line-height: 40px;
+  font-size: 18px;
+  /* background: #db6a1a; */
   transition: all .5s ease;
-  border-radius: 25px;
+  /* border-radius: 25px; */
   text-decoration: none;
 }
 nav ul li a:hover{
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: rgb(2, 1, 0);
   box-shadow: 0 0 30px rgb(186, 104, 30);
   text-decoration: none;
 }
+
 nav ul ul{
   position: absolute;
   top: 85px;
@@ -58,30 +63,33 @@ nav ul ul li{
   width: auto;
   display: list-item;
   position: relative;
-  border: 1px solid #042331;
+  /* border: 1px solid #042331; */
   border-top: none;
   text-decoration: none;
 }
-nav ul ul li a{
+/* nav ul ul li a{
   line-height: 50px;
   text-decoration: none;
-}
-nav ul ul ul{
+} */
+/* nav ul ul ul{
   border-top: none;
   text-decoration: none;
-}
-nav ul ul ul li{
+} */
+/* nav ul ul ul li{
   position: relative;
-  top: -70px;
-  left: 150px;
-  text-decoration: none;
-}
+  /* top: -70px; */
+  /* left: 150px; */
+  /* text-decoration: none; */
+/* } */ */
 nav ul ul li a i{
   margin-left: 45px;
   text-decoration: none;
 }
 * {box-sizing:border-box}
+.dropdown-menu{
+  background-color: rgb(250, 139, 43);
 
+}
 /* Slideshow container */
 /* .slideshow-container {
 max-width: 650px;
@@ -167,7 +175,10 @@ from {opacity: 2}
 to {opacity: 1}
 }
 body{
-background-color: #f3d8c4;
+  background: url('../img/pud2.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
 font-family: Forte;
 }
 .container{
@@ -722,6 +733,7 @@ display: inline-block;
   .hi{
     font-family: Ink free;
     font-weight: bold;
+    font-size: 2em;
   }
 
   /* CSS */
@@ -869,7 +881,7 @@ float: right;
 
 
 body {
-  background: #eee;
+  background: url('https://img.freepik.com/premium-photo/healthy-food-background-concept-healthy-food-fresh-vegetables-nuts-fruits-stone-background-top-view-copy-space_187166-21326.jpg?w=2000');
   font-family: 'Lily Script One';
 }
 
@@ -1109,4 +1121,9 @@ body {
 .button-78:disabled {
   cursor: default;
   opacity: .24;
+}
+.ourgallery{
+  background: url('https://img.freepik.com/premium-photo/healthy-food-background-concept-healthy-food-fresh-vegetables-nuts-fruits-stone-background-top-view-copy-space_187166-21326.jpg?w=2000');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }

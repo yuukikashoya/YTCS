@@ -16,20 +16,24 @@ session_start();
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
+
 <style>
-    .img2{
-        height: 60px;
-        width: 60px;
-        border-radius: 50%;
-    }
-    nav{
-  height: 70px;
-  background: black;
-  background-size: 120px;
-  box-shadow: 0 3px 15px rgba(0,0,0,.4);
+.img2{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+nav{
+  height: 60px;
+  background: url('../img/pud2.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  /* background-position: center; */
+  /* background: transparent; */
+  /* background-size: 120px; */
+  /* box-shadow: 0 3px 15px rgba(0,0,0,.4); */
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-decoration: none;
-  
 }
 nav ul{
   float: right;
@@ -37,27 +41,29 @@ nav ul{
   text-decoration: none;
 }
 nav ul li{
-  display: inline-block;
+  display: inline-block; 
   transition: all .2s ease;
   text-decoration: none;
+  
 }
 nav ul li a{
-  color: black;
+  color: rgb(255, 255, 255);
   display: block;
-  padding: 8px 25px;
-  line-height: 50px;
-  font-size: 20px;
-  background: #eab995;
+  padding: 5px 15px;
+  line-height: 40px;
+  font-size: 18px;
+  /* background: #db6a1a; */
   transition: all .5s ease;
-  border-radius: 25px;
+  /* border-radius: 25px; */
   text-decoration: none;
 }
 nav ul li a:hover{
-  color: black;
-  background-color: white;
-  box-shadow: 0 0 10px blue;
+  color: white;
+  background-color: rgb(2, 1, 0);
+  box-shadow: 0 0 30px rgb(186, 104, 30);
   text-decoration: none;
 }
+
 nav ul ul{
   position: absolute;
   top: 85px;
@@ -77,37 +83,42 @@ nav ul ul li{
   width: auto;
   display: list-item;
   position: relative;
-  border: 1px solid #042331;
+  /* border: 1px solid #042331; */
   border-top: none;
   text-decoration: none;
 }
-nav ul ul li a{
+/* nav ul ul li a{
   line-height: 50px;
   text-decoration: none;
-}
-nav ul ul ul{
+} */
+/* nav ul ul ul{
   border-top: none;
   text-decoration: none;
-}
-nav ul ul ul li{
+} */
+/* nav ul ul ul li{
   position: relative;
-  top: -70px;
-  left: 150px;
-  text-decoration: none;
-}
+  /* top: -70px; */
+  /* left: 150px; */
+  /* text-decoration: none; */
+} */
 nav ul ul li a i{
   margin-left: 45px;
   text-decoration: none;
 }
 * {box-sizing:border-box}
+.dropdown-menu{
+  background-color: rgb(250, 139, 43);
+
+}
 
     body{
       background: url('https://img.freepik.com/premium-photo/healthy-food-background-concept-healthy-food-fresh-vegetables-nuts-fruits-stone-background-top-view-copy-space_187166-21326.jpg?w=2000');
     }
-    h1{
+    .ih1{
       text-align: right;
       color: white;
       padding-right: 6em;
+
     }
 
     /* .container1{
@@ -122,11 +133,10 @@ nav ul ul li a i{
 
     }
     p{
-      font-size: 21px;
+      font-size: 19px;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      font-weight: bold;
   text-align: justify;
-      padding-top: 30px;
+      padding-top: 10px;
       margin-right: 2em;
       margin-left: 4em;
       color: white;
@@ -134,9 +144,9 @@ nav ul ul li a i{
  
     }
     .about_img{
-      width: 400px;
+      width: 350px;
       border-style: solid;
-      box-shadow: 10px 10px 5px grey;
+      box-shadow: 10px 10px 5px rgb(250, 139, 43);
       float: left;
       margin-left: 8em;
       margin-right: 15em; 
@@ -161,6 +171,48 @@ nav ul ul li a i{
       background: url('https://wallpaperaccess.com/full/5196643.jpg'); 
       background-size: 100% 100%;  
     }
+    .pap{
+    text-align: center;
+    color: black;
+    font-family: Calibri;
+  }
+  .hi{
+    font-family: Ink free;
+    font-weight: bold;
+    text-shadow: 2px 2px white;  
+    font-size: 2em;  
+    padding-top: 10px;
+  }
+  h3 {
+    color: white;
+    text-shadow: 2px 2px black;
+}
+  .img2{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+footer {
+      text-align: center;
+      padding: 1px;
+      background-color: #d97f3c;
+      color: black;
+      width: 100%;
+      position: relative;
+      margin-top: -90px;
+      columns: 70px 3;    
+      position: relative;
+    }
+    .contactf {
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    color: black;
+    line-height: 22px;
+}
+h3{
+  font-family: 'Lily Script One';
+}
 </style>
 
 </head>
@@ -215,7 +267,7 @@ nav ul ul li a i{
     <br><br>
 
     <div class="oppo">
-    <h1 class="ih1">About Us</h1>
+    <h1 class="ih1" >About Us</h1>
 
     <img class="about_img" src="Add a subheading.png">
   
@@ -237,4 +289,16 @@ nav ul ul li a i{
     </div>
 
     </body>
+    <footer>
+  <div class="pap">	               
+    <h1 class="hi"> <img class="img2" src="https://i.pinimg.com/736x/e9/60/86/e96086161caad546aba41b027daacee4.jpg">	Yani and Tin-tin Catering Service</h1><h3>A taste you'll remember.</h3>
+  </div>
+    <p><img class="img2" src="https://cdn-icons-png.flaticon.com/512/49/49354.png"><img class="img2" src="https://www.freepnglogos.com/uploads/black-email-logo-png-0.png"><br>
+    <a href="">Menu<br></a><a href="">Gallery</a><br><a href="">About</a><br><a href="">FAQs</a></p><br>
+    <h3>Contact Us</h3>
+    <p class="contactf"><i class="fa fa-phone"></i>Mobile: 09663955462<br> 09319919517<br>
+    <i class="material-icons">&#xe0be;</i>Email: <a href="">myadmin.123@gmail.com</a>
+    </p> 
+  </footer>
 </html>
+
