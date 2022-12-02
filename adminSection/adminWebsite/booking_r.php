@@ -128,14 +128,63 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
                 <div class="jumbotron jumbotron-fluid">
 
  <h3><span class="label label-default" style="text-align: center;">User </span></h3>
-             <h1  > <?php echo $row['client_name'];?></h1>
-             <p  ><b>email:</b> <?php echo $row['email'];?> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>contact:</b>: <?php echo $row['contact'];?></p>
-             <h3><span class="label label-default" style="text-align: center;">Bundle </span></h3>
-             <p  ><b>Bundle:</b> <?php echo $row['bundle'];?>  &nbsp;&nbsp;&nbsp; <b>Pax:</b>: <?php echo $row['pax'];?> &nbsp;&nbsp;&nbsp; <b>Photography:</b>: <?php echo $row['photo'];?></p>
-             <p  ><b>Time Start:</b> <?php echo $row['time_start'];?> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Time Ends:</b>: <?php echo $row['time_ends'];?></p>
-             <p  ><b>Date:</b> <?php echo $row['date'];?></p>
-             <p  ><b>Location:</b>   <?php echo $row['street'] , '. ', $row['city'] , '. postal code ',$row['postal_zip_code'] ;?></p>
 
+<table style="border: solid;">
+<style>
+  table{
+    width: 100%;
+    
+  }
+</style>
+<tr >
+  <th>Name</th>
+  <th><?php echo $row['client_name'];?></th>
+</tr>
+<tr >
+  <th>Email</th>
+  <th><?php echo $row['email'];?></th>
+</tr>
+<tr >
+  <th>Contact</th>
+  <th><?php echo $row['contact'];?></th>
+</tr>
+<tr >
+  <td style="border: solid;">Bundle :<?php echo $row['bundle'];?></td>
+  <td style="border: solid;">Pax :<?php echo $row['pax'];?></td>
+  <td style="border: solid;">Photography :<?php echo $row['photo'];?></td>
+</tr>
+<tr >
+   <td style="border: solid;">Date :<?php echo $row['date'];?></td>
+  <td style="border: solid;">Time Start :<?php echo $row['time_start'];?></td>
+  <td style="border: solid;">Time Ends :<?php echo $row['time_ends'];?></td>
+  
+</tr>
+
+<tr  >
+  <td style="border: solid;">Location : <?php echo $row['street'] , '. ', $row['city'] , '. postal code ',$row['postal_zip_code'] ;?></td>
+</tr>
+
+
+</table>
+<br>
+<table>
+<tr >
+  <th  style="border-left: solid;border-top:solid;">Bundle </th><th style="border-top:solid;"><?php echo $row['bundle'];?> for <?php echo $row['pax'];?> people</th>
+  <th style="border-left: solid;border-top: solid;border-right: solid;">Php 1000</th>
+</tr>
+
+<tr>
+   <th style=";border-left:solid;border-bottom:solid;">Photography </th><th style="border-bottom:solid;"><?php echo $row['photo'];?></th>
+   <th style="border-left: solid;border-bottom: solid;border-right: solid;">Php 500</th>
+</tr>
+<tr>
+   <th ></th><th style="border-left:solid;border-bottom:solid;">Total :</th>
+   <th style="border-left: solid;border-bottom: solid;border-right: solid;">Php 1500</th>
+</tr>
+
+
+
+</table>
              <input type="button" class="jkl" value="Done" onclick="window.location.href='../adminCode/delete_booking.php?service_id=<?php echo $service_id; ?>'">
              <input type="button" class="aw" value="Go back!" onclick="history.back()">
 
