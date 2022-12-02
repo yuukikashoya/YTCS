@@ -175,7 +175,7 @@ from {opacity: 2}
 to {opacity: 1}
 }
 body{
-  background: url('../img/pud2.png');
+  background-color: white;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -834,7 +834,7 @@ h3{
   -webkit-user-select: none;
   touch-action: manipulation;
   columns: 50px ;
-  margin-left: 300px;
+  /* margin-left: 300px; */
 
 }
 
@@ -857,31 +857,35 @@ h3{
   margin-right: auto;
   height: 100px;
   margin-bottom: 5em;
+  background-color: white;
 }
 
 
 .forda{
 display: inline-block;
-width: 80%;
-padding-left: 1rem;
-padding-right: 20rem;
+/* width: 80%;
+  padding-right: 20rem;   */
+ 
+padding-left: 5em;
 clear: both;
 display: table;
 float: left;
+background-color: white;
+column-count: 2;
 }
 .us{
- padding-bottom: 100px;
+ padding-top: 11em;
+ padding-right: 11em;
  display: inline-block;
- padding-right: 300px;
- padding-left: 10em;
+
 height: 50px;
 float: right;
-
+background-color: white;
 }
 
 
 body {
-  background: url('https://img.freepik.com/premium-photo/healthy-food-background-concept-healthy-food-fresh-vegetables-nuts-fruits-stone-background-top-view-copy-space_187166-21326.jpg?w=2000');
+  background-color: white;
   font-family: 'Lily Script One';
 }
 

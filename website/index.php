@@ -117,7 +117,9 @@ session_start();
  
     <br><br<br><br><br><br><br>
     <h2>“One of the very nicest things about life<br> is the way we must regularly stop <br>whatever it is we are doing and devote our <br>attention to eating.”<br>
-– Luciano Pavarotti </h2> </span>
+– Luciano Pavarotti </h2> 
+
+</span>
 <span class=" us">
 <a href="booking.php"><button class="button-81 " role="button">Book  Now</button></a></span>
 
