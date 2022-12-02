@@ -33,7 +33,7 @@ session_start();
 </head>
 <style>
   body {
-    background-image: url('https://img.freepik.com/premium-photo/baby-s-breath-flowers-pink-background_82740-98.jpg?w=2000');
+ 
   align-content: center;
   }
   .h{
