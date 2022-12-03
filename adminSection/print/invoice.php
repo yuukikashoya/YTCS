@@ -21,6 +21,7 @@ include"../../database/connecting_to_DB.php";
      $time_ends  = $row['time_ends'];
      $date  = $row['date'];
      $today =  date("Y-m-d");
+     $invitation = $row['invitation'];
 
  }
 
@@ -34,7 +35,7 @@ include"../../database/connecting_to_DB.php";
  $pdf=new FPDF("L","mm","A5"); 
  
  //or custom page size
-  $pdf=new FPDF("L","mm",array(210,120)); 
+  $pdf=new FPDF("L","mm",array(210,125)); 
  
  //Add Blank Page
  $pdf->AddPage();  
@@ -110,9 +111,11 @@ include"../../database/connecting_to_DB.php";
  $pdf->Cell(110 ,5,'Photograpy',1,0);
  $pdf->Cell(45 ,5,$photo,1,0);
  $pdf->Cell(34 ,5,'1,200',1,1,'R');//end of line
- 
+ $pdf->Cell(110 ,5,'invitation',1,0);
+ $pdf->Cell(45 ,5, $invitation,1,0);
+ $pdf->Cell(34 ,5,'1,200',1,1,'R');//end of line
 
- 
+
  //summary
 
  

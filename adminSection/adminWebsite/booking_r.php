@@ -167,7 +167,9 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
 </tr>
 
 <tr  >
-  <td style="border: solid;">Location : <?php echo $row['street'] , '. ', $row['city'] , '. postal code ',$row['postal_zip_code'] ;?></td>
+  <td style="border: solid;border-right:white;">Location : <?php echo $row['street'] , '. ', $row['city'] , '. postal code ',$row['postal_zip_code'] ;?></td>
+  <th ></th>
+  <td style="border: solid;">invitation and Giveaways :<?php echo $row['invitation'];?></td>
 </tr>
 
 
@@ -180,7 +182,11 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
 </tr>
 
 <tr>
-   <th style=";border-left:solid;border-bottom:solid;">Photography </th><th style="border-bottom:solid;"><?php echo $row['photo'];?></th>
+   <th style=";border-left:solid;">Photography </th><th ><?php echo $row['photo'];?></th>
+   <th style="border-left: solid;border-bottom: solid;border-right: solid;">Php 500</th>
+</tr>
+<tr>
+   <th style=";border-left:solid;border-bottom:solid;">invitation and Giveaways </th><th style="border-bottom:solid;"><?php echo $row['invitation'];?></th>
    <th style="border-left: solid;border-bottom: solid;border-right: solid;">Php 500</th>
 </tr>
 <tr>
