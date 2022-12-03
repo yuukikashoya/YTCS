@@ -62,6 +62,12 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
           </a>
         </li>
         <li>
+          <a href="an.php" class="active">
+            <i class='	bx bx-bell' ></i>
+            <span class="links_name">Announcement</span>
+          </a>
+        </li>
+        <li>
           <a href="adminlist.php">
             <i class='	bx bx-user-pin' ></i>
             <span class="links_name">Admin</span>
@@ -74,7 +80,7 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
           </a>
         </li>
         <li>
-          <a href="adminGallery.php" class="active">
+          <a href="adminGallery.php" >
             <i class='	bx bx-camera' ></i>
             <span class="links_name">Gallery</span>
           </a>
@@ -105,7 +111,7 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
 
 <div class="container  center  home-content" id="top">
 
-<div class="container kek center">
+<div class="container  center">
                 <div class="jumbotron jumbotron-fluid bg-dark ">
                     
                         <h3> <span class="label label-default">Announcement</span>  </h3>
@@ -131,12 +137,12 @@ $query =" SELECT * FROM announcement ORDER BY an_id DESC LIMIT 1000";
 
 
      while ($row = $result->fetch_assoc()) {
-
+$an_id = $row["an_id"];
 ?>
  <div class="container   ">
-            <div class="jumbotron jumbotron-fluid bg-dark text-white">
+            <div class="jumbotron jumbotron-fluid bg-dark text-white"> <a href="../adminCode/delan.php?an_id=<?php echo $an_id; ?>"><i class='	bx bx-trash' style="color: red;font-size:2em;float:right;"></i></a>
             <div class="shesh "><?php
-              echo $row["an"];
+              echo $row["an"]; 
              ?></div>
          </div> 
 
