@@ -98,7 +98,7 @@ else{
           </div>
           <h2>Booking Form</h2>
           <div class="item " >
-            <p>Event Pakage</p>
+            <p>Event package</p>
           
             <input type="radio" name="Event" id="Birthday" value="Birthday"/>
              <label for="Birthday">Birthday</label>
@@ -110,12 +110,23 @@ else{
         
           </div>
           <div class="item " >
-            <p>Photography Pakage</p>
+            <p>Photography package</p>
           
             <input type="radio" name="Photography" id="x" value="yes"/>
              <label for="x ">yes</label>
             <input type="radio" name="Photography"  id="z" value="no"/>
              <label for="z">no</label>
+
+        
+        
+          </div>
+          <div class="item " >
+            <p>invitation and Giveaways package</p>
+          
+            <input type="radio" name="invitation" id="q" value="yes"/>
+             <label for="q ">yes</label>
+            <input type="radio" name="invitation"  id="w" value="no"/>
+             <label for="w">no</label>
 
         
         

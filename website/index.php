@@ -98,7 +98,7 @@ $result->free();
   <!-- The dots/circles -->
   <div class="wala" >
     <br>
-  <img class="img13" src="Add a subheading.png" style="height: 60%; weight: 60%;">
+  <img class="img13" src="Add a subheading.png" style="height: 60%;">
      <h1>Yani and Tin-tin Catering Service</h1><h3>A taste you'll remember.</h3><br><br>
             </div>
 
