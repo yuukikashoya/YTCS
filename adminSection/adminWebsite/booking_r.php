@@ -185,7 +185,8 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
 
 
 </table>
-             <a  class="jkl" value="Print" href='../print/invoice.php?service_id=<?php echo $service_id; ?>'  target="_blank"></a>
+             <input type="button" class="amon" value="Print" onclick="window.open(this.href='../print/invoice.php?service_id=<?php echo $service_id; ?>'); return false;" >
+           
              <input type="button" class="jkl" value="Done" onclick="window.location.href='../adminCode/delete_booking.php?service_id=<?php echo $service_id; ?>'">
              <input type="button" class="aw" value="Go back!" onclick="history.back()">
            
