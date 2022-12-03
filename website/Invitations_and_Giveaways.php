@@ -1,5 +1,6 @@
 <?php 
-session_start()
+session_start();
+include"../database/connecting_to_DB.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -61,14 +62,40 @@ session_start()
         <li><a href="index.php"><i class="fas fa-home"></i></a></li>
         <li><a href="design_about.php">ABOUT</a></li> 
         <li><a href="gallery.php">GALLERY</a></li> 
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICE</a> 
-          <ul class="dropdown-menu"> 
-            <li><a href="booking.php">Booking</a></li> 
-            <li><a href="chat.php">Chat</a></li> 
-            <li><a href="services.php">Other Services</a></li> 
-           </ul> 
-           </li> 	
-       <li><a href="#">NOTIFICATIONS</a></li>                  		 
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICE<span class="caret"></span></a> 
+             <ul class="dropdown-menu"> 
+              <li><a href="booking.php">Booking</a></li> 
+              <li><a href="chat.php">Chat</a></li> 
+
+              <li><a href="services.php">Other Services</a></li> 
+
+             </ul> 
+             </li> 	
+             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">NOTIFICATIONS<span class="caret"></span><i class="fas fa-bell"></i></a> 
+             <ul class="dropdown-menu" > 
+<?php
+$query =" SELECT * FROM announcement ORDER BY an_id DESC LIMIT 5";
+
+if ($result = $conn->query($query)) {
+
+
+    while ($row = $result->fetch_assoc()) {
+
+
+?>
+<hr style="  border-top: 2px solid white;">
+<h4 style="color: white;text-align:center;display:block;"><?php echo $row["an"];?></h4>
+
+<?php
+
+}
+
+$result->free();
+}
+
+       ?>       
+             </ul> 
+             </li>                 		 
        <li class="dropdown"> 
        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fas fa-align-justify"></i></a> 
            <ul class="dropdown-menu">           
@@ -96,7 +123,7 @@ echo '  <li><a href="../code/logout.php">Logout</a></li> ';
   </div>
   <p class="invi" style="font-size: 25px;">What's a party without an invitations and giveaways for your guest. As for the our catering service,<br>
   we provide a creative service in terms of managing and creating an aesthetic invitations and giveaways <br>
-  that you may distribute for your ocassions that will sure happily interact you and your guest.<br><button class="button-81" role="button">Grab Service</button></p>
+  that you may distribute for your ocassions that will sure happily interact you and your guest.<br> <a href="booking.php"><button  class="button-81" type="button">Grab Service</button></a> </p>
   <center><p style="font-family: Harrington; font-weight: bold; font-size: 40px;">Sample offers</p></center>
   <div class="invipics">
   <center>

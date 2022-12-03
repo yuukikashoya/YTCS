@@ -1,5 +1,6 @@
 <?php
 session_start();
+include"../database/connecting_to_DB.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -55,14 +56,40 @@ session_start();
           <li><a href="index.php"><i class="fas fa-home"></i></a></li>
           <li><a href="design_about.php">ABOUT</a></li> 
           <li><a href="gallery.php">GALLERY</a></li> 
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICE</a> 
-            <ul class="dropdown-menu"> 
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICE</span></a> 
+             <ul class="dropdown-menu"> 
               <li><a href="booking.php">Booking</a></li> 
               <li><a href="chat.php">Chat</a></li> 
+
               <li><a href="services.php">Other Services</a></li> 
+
              </ul> 
              </li> 	
-         <li><a href="#">NOTIFICATIONS</a></li>                  		 
+             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">NOTIFICATIONS</span><i class="fas fa-bell"></i></a> 
+             <ul class="dropdown-menu" > 
+<?php
+$query =" SELECT * FROM announcement ORDER BY an_id DESC LIMIT 5";
+
+if ($result = $conn->query($query)) {
+
+
+    while ($row = $result->fetch_assoc()) {
+
+
+?>
+<hr style="  border-top: 2px solid white;">
+<h4 style="color: white;text-align:center;display:block;"><?php echo $row["an"];?></h4>
+
+<?php
+
+}
+
+$result->free();
+}
+
+       ?>       
+             </ul> 
+             </li>                 		 
          <li class="dropdown"> 
          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fas fa-align-justify"></i></a> 
              <ul class="dropdown-menu">           
@@ -109,27 +136,14 @@ else{
       </div>
       <div class="flip-card-back">
         <h1>Photography</h1> 
-        <a class="button-74" role="button" href="Photography.html">Learn More</a>
+        <a class="button-74" role="button" href="Photography.php">Learn More</a>
         <p></p>
       </div>
     </div>
   </div>
         </div>
 
-  <div class="column">
-     <div class="flip-card">
-       <div class="flip-card-inner">
-         <div class="flip-card-front">
-           <img src="../img/food.jpg" alt="Avatar" style="width:300px;height:300px;">
-         </div>
-         <div class="flip-card-back">
-           <h1>Food Menus</h1> 
-           <button class="button-74" role="button">Learn More</button>
-           <p></p>
-         </div>
-       </div>
-     </div>
-  </div>
+
      <div class="column">
      <div class="flip-card">
         <div class="flip-card-inner">

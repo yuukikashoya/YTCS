@@ -30,7 +30,7 @@ session_start();
           <li><a href="index.php"><i class="fas fa-home"></i></a></li>
           <li><a href="design_about.php">ABOUT</a></li> 
           <li><a href="gallery.php">GALLERY</a></li> 
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICE<span class="caret"></span><i class="fas fa-bell"></i></a> 
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"style="color: white;">SERVICE<span class="caret"></span></a> 
              <ul class="dropdown-menu"> 
               <li><a href="booking.php">Booking</a></li> 
               <li><a href="chat.php">Chat</a></li> 
@@ -39,7 +39,31 @@ session_start();
 
              </ul> 
              </li> 	
-         <li><a href="#">NOTIFICATIONS</a></li>                  		 
+             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" style="color: white;">NOTIFICATIONS<span class="caret"></span><i class="fas fa-bell"></i></a> 
+             <ul class="dropdown-menu" > 
+<?php
+$query =" SELECT * FROM announcement ORDER BY an_id DESC LIMIT 5";
+
+if ($result = $conn->query($query)) {
+
+
+    while ($row = $result->fetch_assoc()) {
+
+
+?>
+<hr style="  border-top: 2px solid white;">
+<h4 style="color: white;text-align:center;display:block;"><?php echo $row["an"];?></h4>
+
+<?php
+
+}
+
+$result->free();
+}
+
+       ?>       
+             </ul> 
+             </li>                  		 
          <li class="dropdown"> 
          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret">
     <?php 
