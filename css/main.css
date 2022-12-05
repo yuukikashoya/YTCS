@@ -39,10 +39,10 @@ nav ul li a{
   text-decoration: none;
 }
 nav ul li a:hover{
-  background-image: url('https://images.template.net/76782/PNG-01-1.png');
+  background-image: url('https://cdn.iconscout.com/icon/free/png-256/food-dish-2634600-2187288.png');
   background-size: 80% 110%;
   background-repeat: no-repeat;
-  color: black;
+  color: rgb(255, 187, 0);
   animation: spring 300ms ease-out;
   text-shadow: 2px 2px 8px #f9f9f9;
   font-weight: bold;

@@ -99,7 +99,7 @@ $result->free();
   <div class="wala" >
     <br><br><br>
 
-     <h1 class="lol">Yani and Tin-tin Catering Service</h1><h3>A taste you'll remember.</h3>
+     <h1 class="lol">Yani and Tin-tin Catering Service</h1><h3 style=" font-size: 40px; color: white; font-weight: bold; -webkit-text-stroke: 0.2vw rgb(160, 93, 26);">A taste you'll remember.</h3>
             </div>
 
 
