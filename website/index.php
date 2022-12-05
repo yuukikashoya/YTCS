@@ -18,9 +18,10 @@ session_start();
     </head>
    
     <body>
+      <center>
       <nav>
-        <img class="img2" src="Add a subheading.png">		 		 
-      <h4 class="title"> YTCS</h4>
+	 		 
+      <!-- <h4 class="title"> YTCS</h4> -->
       
         
         <ul>
@@ -28,6 +29,7 @@ session_start();
           <li><a href="index.php"><i class="fas fa-home"></i></a></li>
           <li><a href="design_about.php">ABOUT</a></li> 
           <li><a href="gallery.php">GALLERY</a></li> 
+          <img class="img2" src="Add a subheading.png">	          
           <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICE<span class="caret"></span><i class="fas fa-bell"></i></a> 
              <ul class="dropdown-menu"> 
               <li><a href="booking.php">Booking</a></li> 
@@ -67,13 +69,14 @@ session_start();
          </li>
        </ul>
      </nav>
+            </center>
              <!-- Slideshow container -->
   
   <!-- The dots/circles -->
   <div class="wala" >
-    <br>
-  <img class="img13" src="Add a subheading.png" style="height: 60%; weight: 60%;">
-     <h1>Yani and Tin-tin Catering Service</h1><h3>A taste you'll remember.</h3><br><br>
+    <br><br><br>
+  <!-- <img class="img13" src="Add a subheading.png" style="height: 60%; weight: 60%;"> -->
+     <h1 class="en">Yani and Tin-tin Catering Service</h1><h3>A taste you'll remember.</h3><br><br>
             </div>
 
 
@@ -117,7 +120,7 @@ session_start();
  
     <br><br<br><br><br><br><br>
     <h2>“One of the very nicest things about life<br> is the way we must regularly stop <br>whatever it is we are doing and devote our <br>attention to eating.”<br>
-– Luciano Pavarotti </h2> 
+– Luciano Pavarotti </h2> <br><br><br><br>
 
 </span>
 <span class=" us">
@@ -131,13 +134,13 @@ session_start();
     </body>
     <footer>
   <div class="pap">	 
-  <h1 class="hi"> <img class="img2" src="https://i.pinimg.com/736x/e9/60/86/e96086161caad546aba41b027daacee4.jpg">	Yani and Tin-tin Catering Service</h1><h3>A taste you'll remember.</h3>
+  <h1 class="hi"> <img class="img2" src="https://i.pinimg.com/736x/e9/60/86/e96086161caad546aba41b027daacee4.jpg">	Yani and Tin-tin Catering Service</h1><h3>A taste you'll remember.</h3><br>
      </div>
-  <p><img class="img2" src="https://cdn-icons-png.flaticon.com/512/49/49354.png"><img class="img2" src="https://www.freepnglogos.com/uploads/black-email-logo-png-0.png"><br>
-    <a href="">Menu<br></a><a href="">Gallery</a><br><a href="">About</a><br><a href="">FAQs</a></p><br>
-  <h3>Contact Us</h3>
+  <p><button type="button" class="mail"><img class="img2" src="https://www.freepnglogos.com/uploads/black-email-logo-png-0.png"><br></button><br>
+  <a href="gallery.php">Gallery</a><br><a href="design_about.php">About</a><br></p><br>
+  <h3>You may also Contact Us here</h3>
   <p><i class="fa fa-phone"></i>Mobile: 09663955462<br> 09319919517<br>
-  <i class="material-icons">&#xe0be;</i>Email: <a href="">myadmin.123@gmail.com</a>
+
   </p>
 
 </footer>

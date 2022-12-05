@@ -12,82 +12,98 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 <style>
-  img{
-      height: 60px;
-      width: 60px;
-      border-radius: 50%;
-  }
-  nav{
-  height: 70px;
-  background: black;
-  background-size: 120px;
-  box-shadow: 0 3px 15px rgba(0,0,0,.4);
+.img2{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+nav{
+  height: 50px;
+  background: url('../img/pud2.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  /* background-position: center; */
+  /* background: transparent; */
+  /* background-size: 120px; */
+  /* box-shadow: 0 3px 15px rgba(0,0,0,.4); */
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-decoration: none;
-  
 }
 nav ul{
   float: right;
   margin-right: 30px;
+  text-decoration: none;
 }
 nav ul li{
-  display: inline-block;
+  display: inline-block; 
   transition: all .2s ease;
+  text-decoration: none;
   
 }
 nav ul li a{
-  color: black;
+  color: rgb(255, 255, 255);
   display: block;
-  padding: 8px 25px;
-  line-height: 50px;
-  font-size: 20px;
-  background: #eab995;
+  padding: 5px 15px;
+  line-height: 40px;
+  font-size: 18px;
+  /* background: #db6a1a; */
   transition: all .5s ease;
-  border-radius: 25px;
+  /* border-radius: 25px; */
+  text-decoration: none;
 }
 nav ul li a:hover{
-  color: black;
-  background-color: white;
-  box-shadow: 0 0 10px blue;
+  color: white;
+  background-color: rgb(2, 1, 0);
+  box-shadow: 0 0 30px rgb(186, 104, 30);
+  text-decoration: none;
 }
+
 nav ul ul{
   position: absolute;
   top: 85px;
   border-top: 3px solid #23dbdb;
   opacity: 0;
   visibility: hidden;
+  text-decoration: none;
 }
 nav ul li:hover > ul{
   top: 70px;
   opacity: 50;
   visibility: visible;
   transition: .3s linear;
+  text-decoration: none;
 }
 nav ul ul li{
   width: auto;
   display: list-item;
   position: relative;
-  border: 1px solid #042331;
+  /* border: 1px solid #042331; */
   border-top: none;
+  text-decoration: none;
 }
-nav ul ul li a{
+/* nav ul ul li a{
   line-height: 50px;
-}
-nav ul ul ul{
+  text-decoration: none;
+} */
+/* nav ul ul ul{
   border-top: none;
-}
-nav ul ul ul li{
+  text-decoration: none;
+} */
+/* nav ul ul ul li{
   position: relative;
-  top: -70px;
-  left: 150px;
-}
+  /* top: -70px; */
+  /* left: 150px; */
+  /* text-decoration: none; */
+/* } */ */
 nav ul ul li a i{
   margin-left: 45px;
+  text-decoration: none;
 }
 * {box-sizing:border-box}
+.dropdown-menu{
+  background-color: rgb(250, 139, 43);
 
-  
-  * {box-sizing:border-box}
+}
   
   /* Slideshow container */
   .slideshow-container {
@@ -174,7 +190,9 @@ nav ul ul li a i{
     to {opacity: 1}
   }
   body{
-    background-color: #f3d8c4;
+    background: url('https://img.freepik.com/premium-photo/healthy-food-background-concept-healthy-food-fresh-vegetables-nuts-fruits-stone-background-top-view-copy-space_187166-21326.jpg?w=2000');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 
   }
   .container{

@@ -33,7 +33,9 @@ session_start();
 </head>
 <style>
   body {
- 
+    background: url('https://img.freepik.com/premium-photo/healthy-food-background-concept-healthy-food-fresh-vegetables-nuts-fruits-stone-background-top-view-copy-space_187166-21326.jpg?w=2000');
+    background-size: auto;
+    background-repeat: no-repeat;
   align-content: center;
   }
   .h{
@@ -45,16 +47,16 @@ session_start();
   }
   </style>
 <body class="me">
+<center>
     <nav>
-    
-        <img class="img2" src="https://i.pinimg.com/736x/e9/60/86/e96086161caad546aba41b027daacee4.jpg">		 		 
-      <h4 class="title"> Yani and Tin-tin Catering Service</h4> 
+     
         
         <ul>
         
-          <li><a href="index.php"><i class="fas fa-home"></i></a></li>
+        <li><a href="index.php"><i class="fas fa-home"></i></a></li>
           <li><a href="design_about.php">ABOUT</a></li> 
-          <li><a href="gallery.php">GALLERY</a></li> 
+          <li><a href="#">GALLERY</a></li> 
+          <img class="img2" src="https://i.pinimg.com/736x/e9/60/86/e96086161caad546aba41b027daacee4.jpg">
           <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICE</a> 
             <ul class="dropdown-menu"> 
               <li><a href="booking.php">Booking</a></li> 
@@ -81,7 +83,8 @@ else{
              </ul> 
          </li>
        </ul>      
-
+</nav>
+</center>
 
     <div class="h">
      <h1 class="h">Services</h1>
@@ -150,15 +153,15 @@ else{
 </body>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <footer>
-    <div class="pap">	 
-    <h1 class="hi"> <img class="img2" src="https://i.pinimg.com/736x/e9/60/86/e96086161caad546aba41b027daacee4.jpg">	Yani and Tin-tin Catering Service</h1><h3>A taste you'll remember.</h3>
-       </div>
-    <p><img class="img2" src="https://cdn-icons-png.flaticon.com/512/49/49354.png"><img class="img2" src="https://www.freepnglogos.com/uploads/black-email-logo-png-0.png"><br>
-      <a href="">Menu<br></a><a href="">Gallery</a><br><a href="">About</a><br><a href="">FAQs</a></p><br>
-    <h3>Contact Us</h3>
-    <p><i class="fa fa-phone"></i>Mobile: 09663955462<br> 09319919517<br>
-    <i class="material-icons">&#xe0be;</i>Email: <a href="">myadmin.123@gmail.com</a>
-    </p> 
-  
-  </footer>
+  <div class="pap">	 
+  <h1 class="hi"> <img class="img2" src="https://i.pinimg.com/736x/e9/60/86/e96086161caad546aba41b027daacee4.jpg">	Yani and Tin-tin Catering Service</h1><h3>A taste you'll remember.</h3><br>
+     </div>
+  <p><button type="button" class="mail"><img class="img2" src="https://www.freepnglogos.com/uploads/black-email-logo-png-0.png"><br></button><br>
+  <a href="gallery.php">Gallery</a><br><a href="design_about.php">About</a><br></p><br>
+  <h3>You may also Contact Us here</h3>
+  <p><i class="fa fa-phone"></i>Mobile: 09663955462<br> 09319919517<br>
+
+  </p>
+
+</footer>
 </html>

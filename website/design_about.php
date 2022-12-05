@@ -19,9 +19,10 @@ session_start();
 
 <style>
 .img2{
-  height: 60px;
-  width: 60px;
+  height: 90px;
+  width: 90px;
   border-radius: 50%;
+  border: 2px solid black;
 }
 nav{
   height: 60px;
@@ -36,8 +37,8 @@ nav{
   text-decoration: none;
 }
 nav ul{
-  float: right;
-  margin-right: 30px;
+  /* float: center;  */
+  /* margin-right: 30px; */
   text-decoration: none;
 }
 nav ul li{
@@ -100,7 +101,7 @@ nav ul ul li{
   /* top: -70px; */
   /* left: 150px; */
   /* text-decoration: none; */
-} */
+/* } */ */
 nav ul ul li a i{
   margin-left: 45px;
   text-decoration: none;
@@ -133,10 +134,10 @@ nav ul ul li a i{
 
     }
     p{
-      font-size: 19px;
+      font-size: 23px;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: justify;
-      padding-top: 10px;
+      padding-top: 40px;
       margin-right: 2em;
       margin-left: 4em;
       color: white;
@@ -177,11 +178,18 @@ nav ul ul li a i{
     font-family: Calibri;
   }
   .hi{
-    font-family: Ink free;
+    text-align: center;
+    font-family: fantasy;
     font-weight: bold;
-    text-shadow: 2px 2px white;  
-    font-size: 2em;  
-    padding-top: 10px;
+    margin-bottom: .5px;
+    margin-top: 8px;
+    /* text-shadow: 2px 3px white; */
+    color: rgb(134, 64, 1);
+    position: relative;
+    font-size: 30px;
+    -webkit-text-stroke: 0.09vw rgb(255, 255, 255);
+    text-transform:uppercase;
+
   }
   h3 {
     color: white;
@@ -213,20 +221,21 @@ footer {
 h3{
   font-family: 'Lily Script One';
 }
+.mail{
+  border-radius: 60%;
+  background-color: black;
+}
 </style>
 
 </head>
 <body>
-<nav>
-        <img class="img2" src="Add a subheading.png">		 		 
-      <h4 class="title"> YTCS</h4>
-      
-        
+  <center>
+<nav>      
         <ul>
-        
-          <li><a href="index.php"><i class="fas fa-home"></i></a></li>
+        <li><a href="index.php"><i class="fas fa-home"></i></a></li>
           <li><a href="design_about.php">ABOUT</a></li> 
           <li><a href="gallery.php">GALLERY</a></li> 
+          <img class="img2" src="https://i.pinimg.com/736x/e9/60/86/e96086161caad546aba41b027daacee4.jpg">
           <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICE<span class="caret"></span><i class="fas fa-bell"></i></a> 
              <ul class="dropdown-menu"> 
               <li><a href="booking.php">Booking</a></li> 
@@ -264,6 +273,7 @@ h3{
          </li>
        </ul>
      </nav>
+            </center>
     <br><br>
 
     <div class="oppo">
@@ -271,7 +281,7 @@ h3{
 
     <img class="about_img" src="Add a subheading.png">
   
-  <p >Yani & Tin-tin catering service have already served for more than 3 decades with the quality of variety of aspects. The name was originated
+  <p class="">Yani & Tin-tin catering service have already served for more than 3 decades with the quality of variety of aspects. The name was originated
     from the 2 daughters of the owner. The owner were past Hotel and Restaurant employee where they cope skills that they indeed somehow learned from 
     their years of experience. As they finally settled down on their personal life by handling to children, they decided to build up their family business 
     that lead them by having a catering service. As the time flies, the business certainly earn its reputation by providing satisfactory to its clients.
@@ -280,25 +290,26 @@ h3{
     </div>
     <div class="ummmm">
     <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d220.9606822557443!2d123.75840021998812!3d13.19886645151466!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sph!4v1669300050382!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <p style="color: black; font-size: 30px;  ">Location<br>Zone 7. Tinago St. Bigaa, Legazpi city. Albay<br>
+      <p class="desc" style="color: black; font-size: 40px; font-weight: bold;">Location</p><p style="color: black; font-size: 20px;"><br><i class="fa fa-map-marker" aria-hidden="true"></i>Zone 7. Tinago St. Bigaa, Legazpi city. Albay<br>
     Postal code: 4501<br>
-  Contact No.<br>
+  <i class="fa fa-phone" aria-hidden="true"></i>Contact No.<br>
   Mobile: 09663955462<br>
   09319919517<br>
-  Email: myadmin.123@gmail.com<br><br><br></p>
+  <i class="fa fa-envelope" aria-hidden="true"></i>Email: myadmin.123@gmail.com<br><br><br></p>
     </div>
 
     </body>
     <footer>
-  <div class="pap">	               
-    <h1 class="hi"> <img class="img2" src="https://i.pinimg.com/736x/e9/60/86/e96086161caad546aba41b027daacee4.jpg">	Yani and Tin-tin Catering Service</h1><h3>A taste you'll remember.</h3>
-  </div>
-    <p><img class="img2" src="https://cdn-icons-png.flaticon.com/512/49/49354.png"><img class="img2" src="https://www.freepnglogos.com/uploads/black-email-logo-png-0.png"><br>
-    <a href="">Menu<br></a><a href="">Gallery</a><br><a href="">About</a><br><a href="">FAQs</a></p><br>
-    <h3>Contact Us</h3>
-    <p class="contactf"><i class="fa fa-phone"></i>Mobile: 09663955462<br> 09319919517<br>
-    <i class="material-icons">&#xe0be;</i>Email: <a href="">myadmin.123@gmail.com</a>
-    </p> 
-  </footer>
+  <div class="pap">	 
+  <h1 class="hi"> <img class="img2" src="https://i.pinimg.com/736x/e9/60/86/e96086161caad546aba41b027daacee4.jpg">	Yani and Tin-tin Catering Service</h1><h3>A taste you'll remember.</h3><br>
+     </div>
+  <p><button type="button" class="mail"><img class="img2" src="https://www.freepnglogos.com/uploads/black-email-logo-png-0.png"><br></button><br>
+  <a href="gallery.php">Gallery</a><br><a href="design_about.php">About</a><br></p><br>
+  <h3>You may also Contact Us here</h3>
+  <p><i class="fa fa-phone"></i>Mobile: 09663955462<br> 09319919517<br>
+
+  </p>
+
+</footer>
 </html>
 

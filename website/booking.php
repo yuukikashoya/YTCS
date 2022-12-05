@@ -22,7 +22,7 @@ include"../code/status.php";
 <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-  
+<center>
 
     <nav>
         <img class="img2" src="Add a subheading.png">		 		 
@@ -30,10 +30,10 @@ include"../code/status.php";
       
         
         <ul>
-        
-          <li><a href="index.php"><i class="fas fa-home"></i></a></li>
+        <li><a href="index.php"><i class="fas fa-home"></i></a></li>
           <li><a href="design_about.php">ABOUT</a></li> 
-          <li><a href="gallery.php">GALLERY</a></li> 
+          <li><a href="#">GALLERY</a></li> 
+          <img class="img2" src="https://i.pinimg.com/736x/e9/60/86/e96086161caad546aba41b027daacee4.jpg">
           <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICE<span class="caret"></span><i class="fas fa-bell"></i></a> 
              <ul class="dropdown-menu"> 
               <li><a href="booking.php">Booking</a></li> 
@@ -63,7 +63,7 @@ else{
          </li>
        </ul>
      </nav>
-    
+</center>   
     <div class="center">
     <div class="testbox center">
         <form class="aform" method="POST" action="../code/service.php">
@@ -128,4 +128,16 @@ else{
       </div>
     </div>
 </body>
+<footer>
+  <div class="pap">	 
+  <h1 class="hi"> <img class="img2" src="https://i.pinimg.com/736x/e9/60/86/e96086161caad546aba41b027daacee4.jpg">	Yani and Tin-tin Catering Service</h1><h3>A taste you'll remember.</h3><br>
+     </div>
+  <p><button type="button" class="mail"><img class="img2" src="https://www.freepnglogos.com/uploads/black-email-logo-png-0.png"><br></button><br>
+  <a href="gallery.php">Gallery</a><br><a href="design_about.php">About</a><br></p><br>
+  <h3>You may also Contact Us here</h3>
+  <p><i class="fa fa-phone"></i>Mobile: 09663955462<br> 09319919517<br>
+
+  </p>
+
+</footer>
 </html>
