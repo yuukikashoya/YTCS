@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Dec 03, 2022 at 07:19 PM
+-- Generation Time: Dec 05, 2022 at 04:09 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -91,7 +91,7 @@ CREATE TABLE `client` (
 
 INSERT INTO `client` (`client_id`, `client_name`, `client_username`, `password`, `address`, `contact`, `birthday`, `email`, `status`, `unique_id`) VALUES
 (14, 'aron', 'aron', '056eafe7cf52220de2df36845b8ed170c67e23e3', 'qwe', '423423423', '2022-10-26', '34223@gmail.com', 'offline', 1624299434),
-(15, 'John Lloyd Miranda', 'BSIT', '056eafe7cf52220de2df36845b8ed170c67e23e3', 'bahay', '412312312523423', '2022-09-27', '07006728@dwc-legazpi.edu', 'online', 1178267994),
+(15, 'John Lloyd Miranda', 'BSIT', '056eafe7cf52220de2df36845b8ed170c67e23e3', 'bahay', '412312312523423', '2022-09-27', '07006728@dwc-legazpi.edu', 'offline', 1178267994),
 (16, 'local', 'local', '939bb46a04c3640c8c427e92b1b557e882e2d2a0', 'local', '312', '2022-10-31', 'yukimiranda26@gmail.com', 'offline', 163751382);
 
 -- --------------------------------------------------------
@@ -165,7 +165,8 @@ CREATE TABLE `service` (
 
 INSERT INTO `service` (`service_id`, `client_username`, `client_name`, `email`, `contact`, `bundle`, `pax`, `time_start`, `time_ends`, `date`, `street`, `city`, `postal_zip_code`, `photo`, `invitation`) VALUES
 (7, 'BSIT', 'John Lloyd Miranda', '07006728@dwc-legazpi.edu', '21', 'Organizzational Event', 21, '00:33:00', '00:33:00', '1212-02-21', 'gapo', 'leagazpi', '4500', 'no', ''),
-(8, 'BSIT', 'John Lloyd Miranda', '07006728@dwc-legazpi.edu', '312', 'Birthday', 21, '02:21:00', '07:17:00', '0000-00-00', 'gapo', 'leagazpi', '', 'no', 'yes');
+(8, 'BSIT', 'John Lloyd Miranda', '07006728@dwc-legazpi.edu', '312', 'Birthday', 21, '02:21:00', '07:17:00', '0000-00-00', 'gapo', 'leagazpi', '', 'no', 'yes'),
+(9, 'BSIT', 'John Lloyd Miranda', '07006728@dwc-legazpi.edu', '312', 'Weddings', 321, '18:32:00', '19:32:00', '0000-00-00', 'gapo', 'leagazpi', '4500', 'no', 'no');
 
 --
 -- Indexes for dumped tables
@@ -245,7 +246,7 @@ ALTER TABLE `message`
 -- AUTO_INCREMENT for table `service`
 --
 ALTER TABLE `service`
-  MODIFY `service_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `service_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
