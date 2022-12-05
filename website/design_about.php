@@ -19,12 +19,13 @@ include"../database/connecting_to_DB.php";
 
 <style>
 .img2{
-  height: 60px;
-  width: 60px;
+  height: 80px;
+  width: 80px;
   border-radius: 50%;
+  border: 2px solid #000;
 }
 nav{
-  height: 60px;
+  height: 55px;
   background: url('../img/pud2.png');
   background-repeat: no-repeat;
   background-size: auto;
@@ -36,7 +37,7 @@ nav{
   text-decoration: none;
 }
 nav ul{
-  float: right;
+  /* float: right; */
   margin-right: 30px;
   text-decoration: none;
 }
@@ -58,10 +59,15 @@ nav ul li a{
   text-decoration: none;
 }
 nav ul li a:hover{
-  color: white;
-  background-color: rgb(2, 1, 0);
-  box-shadow: 0 0 30px rgb(186, 104, 30);
+  background-image: url('https://cdn.iconscout.com/icon/free/png-256/food-dish-2634600-2187288.png');
+  background-size: 80% 110%;
+  background-repeat: no-repeat;
+  color: rgb(255, 187, 0);
+  animation: spring 300ms ease-out;
+  text-shadow: 2px 2px 8px #f9f9f9;
+  font-weight: bold;
   text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 nav ul ul{
@@ -87,38 +93,18 @@ nav ul ul li{
   border-top: none;
   text-decoration: none;
 }
-/* nav ul ul li a{
-  line-height: 50px;
-  text-decoration: none;
-} */
-/* nav ul ul ul{
-  border-top: none;
-  text-decoration: none;
-} */
-/* nav ul ul ul li{
-  position: relative;
-  /* top: -70px; */
-  /* left: 150px; */
-  /* text-decoration: none; */
- 
-nav ul ul li a i{
-  margin-left: 45px;
-  text-decoration: none;
-}
-* {box-sizing:border-box}
-.dropdown-menu{
-  background-color: rgb(250, 139, 43);
-
-}
 
     body{
-      background: url('https://img.freepik.com/premium-photo/healthy-food-background-concept-healthy-food-fresh-vegetables-nuts-fruits-stone-background-top-view-copy-space_187166-21326.jpg?w=2000');
+      background: url('https://c1.wallpaperflare.com/preview/312/229/301/food-knife-background-wooden.jpg');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
     }
     .ih1{
       text-align: right;
-      color: white;
-      padding-right: 6em;
-
+      color: black;
+      padding-right: 3em;
+      font-size: 4em;
+      -webkit-text-stroke: 0.1vw rgb(255, 255, 255);
     }
 
     /* .container1{
@@ -138,8 +124,8 @@ nav ul ul li a i{
   text-align: justify;
       padding-top: 10px;
       margin-right: 2em;
-      margin-left: 4em;
-      color: white;
+      margin-left: 2em;
+      color: black;
     
  
     }
@@ -168,7 +154,7 @@ nav ul ul li a i{
       padding-bottom: 40px;    
     }
     .ummmm{
-      background: url('https://wallpaperaccess.com/full/5196643.jpg'); 
+      background: url('https://i.pinimg.com/736x/e6/7d/af/e67daf68a6e8f6d4a9283cb7d64b098c.jpg'); 
       background-size: 100% 100%;  
     }
     .pap{
@@ -177,11 +163,16 @@ nav ul ul li a i{
     font-family: Calibri;
   }
   .hi{
-    font-family: Ink free;
     font-weight: bold;
-    text-shadow: 2px 2px white;  
-    font-size: 2em;  
-    padding-top: 10px;
+    margin-bottom: .5px;
+    margin-top: 8px;
+    text-align: center;
+    font-family: fantasy;
+    color: rgb(160, 93, 26);
+    position: relative;
+    font-size: 2.5vw;
+    -webkit-text-stroke: 0.1vw rgb(255, 255, 255);
+    text-transform:uppercase;
   }
   h3 {
     color: white;
@@ -213,13 +204,23 @@ footer {
 h3{
   font-family: 'Lily Script One';
 }
+.butt{
+  border-radius: 50%;
+  background-color: black;
+}
+.small{
+  color: white;
+  text-shadow: 2px 2px black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
 </style>
 
 </head>
 <body>
+  <center>
 <nav>
-        <img class="img2" src="Add a subheading.png">		 		 
-      <h4 class="title"> YTCS</h4>
+	 
       
         
         <ul>
@@ -227,6 +228,7 @@ h3{
           <li><a href="index.php"><i class="fas fa-home"></i></a></li>
           <li><a href="design_about.php">ABOUT</a></li> 
           <li><a href="gallery.php">GALLERY</a></li> 
+        <img class="img2" src="Add a subheading.png">		 	          
           <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"style="color: white;">SERVICE<span class="caret"></span></a> 
              <ul class="dropdown-menu"> 
               <li><a href="booking.php">Booking</a></li> 
@@ -290,12 +292,14 @@ $result->free();
          </li>
        </ul>
      </nav>
+            </center>
     <br><br>
 
     <div class="oppo">
     <h1 class="ih1" >About Us</h1>
 
     <img class="about_img" src="Add a subheading.png">
+    <br>
   
   <p >Yani & Tin-tin catering service have already served for more than 3 decades with the quality of variety of aspects. The name was originated
     from the 2 daughters of the owner. The owner were past Hotel and Restaurant employee where they cope skills that they indeed somehow learned from 
@@ -306,25 +310,24 @@ $result->free();
     </div>
     <div class="ummmm">
     <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d220.9606822557443!2d123.75840021998812!3d13.19886645151466!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sph!4v1669300050382!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <p style="color: black; font-size: 30px;  ">Location<br>Zone 7. Tinago St. Bigaa, Legazpi city. Albay<br>
+      <p style="color: white; font-size: 60px; font-weight: bolder; -webkit-text-stroke: 3.5px black; text-position: left;"><br>Location<br></p><p style="color: white;">Zone 7. Tinago St. Bigaa, Legazpi city. Albay<br>
     Postal code: 4501<br>
   Contact No.<br>
   Mobile: 09663955462<br>
   09319919517<br>
-  Email: myadmin.123@gmail.com<br><br><br></p>
+  Email: myadmin.123@gmail.com<br><br><br><br><br><br><br></p>
     </div>
 
     </body>
     <footer>
-  <div class="pap">	               
-    <h1 class="hi"> <img class="img2" src="https://i.pinimg.com/736x/e9/60/86/e96086161caad546aba41b027daacee4.jpg">	Yani and Tin-tin Catering Service</h1><h3>A taste you'll remember.</h3>
-  </div>
-    <p><img class="img2" src="https://cdn-icons-png.flaticon.com/512/49/49354.png"><img class="img2" src="https://www.freepnglogos.com/uploads/black-email-logo-png-0.png"><br>
-    <a href="">Menu<br></a><a href="">Gallery</a><br><a href="">About</a><br><a href="">FAQs</a></p><br>
-    <h3>Contact Us</h3>
-    <p class="contactf"><i class="fa fa-phone"></i>Mobile: 09663955462<br> 09319919517<br>
-    <i class="material-icons">&#xe0be;</i>Email: <a href="">myadmin.123@gmail.com</a>
-    </p> 
-  </footer>
+  <div class="pap">	 
+  <h1 class="hi"> <img class="img2" src="Add a subheading.png">	Yani and Tin-tin Catering Service</h1><h3>A taste you'll remember.</h3><br>
+     </div>
+  <p><a href="login.php"><button class="butt" type="button" ><img class="img2" src="https://www.freepnglogos.com/uploads/black-email-logo-png-0.png"><br></button></a>
+  <br><a href="gallery.php">Gallery</a><br><a href="design_about.php">About</a><br></p><br>
+  <h3 class="small">You may also Contact Us</h3>
+  <p><i class="fa fa-phone" style="font-size:25px"></i>Mobile: 09663955462<br> 09319919517<br>
+  </p>
+</footer>
 </html>
 
