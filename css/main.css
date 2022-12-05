@@ -1,10 +1,11 @@
 .img2{
-  height: 60px;
-  width: 60px;
+  height: 80px;
+  width: 80px;
   border-radius: 50%;
+  border: 2px solid #000;
 }
 nav{
-  height: 50px;
+  height: 70px;
   background: url('../img/pud2.png');
   background-repeat: no-repeat;
   background-size: auto;
@@ -16,7 +17,7 @@ nav{
   text-decoration: none;
 }
 nav ul{
-  float: right;
+  /* float: right; */
   margin-right: 30px;
   text-decoration: none;
 }
@@ -38,10 +39,15 @@ nav ul li a{
   text-decoration: none;
 }
 nav ul li a:hover{
-  color: white;
-  background-color: rgb(2, 1, 0);
-  box-shadow: 0 0 30px rgb(186, 104, 30);
+  background-image: url('https://images.template.net/76782/PNG-01-1.png');
+  background-size: 80% 110%;
+  background-repeat: no-repeat;
+  color: black;
+  animation: spring 300ms ease-out;
+  text-shadow: 2px 2px 8px #f9f9f9;
+  font-weight: bold;
   text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 nav ul ul{
@@ -532,13 +538,17 @@ html, body {
 
   }
 
-  h1{
-      text-align: center;
-      font-family: Ink Free;
+    .lol{
       font-weight: bold;
       margin-bottom: .5px;
       margin-top: 8px;
-      text-shadow: 2px 1px white;
+      text-align: center;
+      font-family: fantasy;
+      color: rgb(160, 93, 26);
+      position: relative;
+      font-size: 4.5vw;
+      -webkit-text-stroke: 0.1vw rgb(255, 255, 255);
+      text-transform:uppercase;
     }
     /* .container1{
       height: 20%;
@@ -731,9 +741,16 @@ display: inline-block;
     font-family: Calibri;
   }
   .hi{
-    font-family: Ink free;
     font-weight: bold;
-    font-size: 2em;
+    margin-bottom: .5px;
+    margin-top: 8px;
+    text-align: center;
+    font-family: fantasy;
+    color: rgb(160, 93, 26);
+    position: relative;
+    font-size: 2.5vw;
+    -webkit-text-stroke: 0.1vw rgb(255, 255, 255);
+    text-transform:uppercase;
   }
 
   /* CSS */
@@ -1130,4 +1147,8 @@ body {
   background: url('https://img.freepik.com/premium-photo/healthy-food-background-concept-healthy-food-fresh-vegetables-nuts-fruits-stone-background-top-view-copy-space_187166-21326.jpg?w=2000');
   background-size: 100% 100%;
   background-repeat: no-repeat;
+}
+.butt{
+  border-radius: 50%;
+  background-color: black;
 }
