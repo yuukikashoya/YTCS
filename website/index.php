@@ -14,7 +14,8 @@ include"../database/connecting_to_DB.php";
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="../css/main.css">
     </head>
    
@@ -156,12 +157,12 @@ $result->free();
     </body>
     <footer>
   <div class="pap">	 
-  <h1 class="hi"> <img class="img2" src="https://i.pinimg.com/736x/e9/60/86/e96086161caad546aba41b027daacee4.jpg">	Yani and Tin-tin Catering Service</h1><h3>A taste you'll remember.</h3><br>
+  <h1 class="hi"> <img class="img2" src="Add a subheading.png">	Yani and Tin-tin Catering Service</h1><h3>A taste you'll remember.</h3><br>
      </div>
   <p><button class="butt" type="button"><img class="img2" src="https://www.freepnglogos.com/uploads/black-email-logo-png-0.png"><br></button>
   <br><a href="gallery.php">Gallery</a><br><a href="design_about.php">About</a><br></p><br>
-  <h3>You may also Contact Us</h3>
-  <p><i class="fa fa-phone"></i>Mobile: 09663955462<br> 09319919517<br>
+  <h3 class="small">You may also Contact Us</h3>
+  <p><i class="fa fa-phone" style="font-size:25px"></i>Mobile: 09663955462<br> 09319919517<br>
   </p>
 
 </footer>

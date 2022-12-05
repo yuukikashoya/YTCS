@@ -823,9 +823,11 @@ display: inline-block;
   border-radius: 35px;
   margin-top: .1px;
 }
-h3{
+.small{
   color: white;
   text-shadow: 2px 2px black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
 }
 
 /* CSS */
