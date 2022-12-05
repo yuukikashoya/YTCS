@@ -1,5 +1,6 @@
 <?php
 session_start();
+include"../database/connecting_to_DB.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -112,7 +113,7 @@ else{
       </div>
       <div class="flip-card-back">
         <h1>Photography</h1> 
-        <a class="button-74" role="button" href="Photography.html">Learn More</a>
+        <a class="button-74" role="button" href="Photography.php">Learn More</a>
         <p></p>
       </div>
     </div>

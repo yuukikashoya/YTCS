@@ -51,15 +51,41 @@
           <li><a href="index.php"><i class="fas fa-home"></i></a></li>
           <li><a href="design_about.php">ABOUT</a></li> 
           <li><a href="#">GALLERY</a></li> 
-          <img class="img2" src="https://i.pinimg.com/736x/e9/60/86/e96086161caad546aba41b027daacee4.jpg">          
           <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICE</a> 
             <ul class="dropdown-menu"> 
-              <li><a href="booking.php">Booking</a></li> 
-              <li><a href="chat.php">Chat</a></li> 
-              <li><a href="services.html">Other Services</a></li> 
-             </ul> 
-             </li> 	
-         <li><a href="#">NOTIFICATIONS</a></li>                  		 
+             <li><a href="booking.php">Booking</a></li> 
+             <li><a href="chat.php">Chat</a></li> 
+
+             <li><a href="services.php">Other Services</a></li> 
+
+            </ul> 
+            </li> 	
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" style="color: white;">NOTIFICATIONS<span class="caret"></span><i class="fas fa-bell"></i></a> 
+            <ul class="dropdown-menu" > 
+<?php
+include"../database/connecting_to_DB.php";
+$query =" SELECT * FROM announcement ORDER BY an_id DESC LIMIT 5";
+
+if ($result = $conn->query($query)) {
+
+
+   while ($row = $result->fetch_assoc()) {
+
+
+?>
+<hr style="  border-top: 2px solid white;">
+<h4 style="color: white;text-align:center;display:block;"><?php echo $row["an"];?></h4>
+
+<?php
+
+}
+
+$result->free();
+}
+
+      ?>       
+            </ul> 
+            </li>                  		 
          <li class="dropdown"> 
          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fas fa-align-justify"></i></a> 
              <ul class="dropdown-menu">           
@@ -77,7 +103,7 @@
     <p class="photo1">Photography is more than just a skill or talent; it's a passion that needs constant fulfillment. <br>Whether you are an amateur or a professional photographer, these inspirational photography quotes for <br>photographers would motivate you to find your passion and love for photography.<br>
         All photographs are memento mori. To take a photograph is to participate in another person’s (or <br> thing’s) mortality, vulnerability, mutability. Precisely by slicing out this moment and freezing it, all <br>photographs testify to time’s relentless melt.
     <br>
-    <button class="button-81" role="button">Grab Service</button>
+    <a href="booking.php"> <button class="button-81" role="button">Grab Service</button></a>
    </p>
     </div>
     </div>

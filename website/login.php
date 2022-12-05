@@ -12,92 +12,77 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 <style>
-.img2{
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-}
-nav{
-  height: 50px;
-  background: url('../img/pud2.png');
-  background-repeat: no-repeat;
-  background-size: auto;
-  /* background-position: center; */
-  /* background: transparent; */
-  /* background-size: 120px; */
-  /* box-shadow: 0 3px 15px rgba(0,0,0,.4); */
+  img{
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+  }
+  nav{
+  height: 70px;
+  background: black;
+  background-size: 120px;
+  box-shadow: 0 3px 15px rgba(0,0,0,.4);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-decoration: none;
+  
 }
 nav ul{
   float: right;
   margin-right: 30px;
-  text-decoration: none;
 }
 nav ul li{
-  display: inline-block; 
+  display: inline-block;
   transition: all .2s ease;
-  text-decoration: none;
   
 }
 nav ul li a{
-  color: rgb(255, 255, 255);
+  color: black;
   display: block;
-  padding: 5px 15px;
-  line-height: 40px;
-  font-size: 18px;
-  /* background: #db6a1a; */
+  padding: 8px 25px;
+  line-height: 50px;
+  font-size: 20px;
+  background: #eab995;
   transition: all .5s ease;
-  /* border-radius: 25px; */
-  text-decoration: none;
+  border-radius: 25px;
 }
 nav ul li a:hover{
-  color: white;
-  background-color: rgb(2, 1, 0);
-  box-shadow: 0 0 30px rgb(186, 104, 30);
-  text-decoration: none;
+  color: black;
+  background-color: white;
+  box-shadow: 0 0 10px blue;
 }
-
 nav ul ul{
   position: absolute;
   top: 85px;
   border-top: 3px solid #23dbdb;
   opacity: 0;
   visibility: hidden;
-  text-decoration: none;
 }
 nav ul li:hover > ul{
   top: 70px;
   opacity: 50;
   visibility: visible;
   transition: .3s linear;
-  text-decoration: none;
 }
 nav ul ul li{
   width: auto;
   display: list-item;
   position: relative;
-  /* border: 1px solid #042331; */
+  border: 1px solid #042331;
   border-top: none;
-  text-decoration: none;
 }
-/* nav ul ul li a{
+nav ul ul li a{
   line-height: 50px;
-  text-decoration: none;
-} */
-/* nav ul ul ul{
+}
+nav ul ul ul{
   border-top: none;
-  text-decoration: none;
-} */
-/* nav ul ul ul li{
+}
+nav ul ul ul li{
   position: relative;
-  /* top: -70px; */
-  /* left: 150px; */
-  /* text-decoration: none; */
-/* } */ */
+  top: -70px;
+  left: 150px;
+}
 nav ul ul li a i{
   margin-left: 45px;
-  text-decoration: none;
 }
 * {box-sizing:border-box}
 .dropdown-menu{
@@ -363,14 +348,41 @@ input{
           <li><a href="index.php"><i class="fas fa-home"></i></a></li>
           <li><a href="design_about.php">ABOUT</a></li> 
           <li><a href="gallery.php">GALLERY</a></li> 
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICE<span class="caret"></span><i class="fas fa-bell"></i></a> 
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"style="color: white;">SERVICE<span class="caret"></span></a> 
              <ul class="dropdown-menu"> 
               <li><a href="booking.php">Booking</a></li> 
               <li><a href="chat.php">Chat</a></li> 
+
               <li><a href="services.php">Other Services</a></li> 
+
              </ul> 
              </li> 	
-         <li><a href="#">NOTIFICATIONS</a></li>                  		 
+             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" style="color: white;">NOTIFICATIONS<span class="caret"></span><i class="fas fa-bell"></i></a> 
+             <ul class="dropdown-menu" > 
+<?php
+include"../database/connecting_to_DB.php";
+$query =" SELECT * FROM announcement ORDER BY an_id DESC LIMIT 5";
+
+if ($result = $conn->query($query)) {
+
+
+    while ($row = $result->fetch_assoc()) {
+
+
+?>
+<hr style="  border-top: 2px solid white;">
+<h4 style="color: white;text-align:center;display:block;"><?php echo $row["an"];?></h4>
+
+<?php
+
+}
+
+$result->free();
+}
+
+       ?>       
+             </ul> 
+             </li>                  		 
        
        </ul>
      </nav>

@@ -1,5 +1,6 @@
 <?php 
-session_start()
+session_start();
+include"../database/connecting_to_DB.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -57,10 +58,10 @@ session_start()
 
         
       <ul>
-      <li><a href="index.php"><i class="fas fa-home"></i></a></li>
-          <li><a href="design_about.php">ABOUT</a></li> 
-          <li><a href="#">GALLERY</a></li> 
-          <img class="img2" src="https://i.pinimg.com/736x/e9/60/86/e96086161caad546aba41b027daacee4.jpg">
+        
+        <li><a href="index.php"><i class="fas fa-home"></i></a></li>
+        <li><a href="design_about.php">ABOUT</a></li> 
+        <li><a href="gallery.php">GALLERY</a></li> 
         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICE</a> 
           <ul class="dropdown-menu"> 
             <li><a href="booking.php">Booking</a></li> 
@@ -96,7 +97,7 @@ echo '  <li><a href="../code/logout.php">Logout</a></li> ';
   </div>
   <p class="invi" style="font-size: 25px;">What's a party without an invitations and giveaways for your guest. As for the our catering service,<br>
   we provide a creative service in terms of managing and creating an aesthetic invitations and giveaways <br>
-  that you may distribute for your ocassions that will sure happily interact you and your guest.<br><button class="button-81" role="button">Grab Service</button></p>
+  that you may distribute for your ocassions that will sure happily interact you and your guest.<br> <a href="booking.php"><button  class="button-81" type="button">Grab Service</button></a> </p>
   <center><p style="font-family: Harrington; font-weight: bold; font-size: 40px;">Sample offers</p></center>
   <div class="invipics">
   <center>

@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-
+include"../database/connecting_to_DB.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -101,7 +101,7 @@ nav ul ul li{
   /* top: -70px; */
   /* left: 150px; */
   /* text-decoration: none; */
-/* } */ */
+} */
 nav ul ul li a i{
   margin-left: 45px;
   text-decoration: none;
@@ -235,15 +235,40 @@ h3{
         <li><a href="index.php"><i class="fas fa-home"></i></a></li>
           <li><a href="design_about.php">ABOUT</a></li> 
           <li><a href="gallery.php">GALLERY</a></li> 
-          <img class="img2" src="https://i.pinimg.com/736x/e9/60/86/e96086161caad546aba41b027daacee4.jpg">
           <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICE<span class="caret"></span><i class="fas fa-bell"></i></a> 
              <ul class="dropdown-menu"> 
               <li><a href="booking.php">Booking</a></li> 
               <li><a href="chat.php">Chat</a></li> 
+
               <li><a href="services.php">Other Services</a></li> 
+
              </ul> 
              </li> 	
-         <li><a href="#">NOTIFICATIONS</a></li>                  		 
+             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" style="color: white;">NOTIFICATIONS<span class="caret"></span><i class="fas fa-bell"></i></a> 
+             <ul class="dropdown-menu" > 
+<?php
+$query =" SELECT * FROM announcement ORDER BY an_id DESC LIMIT 5";
+
+if ($result = $conn->query($query)) {
+
+
+    while ($row = $result->fetch_assoc()) {
+
+
+?>
+<hr style="  border-top: 2px solid white;">
+<h4 style="color: white;text-align:center;display:block;"><?php echo $row["an"];?></h4>
+
+<?php
+
+}
+
+$result->free();
+}
+
+       ?>       
+             </ul> 
+             </li>                  		 
          <li class="dropdown"> 
          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret">
     <?php 

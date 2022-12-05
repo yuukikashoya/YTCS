@@ -9,11 +9,10 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
 
 <html>
     <head>
-    <title>Gallery</title>
+    <title>Announcement</title>
     <meta charset="utf-8">
 
     <!-- <meta http-equiv="refresh" content="5"> -->
-
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -42,14 +41,12 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
 
 
 
-
-  <link rel="stylesheet" href="../adminCSS/pog.css">
-  <link rel="stylesheet" href="../adminCSS/listchat.css">
-    
+    <link rel="stylesheet" href="../adminCSS/pog.css">
+    <link rel="stylesheet" href="../adminCSS/chat.css">
    
     </head>
  
-    <body class="WebContainer">
+    <body class="WebContainer" >
 
 
       <div class="sidebar">
@@ -65,7 +62,7 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
           </a>
         </li>
         <li>
-          <a href="an.php" >
+          <a href="an.php" class="active">
             <i class='	bx bx-bell' ></i>
             <span class="links_name">Announcement</span>
           </a>
@@ -83,13 +80,11 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
           </a>
         </li>
         <li>
-          <a href="adminGallery.php" class="active">
+          <a href="adminGallery.php" >
             <i class='	bx bx-camera' ></i>
             <span class="links_name">Gallery</span>
           </a>
         </li>
-
-
         <li>
           <a href="../adminCode/adminLogout.php">
             <i class='	bx bx-log-out' ></i>
@@ -97,15 +92,14 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
           </a>
         </li>
 
+        
       
       
       </ul>
   </div>
 
 
-
-
-<section class="home-section ">
+<section class="home-section " >
     <nav>
 
       <div class="sidebar-button">
@@ -114,57 +108,66 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
    
     </nav>
 
-<div class="container  center  home-content" >
 
+<div class="container  center  home-content" id="top">
 
+<div class="container  center">
+                <div class="jumbotron jumbotron-fluid bg-dark ">
+                    
+                        <h3> <span class="label label-default">Announcement</span>  </h3>
+                        <form method="POST" class="left" action="../adminCode/addan.php">
 
-
-
-
-<?php
-		$img_id  = $_GET['img_id'];
-		$sql_query = "SELECT * FROM img WHERE img_id ='$img_id ' ";
-		
-		$result = $conn -> query($sql_query);
-		
-		while($row = $result -> fetch_assoc()){
-			$img_id  = $row['img_id'];
-	?>
-
-                <div class="jumbotron jumbotron-fluid">
-
-                <img  class="len" src="../images/<?php echo $row['file'];?>"><br><br>
-                <form method="POST"  action="../adminCode/adminedit.php" >
-                <input type="hidden" value="<?php echo $row['img_id'];?>" name="img_id" readonly>
-<h1>
-<input type="text" value="<?php echo $row['img_name'];?>" class="center headeredit" name="img_name">
-</h1>
-                <input type="submit" class="ch" value="Rename" name="submit">
-              
-                <input type="button" class="jkl" value="Go back!" onclick="history.back()">
-                <input type="button" class="del" value="Delete" onclick="window.location.href='../adminCode/delete_image.php?img_id=<?php echo $img_id; ?>'">
-   
-              </form>
-               
+                                    
+                            <textarea name="announcement" class="lan text-black" placeholder="Enter text here..."></textarea>
+    
+                            <input type="submit" class="btn btn-primary" name="submit">
+                        </form>
                     </div>        
-        
-  
-	<?php
-		}
-		
-		$conn->close();
-	?>
-	
-
-	</div>
-        </section>
+            </div>
 
 
 
+            <?php
 
-    </body>
-    </html>
-<script>
+
+//  $query = "SELECT * FROM announcement";$query =" SELECT * FROM `announcement` WHERE an_id=(SELECT MAX(an_id) FROM `announcement`);";
+$query =" SELECT * FROM announcement ORDER BY an_id DESC LIMIT 1000";
+
+ if ($result = $conn->query($query)) {
+
+
+     while ($row = $result->fetch_assoc()) {
+$an_id = $row["an_id"];
+?>
+ <div class="container   ">
+            <div class="jumbotron jumbotron-fluid bg-dark text-white"> <a href="../adminCode/delan.php?an_id=<?php echo $an_id; ?>"><i class='	bx bx-trash' style="color: red;font-size:2em;float:right;"></i></a>
+            <div class="shesh "><?php
+              echo $row["an"]; 
+             ?></div>
+         </div> 
+
+
+                </div>
+
+                <?php
+
+ }
+
+ $result->free();
+ }
+
+        ?>
+
+
+
+
+
+
+  </div>
+  </section>
+        <script>
+
+
    let sidebar = document.querySelector(".sidebar");
 let sidebarBtn = document.querySelector(".sidebarBtn");
 sidebarBtn.onclick = function() {
@@ -172,8 +175,12 @@ sidebarBtn.onclick = function() {
   if(sidebar.classList.contains("active")){
   sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
 }else
-  side
-  barBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
 }
-$('html,body').animate({scrollTop: document.body.scrollHeight},"fast");
-</script>
+
+
+ </script>
+
+    </body>
+    </html>
+

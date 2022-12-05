@@ -62,6 +62,12 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
           </a>
         </li>
         <li>
+          <a href="an.php" >
+            <i class='	bx bx-bell' ></i>
+            <span class="links_name">Announcement</span>
+          </a>
+        </li>
+        <li>
           <a href=""class="active">
             <i class='	bx bx-user-pin' ></i>
             <span class="links_name">Admin</span>

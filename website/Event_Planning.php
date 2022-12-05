@@ -1,6 +1,6 @@
 <?php 
-session_start()
-
+session_start();
+include"../database/connecting_to_DB.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -54,10 +54,10 @@ session_start()
 <center> 
     <nav>
       <ul>
-      <li><a href="index.php"><i class="fas fa-home"></i></a></li>
-          <li><a href="design_about.php">ABOUT</a></li> 
-          <li><a href="#">GALLERY</a></li> 
-          <img class="img2" src="https://i.pinimg.com/736x/e9/60/86/e96086161caad546aba41b027daacee4.jpg">
+        
+        <li><a href="index.php"><i class="fas fa-home"></i></a></li>
+        <li><a href="design_about.php">ABOUT</a></li> 
+        <li><a href="gallery.php">GALLERY</a></li> 
         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICE</a> 
           <ul class="dropdown-menu"> 
             <li><a href="booking.php">Booking</a></li> 
