@@ -44,7 +44,7 @@ include"../database/connecting_to_DB.php";
   padding: 10px;
   }
   </style>
-<body class="me">
+<body class="ourgallery">
     <center><nav>
     
 	 		 
@@ -112,6 +112,7 @@ else{
     <div class="h">
      <h1 class="h">Services</h1>
       </div>
+      <center>
      <div class="row">
         <div class="column">
 <div class="flip-card">
@@ -158,7 +159,7 @@ else{
       </div>
     </div>
     </div>
-
+</center>
   
 </body>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

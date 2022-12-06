@@ -711,8 +711,10 @@ display: inline-block;
   }
   .h{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 4vw;
+    font-size: 6vw;
     color: black;
+    -webkit-text-stroke: 0.1vw rgb(255, 255, 255);
+    font-weight: bold;
   }
     footer {
       text-align: center;

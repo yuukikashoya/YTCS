@@ -21,19 +21,20 @@ include"../code/status.php";
 
 <link rel="stylesheet" href="../css/main.css">
 </head>
-<body>
+<body class="ourgallery">
   
-
+<center>
     <nav>
-        <img class="img2" src="Add a subheading.png">		 		 
-      <h4 class="title"> YTCS</h4>
+        		 		 
+        
       
         
         <ul>
         
           <li><a href="index.php"><i class="fas fa-home"></i></a></li>
           <li><a href="design_about.php">ABOUT</a></li> 
-          <li><a href="gallery.php">GALLERY</a></li> 
+          <li><a href="gallery.php">GALLERY</a></li>
+          <img class="img2" src="Add a subheading.png"> 
           <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICE<span class="caret"></span></a> 
              <ul class="dropdown-menu"> 
               <li><a href="booking.php">Booking</a></li> 
@@ -89,7 +90,7 @@ else{
          </li>
        </ul>
      </nav>
-    
+</center>
     <div class="center">
     <div class="testbox center">
         <form class="aform" method="POST" action="../code/service.php">
