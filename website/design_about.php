@@ -304,13 +304,13 @@ $result->free();
     <h1 class="ih1" >About Us</h1>
 
     <img class="about_img" src="Add a subheading.png">
-    <br>
+    <br><br><br><br>
   
   <p >Yani & Tin-tin catering service have already served for more than 3 decades with the quality of variety of aspects. The name was originated
     from the 2 daughters of the owner. The owner were past Hotel and Restaurant employee where they cope skills that they indeed somehow learned from 
     their years of experience. As they finally settled down on their personal life by handling to children, they decided to build up their family business 
     that lead them by having a catering service. As the time flies, the business certainly earn its reputation by providing satisfactory to its clients.
-  </p>
+  </p><br><br><br>
     
     </div>
     <div class="ummmm">

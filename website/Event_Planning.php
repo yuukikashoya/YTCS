@@ -51,17 +51,17 @@ include"../database/connecting_to_DB.php";
   }
 </style>
 <body class="me">
-    <nav>
+    <center><nav>
     
-        <img class="img2" src="https://i.pinimg.com/736x/e9/60/86/e96086161caad546aba41b027daacee4.jpg">		 		 
-      <h4 class="title"> Yani and Tin-tin Catering Service</h4> 
+	 		 
         
       <ul>
         
         <li><a href="index.php"><i class="fas fa-home"></i></a></li>
         <li><a href="design_about.php">ABOUT</a></li> 
         <li><a href="gallery.php">GALLERY</a></li> 
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"style="color: white;">SERVICE<span class="caret"></span></a> 
+        <img class="img2" src="https://i.pinimg.com/736x/e9/60/86/e96086161caad546aba41b027daacee4.jpg">	        
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"style="color: white;">SERVICE</a> 
              <ul class="dropdown-menu"> 
               <li><a href="booking.php">Booking</a></li> 
               <li><a href="chat.php">Chat</a></li> 
@@ -70,7 +70,7 @@ include"../database/connecting_to_DB.php";
 
              </ul> 
              </li> 	
-             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" style="color: white;">NOTIFICATIONS<span class="caret"></span><i class="fas fa-bell"></i></a> 
+             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" style="color: white;">NOTIFICATIONS<i class="fas fa-bell"></i></a> 
              <ul class="dropdown-menu" > 
 <?php
 $query =" SELECT * FROM announcement ORDER BY an_id DESC LIMIT 5";
@@ -116,6 +116,7 @@ echo '  <li><a href="../code/logout.php">Logout</a></li> ';
 
   
   </nav>
+</center>
 <center>
 <div class="p1">
     <h1>Package Deals</h1>
