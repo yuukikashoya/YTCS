@@ -17,6 +17,11 @@ include"../database/connecting_to_DB.php";
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="../css/main.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     </head>
    
     <body>
@@ -149,15 +154,13 @@ $result->free();
 <span class=" us">
 <a href="booking.php"><button class="button-81 " role="button">Book  Now</button></a></span>
 
- 
-</div>
 
 <br><br><br><br><br><br>
 
     </body>
     <footer>
   <div class="pap">	 
-  <h1 class="hi"> <img class="img2" src="Add a subheading.png">	Yani and Tin-tin Catering Service</h1><h3>A taste you'll remember.</h3><br>
+  <h1 class="hi"> <img class="img2" src="Add a subheading.png">	Yani and Tin-tin Catering Service</h1><h3>A taste you'll remember.</h3><br><br><br>
      </div>
   <p><button class="butt" type="button"><img class="img2" src="https://www.freepnglogos.com/uploads/black-email-logo-png-0.png"><br></button>
   <br><a href="gallery.php">Gallery</a><br><a href="design_about.php">About</a><br></p><br>
