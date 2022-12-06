@@ -62,9 +62,9 @@ nav ul li a:hover{
   background-image: url('https://cdn.iconscout.com/icon/free/png-256/food-dish-2634600-2187288.png');
   background-size: 80% 110%;
   background-repeat: no-repeat;
-  color: rgb(255, 187, 0);
+  color: white;
   animation: spring 300ms ease-out;
-  text-shadow: 2px 2px 8px #f9f9f9;
+  text-shadow: 2px 2px 8px #c12b11;
   font-weight: bold;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
@@ -92,6 +92,11 @@ nav ul ul li{
   /* border: 1px solid #042331; */
   border-top: none;
   text-decoration: none;
+}
+* {box-sizing:border-box}
+.dropdown-menu{
+  background-color: rgb(250, 139, 43);
+
 }
 
     body{
