@@ -44,7 +44,7 @@ include"../code/status.php";
 <link rel="stylesheet" href="../css/chat.css">
     </head>
    
-    <body style="background-color: #f3d8c4 ;">
+    <body class="ourgallery">
     <center><nav>
 	 		 
       

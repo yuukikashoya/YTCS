@@ -18,7 +18,13 @@ session_start();
 <link rel="stylesheet" href="../css/main.css">
 <link rel="stylesheet" href="../css/chat.css">
     </head>
-   
+   <style>
+    .ourgallery{
+  background: url('https://img.freepik.com/premium-photo/healthy-food-background-concept-healthy-food-fresh-vegetables-nuts-fruits-stone-background-top-view-copy-space_187166-21326.jpg?w=2000');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+   </style>
     <body class="ourgallery">
      <center> <nav>
  		 
