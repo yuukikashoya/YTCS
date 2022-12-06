@@ -236,47 +236,47 @@ celebrant itself won't needed much to hassle for the fulfillment of their dream 
     <br>and you are unable to fetch the most suitable words.</p></center>
     <div class="lab">
 <div class="packs1">
-    <p>   <b>Set A</b> <br>   The ideal catering food package for soon-to-wed couples for a maximum of 180 guests, which includes:</p>
-    <li>Beef Menu, Chicken Menu, Pork Menu, Fish Menu, and SeaFood Menu</li>
-    <li>Pasta And Vegestable</li>
-    <li>2 Dessert Salad</li>
-    <li>Soup</li>
+    <p>   <b>Set A</b> <br>   The ideal catering food package with Friends for a maximum of 180 people, which includes:</p>
+    <li>Patatim</li>
+    <li>Four Season Veg. w/ Ham & Oyster Sauce</li>
+    <li>Fried Chicken</li>
+    <li>Fish Fillet w/ Lemon  Butter Sauce</li>
     <li>Rice</li>
-    <li>Drinks (Coke,Sprite,Pepsi,Rc)</li>
-    <h3>This package starts at ₱ 600 per head</h3>
+    <li>Choice Maja Blanca or Panda Gelatin</li>
+    <h3>This package starts at ₱ 450 per head</h3>
   </div>
   <br>
   <div class="packs1">
-    <p>   <b>Set B</b> <br>   The ideal catering food package for soon-to-wed couples for a maximum of 180 guests, which includes:</p>
-    <li>Beef Menu, Chicken Menu, Pork Menu, Fish Menu, and SeaFood Menu</li>
-    <li>Pasta And Vegestable</li>
-    <li>2 Dessert Salad</li>
-    <li>Soup</li>
+    <p>   <b>Set B</b> <br>   The ideal catering food package with Friends for a maximum of 180 people, which includes:</p>
+    <li>Lechon w/ Lemon Grass</li>
+    <li>Chopsuey Guisado</li>
+    <li>Fried Chicken</li>
+    <li>Lumpai Shanghai</li>
     <li>Rice</li>
-    <li>Drinks (Coke,Sprite,Pepsi,Rc)</li>
-    <h3>This package starts at ₱ 600 per head</h3>
+    <li>Choice Maja Blanca or Panda Gelatin</li>
+    <h3>This package starts at ₱ 350 per head</h3>
   </div>
   <br> 
   <div class="packs1">
-    <p>   <b>Set B</b> <br>   The ideal catering food package for soon-to-wed couples for a maximum of 180 guests, which includes:</p>
-    <li>Beef Menu, Chicken Menu, Pork Menu, Fish Menu, and SeaFood Menu</li>
-    <li>Pasta And Vegestable</li>
-    <li>2 Dessert Salad</li>
-    <li>Soup</li>
+    <p>   <b>Set C</b> <br>   The ideal catering food package with Friends for a maximum of 180 people, which includes:</p>
+    <li>Porkloin Chinese Style w/ French Fries</li>
+    <li>Buttered Chicken</li>
+    <li>Chopsuey Guisado</li>
+    <li>Mixed Pork w/ Oyster Sauce</li>
     <li>Rice</li>
-    <li>Drinks (Coke,Sprite,Pepsi,Rc)</li>
-    <h3>This package starts at ₱ 600 per head</h3>
+    <li>Choice Maja Blanca or Panda Gelatin</li>
+    <h3>This package starts at ₱ 450 per head</h3>
   </div>
   <br>
   <div class="packs1">
-    <p>   <b>Set B</b> <br>   The ideal catering food package for soon-to-wed couples for a maximum of 180 guests, which includes:</p>
-    <li>Beef Menu, Chicken Menu, Pork Menu, Fish Menu, and SeaFood Menu</li>
-    <li>Pasta And Vegestable</li>
-    <li>2 Dessert Salad</li>
-    <li>Soup</li>
+    <p>   <b>Set D</b> <br>   The ideal catering food package with Friends for a maximum of 180 people, which includes:</p>
+    <li>Shredded Pork w/ Mushroom & Bell Pepper</li>
+    <li>Roasted Chicken</li>
+    <li>Assorted Veg. w/ Quill Egg </li>
+    <li>Pork Steak</li>
     <li>Rice</li>
-    <li>Drinks (Coke,Sprite,Pepsi,Rc)</li>
-    <h3>This package starts at ₱ 600 per head</h3>
+    <li>Choice Maja Blanca or Panda Gelatin</li>
+    <h3>This package starts at ₱ 450 per head</h3>
   </div>  <br>
   <div class="packs1">
 <li>Note!! price will varie from its maximum range</li>
