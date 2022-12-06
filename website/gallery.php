@@ -18,11 +18,17 @@ session_start();
 <link rel="stylesheet" href="../css/main.css">
 <link rel="stylesheet" href="../css/chat.css">
     </head>
-   
+   <style>
+    .ourgallery{
+  background: url('https://img.freepik.com/premium-photo/healthy-food-background-concept-healthy-food-fresh-vegetables-nuts-fruits-stone-background-top-view-copy-space_187166-21326.jpg?w=2000');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+   </style>
     <body class="ourgallery">
-      <nav>
-        <img class="img2" src="Add a subheading.png">		 		 
-      <h4 class="title"> YTCS</h4>
+     <center> <nav>
+ 		 
+
       
         
         <ul>
@@ -30,6 +36,7 @@ session_start();
           <li><a href="index.php"><i class="fas fa-home"></i></a></li>
           <li><a href="design_about.php">ABOUT</a></li> 
           <li><a href="gallery.php">GALLERY</a></li> 
+        <img class="img2" src="Add a subheading.png">		          
           <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"style="color: white;">SERVICE<span class="caret"></span></a> 
              <ul class="dropdown-menu"> 
               <li><a href="booking.php">Booking</a></li> 
@@ -92,7 +99,7 @@ $result->free();
              </ul> 
          </li>
        </ul>
-     </nav>
+     </nav></uwi>s
              <!-- Slideshow container -->
 
 
@@ -127,13 +134,12 @@ $result->free();
     </body>
     <footer>
   <div class="pap">	 
-  <h1 class="hi"> <img class="img2" src="https://i.pinimg.com/736x/e9/60/86/e96086161caad546aba41b027daacee4.jpg">	Yani and Tin-tin Catering Service</h1><h3>A taste you'll remember.</h3>
+  <h1 class="hi"> <img class="img2" src="Add a subheading.png">	Yani and Tin-tin Catering Service</h1><h3>A taste you'll remember.</h3><br>
      </div>
-  <p><img class="img2" src="https://cdn-icons-png.flaticon.com/512/49/49354.png"><img class="img2" src="https://www.freepnglogos.com/uploads/black-email-logo-png-0.png"><br>
-    <a href="">Menu<br></a><a href="">Gallery</a><br><a href="">About</a><br><a href="">FAQs</a></p><br>
-  <h3>Contact Us</h3>
-  <p><i class="fa fa-phone"></i>Mobile: 09663955462<br> 09319919517<br>
-  <i class="material-icons">&#xe0be;</i>Email: <a href="">myadmin.123@gmail.com</a>
+  <p><button class="butt" type="button"><img class="img2" src="https://www.freepnglogos.com/uploads/black-email-logo-png-0.png"><br></button>
+  <br><a href="gallery.php">Gallery</a><br><a href="design_about.php">About</a><br></p><br>
+  <h3 class="small">You may also Contact Us</h3>
+  <p><i class="fa fa-phone" style="font-size:25px"></i>Mobile: 09663955462<br> 09319919517<br>
   </p>
 
 </footer>

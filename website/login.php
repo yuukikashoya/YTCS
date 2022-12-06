@@ -12,13 +12,14 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 <style>
-  img{
-      height: 60px;
-      width: 60px;
-      border-radius: 50%;
-  }
-  nav{
-  height: 50px;
+.img2{
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  border: 2px solid #000;
+}
+nav{
+  height: 70px;
   background: url('../img/pud2.png');
   background-repeat: no-repeat;
   background-size: auto;
@@ -30,7 +31,7 @@
   text-decoration: none;
 }
 nav ul{
-  float: right;
+  /* float: right; */
   margin-right: 30px;
   text-decoration: none;
 }
@@ -52,10 +53,15 @@ nav ul li a{
   text-decoration: none;
 }
 nav ul li a:hover{
-  color: white;
-  background-color: rgb(2, 1, 0);
-  box-shadow: 0 0 30px rgb(186, 104, 30);
+  background-image: url('https://cdn.iconscout.com/icon/free/png-256/food-dish-2634600-2187288.png');
+  background-size: 80% 110%;
+  background-repeat: no-repeat;
+  color: rgb(255, 255, 255);
+  animation: spring 300ms ease-out;
+  text-shadow: 2px 2px 8px #c12b11;
+  font-weight: bold;
   text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 nav ul ul{
@@ -80,9 +86,21 @@ nav ul ul li{
   /* border: 1px solid #042331; */
   border-top: none;
   text-decoration: none;
-
 }
-
+/* nav ul ul li a{
+  line-height: 50px;
+  text-decoration: none;
+} */
+/* nav ul ul ul{
+  border-top: none;
+  text-decoration: none;
+} */
+/* nav ul ul ul li{
+  position: relative;
+  /* top: -70px; */
+  /* left: 150px; */
+  /* text-decoration: none; */
+/* } */ */
 nav ul ul li a i{
   margin-left: 45px;
   text-decoration: none;
@@ -92,10 +110,6 @@ nav ul ul li a i{
   background-color: rgb(250, 139, 43);
 
 }
-* {box-sizing:border-box}
-
-  
-  * {box-sizing:border-box}
   
   /* Slideshow container */
   .slideshow-container {
@@ -181,10 +195,11 @@ nav ul ul li a i{
     from {opacity: .4}
     to {opacity: 1}
   }
-  body{
-    background-color: #f3d8c4;
-
-  }
+  .ourgallery{
+  background: url('https://img.freepik.com/premium-photo/healthy-food-background-concept-healthy-food-fresh-vegetables-nuts-fruits-stone-background-top-view-copy-space_187166-21326.jpg?w=2000');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
   .container{
     font-family: Forte;
     text-align: center;
@@ -342,10 +357,9 @@ input{
   </style>
     </head>
 
-    <body>
-    <nav>
-        <img class="img2" src="Add a subheading.png">		 		 
-      <h4 class="title"> YTCS</h4>
+    <body class="ourgallery">
+    <center><nav>
+	 		 
       
         
         <ul>
@@ -353,6 +367,7 @@ input{
           <li><a href="index.php"><i class="fas fa-home"></i></a></li>
           <li><a href="design_about.php">ABOUT</a></li> 
           <li><a href="gallery.php">GALLERY</a></li> 
+          <img class="img2" src="Add a subheading.png">	          
           <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"style="color: white;">SERVICE<span class="caret"></span></a> 
              <ul class="dropdown-menu"> 
               <li><a href="booking.php">Booking</a></li> 
@@ -390,7 +405,7 @@ $result->free();
              </li>                  		 
        
        </ul>
-     </nav>
+     </nav></center>
 
       <div class="container">
       

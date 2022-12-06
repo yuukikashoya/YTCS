@@ -44,10 +44,9 @@ include"../code/status.php";
 <link rel="stylesheet" href="../css/chat.css">
     </head>
    
-    <body style="background-color: #f3d8c4 ;">
-    <nav>
-        <img class="img2" src="Add a subheading.png">		 		 
-      <h4 class="title"> YTCS</h4>
+    <body class="ourgallery">
+    <center><nav>
+	 		 
       
         
         <ul>
@@ -55,7 +54,8 @@ include"../code/status.php";
           <li><a href="index.php"><i class="fas fa-home"></i></a></li>
           <li><a href="design_about.php">ABOUT</a></li> 
           <li><a href="gallery.php">GALLERY</a></li> 
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"style="color: white;">SERVICE<span class="caret"></span></a> 
+        <img class="img2" src="Add a subheading.png">	          
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"style="color: white;">SERVICE</a> 
              <ul class="dropdown-menu"> 
               <li><a href="booking.php">Booking</a></li> 
               <li><a href="chat.php">Chat</a></li> 
@@ -64,7 +64,7 @@ include"../code/status.php";
 
              </ul> 
              </li> 	
-             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" style="color: white;">NOTIFICATIONS<span class="caret"></span><i class="fas fa-bell"></i></a> 
+             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" style="color: white;">NOTIFICATIONS</a> 
              <ul class="dropdown-menu" > 
 <?php
 $query =" SELECT * FROM announcement ORDER BY an_id DESC LIMIT 5";
@@ -90,7 +90,7 @@ $result->free();
              </ul> 
              </li>                  		 
          <li class="dropdown"> 
-         <a class="dropdown-toggle" data-toggle="dropdown"style="color: white;"><span class="caret"></span><i class="fas fa-align-justify"></i></a> 
+         <a class="dropdown-toggle" data-toggle="dropdown"style="color: white;"><i class="fas fa-align-justify"></i></a> 
              <ul class="dropdown-menu">  
             
               <?php
@@ -110,7 +110,7 @@ else{
          </li>
        </ul>
      </nav>
-
+</center>
 <?php 
 
 $outgoing_id = $_SESSION['unique_id'];

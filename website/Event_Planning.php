@@ -151,31 +151,29 @@ It is fonding to provide a service that our catering business could provide in o
 celebrant itself won't needed much to hassle for the fulfillment of their dream event.</p></center>
 <div class="lab">
 <div class="packs1">
-  <p>The ideal catering package for soon-to-wed couples for a minimum of 100 guests, which includes:</p>
-  <li>Full-Service Catering</li>
-  <li>Reception Set-Up and Design</li>
-  <li>An Events Planner is assigned to facilitate the planning and execution of your event</li>
-  <li>Choice of complimentary wedding essentials</li>
-  <h3>This package starts at<span>P 1,300 per head</span></h3>
-</div>
+    <p>   <b>Set A</b> <br>   The ideal catering food package for soon-to-wed couples for a maximum of 180 guests, which includes:</p>
+    <li>Beef Menu, Chicken Menu, Pork Menu, and Fish Menu</li>
+    <li>Pasta And Vegestable</li>
+    <li>2 Dessert Salad</li>
+    <li>Soup</li>
+    <li>Rice</li>
+    <li>Drinks (Coke,Sprite,Pepsi,Rc)</li>
+    <h3>This package starts at ₱ 500 per head</h3>
+  </div>
 <br>
 <div class="packs1">
-  <p>The ideal catering package for soon-to-wed couples for 
-  <br>a minimum of 100 guests, which includes:</p> 
-  <li>Full-Service Catering</li>
-  <li>Reception Set-Up and Design</li>
-  <li>An Events Planner is assigned to facilitate the<br> planning and execution of your event</li>
-  <li>Choice of complimentary wedding essentials</li>
-  <h3>This package starts at P 1,100 per head</h3> 
-</div>
+    <p>   <b>Set B</b> <br>   The ideal catering food package for soon-to-wed couples for a maximum of 180 guests, which includes:</p>
+    <li>Beef Menu, Chicken Menu, Pork Menu, Fish Menu, and SeaFood Menu</li>
+    <li>Pasta And Vegestable</li>
+    <li>2 Dessert Salad</li>
+    <li>Soup</li>
+    <li>Rice</li>
+    <li>Drinks (Coke,Sprite,Pepsi,Rc)</li>
+    <h3>This package starts at ₱ 600 per head</h3>
+  </div>
 <br>
 <div class="packs1">
-  <p>The ideal catering package for soon-to-wed couples for a minimum of 100 guests, which includes:</p>
-  <li>Full-Service Catering</li>
-  <li>Reception Set-Up and Design</li>
-  <li>An Events Planner is assigned to facilitate the planning and execution of your event</li>
-  <li>Choice of complimentary wedding essentials</li>
-  <h3>This package starts at<span>P 1,300 per head</span></h3>
+<li>Note!! price will varie from its maximum range</li>
 
 </div>
 <br><br><br>

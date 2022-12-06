@@ -99,7 +99,7 @@ $result->free();
   <div class="wala" >
     <br><br><br>
 
-     <h1 class="lol">Yani and Tin-tin Catering Service</h1><h3>A taste you'll remember.</h3>
+     <h1 class="lol">Yani and Tin-tin Catering Service</h1><h3 style=" font-size: 48px; color: white; font-weight: bold; -webkit-text-stroke: 0.2vw rgb(160, 93, 26);">A taste you'll remember.</h3>
             </div>
 
 
@@ -143,7 +143,7 @@ $result->free();
  
     <br><br<br><br><br><br><br>
     <h2>“One of the very nicest things about life<br> is the way we must regularly stop <br>whatever it is we are doing and devote our <br>attention to eating.”<br>
-– Luciano Pavarotti </h2> 
+– Luciano Pavarotti </h2> <br><br><br>
 
 </span>
 <span class=" us">
