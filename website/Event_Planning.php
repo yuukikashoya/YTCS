@@ -124,8 +124,9 @@ $result->free();
        </ul>
      </nav>
             </center>
+            
 <div class="p1">
-    <h1>Package Deals</h1>
+  <center> <h1>Package Deals</h1>
     <div class="quotes">
       <a class="card" href="#weddings">
         <div class="box box1">
@@ -148,12 +149,12 @@ $result->free();
         </div>
         <div class="bg"></div>
       </a>
-    </div>
+    </div></center> 
   </div>
 </center>
 <div class="weddings" id="weddings">
-<h1>Weddings</h1>
-<center><p>Wedding events were consider to be a hassle work for a upcoming married couples
+    <center>      <h1>Weddings</h1>
+<p>Wedding events were consider to be a hassle work for a upcoming married couples
 It is fonding to provide a service that our catering business could provide in order the<br>
 celebrant itself won't needed much to hassle for the fulfillment of their dream event.</p></center>
 <div class="lab">
@@ -192,8 +193,8 @@ celebrant itself won't needed much to hassle for the fulfillment of their dream 
 </div>
 <br>
 <div class="birthday" id="birthday">
-<h1>Birthdays</h1>
-<center><p>Birthdays are the special occasions which people celebrate with friends and family.
+<center><h1>Birthdays</h1>
+<p>Birthdays are the special occasions which people celebrate with friends and family.
   As this special day comes just once a year, the significance of this day augments
    naturally. <br>No other day can be better than Birthdays to inspire and motivate the 
   people to whom you care for. Many a time, when you think of expressing your feelings 
@@ -237,8 +238,8 @@ celebrant itself won't needed much to hassle for the fulfillment of their dream 
 </div>
 </div>
 <div class="birthday" id="org">
-  <h1>Organizational Events</h1>
-  <center><p>Birthdays are the special occasions which people celebrate with friends and family.
+   <center> <h1>Organizational Events</h1>
+<p>Birthdays are the special occasions which people celebrate with friends and family.
     As this special day comes just once a year, the significance of this day augments
      naturally. <br>No other day can be better than Birthdays to inspire and motivate the 
     people to whom you care for. Many a time, when you think of expressing your feelings 
