@@ -51,17 +51,15 @@ include"../database/connecting_to_DB.php";
   }
 </style>
 <body class="me">
-    <nav>
-    
-        <img class="img2" src="https://i.pinimg.com/736x/e9/60/86/e96086161caad546aba41b027daacee4.jpg">		 		 
-      <h4 class="title"> Yani and Tin-tin Catering Service</h4> 
+<center>
+      <nav>     
+        <ul>
         
-      <ul>
-        
-        <li><a href="index.php"><i class="fas fa-home"></i></a></li>
-        <li><a href="design_about.php">ABOUT</a></li> 
-        <li><a href="gallery.php">GALLERY</a></li> 
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"style="color: white;">SERVICE<span class="caret"></span></a> 
+          <li><a href="index.php"><i class="fas fa-home"></i></a></li>
+          <li><a href="design_about.php">ABOUT</a></li> 
+          <li><a href="gallery.php">GALLERY</a></li>
+          <img class="img2" src="Add a subheading.png">	
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICE<span class="caret"></span></a> 
              <ul class="dropdown-menu"> 
               <li><a href="booking.php">Booking</a></li> 
               <li><a href="chat.php">Chat</a></li> 
@@ -70,7 +68,7 @@ include"../database/connecting_to_DB.php";
 
              </ul> 
              </li> 	
-             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" style="color: white;">NOTIFICATIONS<span class="caret"></span><i class="fas fa-bell"></i></a> 
+             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">NOTIFICATIONS<span class="caret"></span><i class="fas fa-bell"></i></a> 
              <ul class="dropdown-menu" > 
 <?php
 $query =" SELECT * FROM announcement ORDER BY an_id DESC LIMIT 5";
@@ -94,29 +92,38 @@ $result->free();
 
        ?>       
              </ul> 
-             </li>                  		 
-       <li class="dropdown"> 
-       <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fas fa-align-justify"></i></a> 
-           <ul class="dropdown-menu">           
-           <?php
+             </li>  
+                		 
+         <li class="dropdown"> 
+         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret">
+    <?php 
+// if(isset($_SESSION['login'])){ //if login in session is not set
+               
+//   echo $_SESSION['name'],' ';
+// }
 
-if(!isset($_SESSION['login'])){ //if login in session is not set
 
-echo '<li><a href="login.php">Login <br> sign up</a></li> ';
-}
-else{
-echo '  <li><a href="settings.php">Settings</a></li>  ';
-echo '  <li><a href="../code/logout.php">Logout</a></li> ';
-}
+?>
+         </span><i class="fas fa-align-justify"></i></a> 
+             <ul class="dropdown-menu">  
+             
+              <?php
 
-            ?>
-           </ul> 
-       </li>
-     </ul>      
-
-  
-  </nav>
-<center>
+              if(!isset($_SESSION['login'])){ //if login in session is not set
+               
+                echo '<li><a href="login.php">Login <br> sign up</a></li> ';
+              }
+              else{
+                echo '  <li><a href="settings.php">Settings</a></li>  ';
+                echo '  <li><a href="../code/logout.php">Logout</a></li> ';
+              }
+              
+                            ?>
+             </ul> 
+         </li>
+       </ul>
+     </nav>
+            </center>
 <div class="p1">
     <h1>Package Deals</h1>
     <div class="quotes">
