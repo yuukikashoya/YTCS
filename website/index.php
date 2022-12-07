@@ -105,7 +105,7 @@ $result->free();
     <br><br><br>
 
      <h1 class="lol">Yani and Tin-tin Catering Service</h1><h3 style=" font-size: 48px; color: white; font-weight: bold; -webkit-text-stroke: 0.2vw rgb(160, 93, 26);">A taste you'll remember.</h3>
-            </div>
+            
 
 
 <!--  
@@ -143,6 +143,7 @@ $result->free();
 
       
   </div>
+  <div class="basic">
   <div class="nah">
   <span class="forda">
  
@@ -152,9 +153,25 @@ $result->free();
 
 </span>
 <span class=" us">
-<a href="booking.php"><button class="button-81 " role="button">Book  Now</button></a></span>
+<a href="booking.php"><button class="button-81 " role="button">Book  Now</button></a></span><br><br>
 
-
+            </div>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br>
+<div class="container0">
+<div class="container">
+	<img src="https://images.unsplash.com/photo-1557912407-eb2900cf49e8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" />
+	<div class="title">Butterfly</div>
+</div>
+<div class="container1">
+	<img src="https://images.unsplash.com/photo-1557912407-eb2900cf49e8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" />
+	<div class="title">Butterfly</div>
+</div>
+<div class="container2">
+	<img src="https://images.unsplash.com/photo-1557912407-eb2900cf49e8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" />
+	<div class="title">Butterfly</div>
+</div>
+            </div>
 <br><br><br><br><br><br>
 
     </body>
