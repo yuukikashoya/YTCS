@@ -33,10 +33,11 @@ include"../database/connecting_to_DB.php";
   <link rel="stylesheet" href="../css/main.css"/>
 </head>
 <style>
-  body {
- 
-  align-content: center;
-  }
+    .ourgallery{
+  background: url('https://img.freepik.com/premium-photo/healthy-food-background-concept-healthy-food-fresh-vegetables-nuts-fruits-stone-background-top-view-copy-space_187166-21326.jpg?w=2000');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
   .h{
     text-align: center;
     margin: auto;
