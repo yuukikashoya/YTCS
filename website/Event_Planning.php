@@ -192,38 +192,41 @@ celebrant itself won't needed much to hassle for the fulfillment of their dream 
   people to whom you care for. Many a time, when you think of expressing your feelings 
   <br>while writing a birthday message to a friend or family member, your mind goes blank 
   <br>and you are unable to fetch the most suitable words.</p></center>
-<div class="lab">
-  <div class="packs1">
-    <p>The ideal catering package for soon-to-wed couples for a minimum of 100 guests, which includes:</p>
-    <li>Full-Service Catering</li>
-    <li>Reception Set-Up and Design</li>
-    <li>An Events Planner is assigned to facilitate the planning and execution of your event</li>
-    <li>Choice of complimentary wedding essentials</li>
-    <h3>This package starts at<span>P 1,300 per head</span></h3>
+  <div class="lab">
+<div class="packs1">
+    <p>   <b>Set A</b> <br>   The ideal catering food package for Children's Party for a maximum of 180 guests, which includes:</p>
+    <li>Mini Cheeseburger</li>
+    <li>Spaghetti With Meatballs</li>
+    <li>Chicken Lolopops</li>
+    <li>Buko Fruit Salad</li>
+    <li>Drinks (Coke,Sprite,Pepsi,Rc,Iced Tea)</li>
+    <h3>This package starts at ₱ 350 per head</h3>
   </div>
-  <br>
-  <div class="packs1">
-    <p>The ideal catering package for soon-to-wed couples for 
-    <br>a minimum of 100 guests, which includes:</p> 
-    <li>Full-Service Catering</li>
-    <li>Reception Set-Up and Design</li>
-    <li>An Events Planner is assigned to facilitate the<br> planning and execution of your event</li>
-    <li>Choice of complimentary wedding essentials</li>
-    <h3>This package starts at P 1,100 per head</h3> 
+<br>
+<div class="packs1">
+    <p>   <b>Set B</b> <br>   The ideal catering food package for Children's Party for a maximum of 180 guests, which includes:</p>
+    <li>Hotdog Sandwiches</li>
+    <li>Baked Macaroni</li>
+    <li>Chicken Nuggets</li>
+    <li>Chocolate Cake</li>
+    <li>Drinks (Coke,Sprite,Pepsi,Rc,Iced Tea)</li>
+    <h3>This package starts at ₱ 350 per head</h3>
   </div>
-  <br> 
-  <div class="packs1">
-    <p>The ideal catering package for soon-to-wed couples for a minimum of 100 guests, which includes:</p>
-    <li>Full-Service Catering</li>
-    <li>Reception Set-Up and Design</li>
-    <li>An Events Planner is assigned to facilitate the planning and execution of your event</li>
-    <li>Choice of complimentary wedding essentials</li>
-    <h3>This package starts at<span>P 1,300 per head</span></h3>
-  </div><br><br><br>
-  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <a class="buttonm text-white " href="booking.php">Book Now</a>
-  <div class="packs1" style="background:transparent;">
-  
+<br>
+<div class="packs1">
+    <p>   <b>Set C</b> <br>   The ideal catering food package for Children's Party for a maximum of 180 guests, which includes:</p>
+    <li>Chicken Drumsticks</li>
+    <li>Fettuccine Carbonara</li>
+    <li>Mini Hotdog on Stick</li>
+    <li>Fruit Jello</li>
+    <li>Drinks (Coke,Sprite,Pepsi,Rc,Iced Tea)</li>
+    <h3>This package starts at ₱ 350 per head</h3>
   </div>
+<br><br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <a class="buttonm text-white "href="booking.php">Book Now</a>
+<div class="packs1" style="background:transparent;">
+ 
+</div>
 </div>
 </div>
 <div class="birthday" id="org">
