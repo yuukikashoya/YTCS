@@ -22,12 +22,47 @@ include"../../database/connecting_to_DB.php";
      $date  = $row['date'];
      $today =  date("Y-m-d");
      $invitation = $row['invitation'];
+     $sets = $row['sets'];
 
  }
 
+$wedding = "Weddings";
+$birthday = "Birthday";
+$org = "Organizational";
 
-
-
+if($wedding == $bundle){
+    if("Set A" == $sets){
+        $per = 500;
+    }
+    else if("Set B" == $sets){
+        $per = 600;
+    }
+}
+else if($birthday == $bundle){
+    if("Set A" == $sets){
+        $per = 350;
+    }
+    else if("Set B" == $sets){
+        $per = 350;
+    }
+    else if("Set C" == $sets){
+        $per = 350;
+    }
+}
+else if($org == $bundle){
+    if("Set A" == $sets){
+        $per = 450;
+    }
+    else if("Set B" == $sets){
+        $per = 350;
+    }
+    else if("Set C" == $sets){
+        $per = 450;
+    }
+    else if("Set D" == $sets){
+        $per = 450;
+    }
+}
 
 
 
@@ -96,24 +131,24 @@ include"../../database/connecting_to_DB.php";
  //invoice contents
  $pdf->SetFont('Arial','B',12);
  
- $pdf->Cell(110 ,5,'Description',1,0);
- $pdf->Cell(45 ,5,'Types',1,0);
- $pdf->Cell(34 ,5,'Amount',1,1);//end of line
+ $pdf->Cell(80 ,5,'',1,0);
+ $pdf->Cell(60 ,5,'Description',1,0);
+ $pdf->Cell(49 ,5,'Amount',1,1);//end of line
  
  $pdf->SetFont('Arial','',12);
  
  //Numbers are right-aligned so we give 'R' after new line parameter
+
+ $pdf->Cell(80 ,5,'Bundle',1,0);
+ $pdf->Cell(60 ,5, $bundle."  pax of ".$pax." ".$sets,1,0);
+ $pdf->Cell(49 ,5,$per,1,1,'R');//end of line
  
- $pdf->Cell(110 ,5,'Bundle',1,0);
- $pdf->Cell(45 ,5, $bundle,1,0);
- $pdf->Cell(34 ,5,'3,250',1,1,'R');//end of line
- 
- $pdf->Cell(110 ,5,'Photograpy',1,0);
- $pdf->Cell(45 ,5,$photo,1,0);
- $pdf->Cell(34 ,5,'1,200',1,1,'R');//end of line
- $pdf->Cell(110 ,5,'invitation',1,0);
- $pdf->Cell(45 ,5, $invitation,1,0);
- $pdf->Cell(34 ,5,'1,200',1,1,'R');//end of line
+ $pdf->Cell(80 ,5,'Photograpy',1,0);
+ $pdf->Cell(60 ,5,$photo,1,0);
+ $pdf->Cell(49 ,5,'1,200',1,1,'R');//end of line
+ $pdf->Cell(80 ,5,'invitation',1,0);
+ $pdf->Cell(60 ,5, $invitation,1,0);
+ $pdf->Cell(49 ,5,'1,200',1,1,'R');//end of line
 
 
  //summary
@@ -123,10 +158,10 @@ include"../../database/connecting_to_DB.php";
  
 
  
- $pdf->Cell(130 ,5,'',0,0);
- $pdf->Cell(25 ,5,'Total Due',0,0);
+ $pdf->Cell(110 ,5,'',0,0);
+ $pdf->Cell(30 ,5,'Total Due',0,0);
  $pdf->Cell(10 ,5,'Php',1,0);
- $pdf->Cell(24 ,5,'4,450',1,1,'R');//end of line
+ $pdf->Cell(39 ,5,'4,450',1,1,'R');//end of line
 
  
  $pdf->Cell(130 ,5,'',0,0);

@@ -19,9 +19,10 @@ if(isset($_POST['submit']))   {
  $bundle = $_POST['Event'];
  $Photography = $_POST['Photography'];
  $invitation = $_POST['invitation'];
+ $set = $_POST['b'];
 
 
-$query_customer = " INSERT INTO service VALUES ('','$username','$name','$email','$contact','$bundle','$pax','$time_start','$time_ends','$date','$street','$city','$zip','$Photography','$invitation')";
+$query_customer = " INSERT INTO service VALUES ('','$username','$name','$email','$contact','$bundle','$pax','$time_start','$time_ends','$date','$street','$city','$zip','$Photography','$invitation','$set')";
 
 if ($conn->query($query_customer) === TRUE){
 

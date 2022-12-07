@@ -98,6 +98,26 @@ else{
        </ul>
      </nav>
 </center>
+
+
+<style>
+    .box{
+  
+        display: none;
+    }
+
+</style>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('input[name="Event"]').click(function(){
+        var inputValue = $(this).attr("value");
+        var targetBox = $("." + inputValue);
+        $(".box").not(targetBox).hide();
+        $(targetBox).show();
+    });
+});
+</script>
     <div class="center">
     <div class="testbox center">
         <form class="aform" method="POST" action="../code/service.php">
@@ -108,22 +128,34 @@ else{
           <div class="item " >
             <p>Event package</p>
           
-            <input type="radio" name="Event" id="Birthday" value="Birthday"/>
-             <label for="Birthday">Birthday</label>
-            <input type="radio" name="Event"  id="Weddings" value="Weddings"/>
-             <label for="Weddings">Weddings</label>
-            <input type="radio" name="Event"   id="Organizzational" value="Organizzational Event"/>
-           <label for="Organizzational">Organizzational Event</label>
-        
+
+        <label><input type="radio" name="Event" value="Birthday"> Birthday</label>
+        <label><input type="radio" name="Event" value="Weddings"> Weddings</label>
+        <label><input type="radio" name="Event" value="Organizational"> Organizational Event</label>
+<br>
+<!-- Bday -->
+    <label class="Birthday box"><input type="radio" name="b" value="Set A" class="Birthday box"> Set A</label>
+    <label class="Birthday box"><input type="radio" name="b" value="Set B" class="Birthday box"> Set B</label>
+    <label class="Birthday box"><input type="radio" name="b" value="Set C" class="Birthday box"> Set C</label>
+
+<!-- wedding -->
+    <label class="Weddings box"><input type="radio" name="b" value="Set A" class="Weddings box"> Set A</label>
+    <label class="Weddings box"><input type="radio" name="b" value="Set B" class="Weddings box"> Set B</label>
+
+    <!-- Organizzational -->
+    <label class="Organizational box"><input type="radio" name="b" value="Set A" class="Organizational box"> Set A</label>
+    <label class="Organizational box"><input type="radio" name="b" value="Set B" class="Organizational box"> Set B</label>
+    <label class="Organizational box"><input type="radio" name="b" value="Set C" class="Organizational box"> Set C</label>
+    <label class="Organizational box"><input type="radio" name="b" value="Set D" class="Organizational box"> Set D</label>
+
+
         
           </div>
           <div class="item " >
             <p>Photography package</p>
           
-            <input type="radio" name="Photography" id="x" value="yes"/>
-             <label for="x ">yes</label>
-            <input type="radio" name="Photography"  id="z" value="no"/>
-             <label for="z">no</label>
+            <label><input type="radio" name="Photography" value="yes"> yes</label>
+            <label><input type="radio" name="Photography" value="no"> no</label>
 
         
         
@@ -131,10 +163,8 @@ else{
           <div class="item " >
             <p>invitation and Giveaways package</p>
           
-            <input type="radio" name="invitation" id="q" value="yes"/>
-             <label for="q ">yes</label>
-            <input type="radio" name="invitation"  id="w" value="no"/>
-             <label for="w">no</label>
+            <label><input type="radio" name="invitation" value="yes"> yes</label>
+            <label><input type="radio" name="invitation" value="no"> no</label>
 
         
         

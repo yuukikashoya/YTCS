@@ -157,7 +157,7 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
 <tr >
   <td style="border: solid;">Bundle :<?php echo $row['bundle'];?></td>
   <td style="border: solid;">Pax :<?php echo $row['pax'];?></td>
-  <td style="border: solid;">Photography :<?php echo $row['photo'];?></td>
+  <td style="border: solid;">Set :<?php echo $row['sets'];?></td>
 </tr>
 <tr >
    <td style="border: solid;">Date :<?php echo $row['date'];?></td>
@@ -168,7 +168,7 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
 
 <tr  >
   <td style="border: solid;border-right:white;">Location : <?php echo $row['street'] , '. ', $row['city'] , '. postal code ',$row['postal_zip_code'] ;?></td>
-  <th ></th>
+  <td style="border: solid;">Photography :<?php echo $row['photo'];?></td>
   <td style="border: solid;">invitation and Giveaways :<?php echo $row['invitation'];?></td>
 </tr>
 
@@ -177,7 +177,7 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
 <br>
 <table>
 <tr >
-  <th  style="border-left: solid;border-top:solid;">Bundle </th><th style="border-top:solid;"><?php echo $row['bundle'];?> for <?php echo $row['pax'];?> people</th>
+  <th  style="border-left: solid;border-top:solid;">Bundle </th><th style="border-top:solid;"><?php echo $row['bundle'];?> for <?php echo $row['pax'];?> people  <?php echo $row['sets'];?></th>
   <th style="border-left: solid;border-top: solid;border-right: solid;">Php 1000</th>
 </tr>
 
