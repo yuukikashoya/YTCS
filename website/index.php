@@ -158,26 +158,27 @@ $result->free();
             </div>
             </div>
             <br><br><br><br><br><br><br><br><br><br><br>
-<div class="container0">
+<div class="container0"><br><br>
+<center><h1 style="font-family: fantasy; -webkit-text-stroke: 0.1vw rgb(255, 255, 255); font-size: 4em;">Services Offers</h1></center>
 <div class="container">
-	<img src="https://images.unsplash.com/photo-1557912407-eb2900cf49e8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" />
-	<div class="title">Butterfly</div>
+	<img src="https://d12m9erqbesehq.cloudfront.net/wp-content/uploads/sites/2/2018/11/16112551/event-planner.jpg">
+  <a href="#" class="at">Event Packages</a><br><br>
 </div>
 <div class="container1">
-	<img src="https://images.unsplash.com/photo-1557912407-eb2900cf49e8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" />
-	<div class="title">Butterfly</div>
+	<img src="../img/cam.jpg">
+  <a href="#" class="at">Photography</a><br><br>
 </div>
 <div class="container2">
-	<img src="https://images.unsplash.com/photo-1557912407-eb2900cf49e8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" />
-	<div class="title">Butterfly</div>
-</div>
+	<img src="../img/inv.jpg">
+  <a href="#" class="at">Invitations and<br> Giveaways</a><br><br><br><br>
+</div><br><br><br><br>
             </div>
-<br><br><br><br><br><br>
+<br><br><br>
 
     </body>
     <footer>
   <div class="pap">	 
-  <h1 class="hi"> <img class="img2" src="Add a subheading.png">	Yani and Tin-tin Catering Service</h1><h3>A taste you'll remember.</h3><br><br><br>
+  <h1 class="hi"> <img class="img2" src="Add a subheading.png">	Yani and Tin-tin Catering Service</h1><h3>A taste you'll remember.</h3><br><br>
      </div>
   <p><button class="butt" type="button"><img class="img2" src="https://www.freepnglogos.com/uploads/black-email-logo-png-0.png"><br></button>
   <br><a href="gallery.php">Gallery</a><br><a href="design_about.php">About</a><br></p><br>
