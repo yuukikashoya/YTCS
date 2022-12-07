@@ -241,6 +241,66 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
 </div>
 
 
+
+
+
+
+
+
+
+<div  class="jumbotron jumbotron-fluid outerdiv">
+<h3> <span class="label label-default">History Transaction</span>  </h3>
+  <table id="ref" class="table table-bordered ">
+  <thead>
+  <tr>
+<th class="idHeader">ID</th>
+<th>Service Name</th>
+<th>Username</th>
+<th>Client  Address</Address></th>
+<th>Event Date</th>
+<th>Total</th>
+<th>Event Type</th>
+<th>Date Ref</th>
+
+
+
+
+  </tr>
+  </thead>
+  <?php
+				$sql_query9 = "SELECT * FROM ref";
+				
+				$result9 = $conn -> query($sql_query9);
+				
+				while($row9 = $result9 -> fetch_assoc()){
+					$id = $row9['id'];
+			?>
+
+    <tr>
+<td ><?php echo $row9['id'];?></td>
+<td ><?php echo $row9['service_id'];?></td>
+<td ><?php echo $row9['name'];?></td>
+<td ><?php echo $row9['username'];?></td>
+<td ><?php echo $row9['event_date'];?></td>
+<td><?php echo $row9['total'];?></td>
+<td><?php echo $row9['event_type'];?></td>
+<td><?php echo $row9['date_ref'];?></td>
+
+<?php		
+				}
+			?>
+    </tr>
+
+
+</table>
+
+
+
+</div>
+
+
+
+
   </div>
         </section>
         <script>
@@ -272,6 +332,7 @@ sidebarBtn.onclick = function() {
    
       $('#Booking').DataTable(); 
       $('#client').DataTable(); 
+      $('#ref').DataTable(); 
     
  });  
  </script>  
