@@ -64,7 +64,18 @@ else if($org == $bundle){
     }
 }
 
-
+if("yes" == $photo){
+    $pg = 2500;
+}
+else if("no" == $photo){
+    $pg = 0;
+}
+if("yes" == $invitation){
+    $in = 25;
+}
+else if("no" == $invitation){
+    $in = 0;
+}
 
  //create an FPDF object
  $pdf=new FPDF("L","mm","A5"); 
@@ -139,16 +150,30 @@ else if($org == $bundle){
  
  //Numbers are right-aligned so we give 'R' after new line parameter
 
+if(180 <  $pax){
+    $sad = $pax - 180;
+    $asd = $sad * 250;
+    $dsa = $per * $pax; 
+    $tper = $dsa + $asd;
+}
+else{
+   $tper = $per * $pax; 
+}
+
+
+
  $pdf->Cell(80 ,5,'Bundle',1,0);
  $pdf->Cell(60 ,5, $bundle."  pax of ".$pax." ".$sets,1,0);
- $pdf->Cell(49 ,5,$per,1,1,'R');//end of line
+ $pdf->Cell(49 ,5,$tper,1,1,'R');//end of line
  
  $pdf->Cell(80 ,5,'Photograpy',1,0);
  $pdf->Cell(60 ,5,$photo,1,0);
- $pdf->Cell(49 ,5,'1,200',1,1,'R');//end of line
+ $pdf->Cell(49 ,5,$pg,1,1,'R');//end of line
+
+ $tin = $in * $pax;
  $pdf->Cell(80 ,5,'invitation',1,0);
  $pdf->Cell(60 ,5, $invitation,1,0);
- $pdf->Cell(49 ,5,'1,200',1,1,'R');//end of line
+ $pdf->Cell(49 ,5,$tin,1,1,'R');//end of line
 
 
  //summary
@@ -156,12 +181,12 @@ else if($org == $bundle){
  
  
  
-
+$total = $tper + $pg + $tin;
  
  $pdf->Cell(110 ,5,'',0,0);
  $pdf->Cell(30 ,5,'Total Due',0,0);
  $pdf->Cell(10 ,5,'Php',1,0);
- $pdf->Cell(39 ,5,'4,450',1,1,'R');//end of line
+ $pdf->Cell(39 ,5,$total,1,1,'R');//end of line
 
  
  $pdf->Cell(130 ,5,'',0,0);
