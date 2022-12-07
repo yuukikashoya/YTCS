@@ -138,7 +138,10 @@ nav ul ul li{
     .about_img{
       width: 350px;
       border-style: solid;
-      box-shadow: 10px 10px 5px rgb(250, 139, 43);
+      border-width: 1em;
+      border-color: white;
+      border-radius: 50%;
+      box-shadow: 10px 10px 5px black;
       float: left;
       margin-left: 8em;
       margin-right: 15em; 

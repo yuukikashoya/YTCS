@@ -102,89 +102,49 @@ $result->free();
   
   <!-- The dots/circles -->
   <div class="wala" >
-    <br><br><br>
+        <br><br><br>
 
-     <h1 class="lol">Yani and Tin-tin Catering Service</h1><h3 style=" font-size: 48px; color: white; font-weight: bold; -webkit-text-stroke: 0.2vw rgb(160, 93, 26);">A taste you'll remember.</h3>
-            
-
-
-<!--  
-  <div class="main form-popup"  id="myForm"> 
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button> 	
-   
-		<input type="checkbox" id="chk" aria-hidden="true">
-
-			<div class="signup">
-				<form method="POST" action="../code/register.php">
-					<label for="chk" aria-hidden="true">Sign up</label>
-          <input type="text" name="name" placeholder="Full Name" required="">
-					<input type="text" name="username" placeholder="User name" required="">
-          <input type="text" name="address" placeholder="address" required="">
-          <input type="number" name="contact" placeholder="contact" required="">
-          <input type="date" id="birthday" name="birthday">
-          <input type="text" name="email" placeholder="Email" required="">
-					<input type="password" name="password" placeholder="Password" required="">
-          <input type="password" name="confirm" placeholder="Confirm password" required="">
-					<button  type="submit" name="submit">Sign up</button>
-				</form>
-			</div>
-
-			<div class="login">
-				<form method="POST" action="../code/login.php">
-					<label for="chk" aria-hidden="true">Login</label>
-					<input type="text" name="username" placeholder="User Name" required="">
-					<input type="password" name="password" placeholder="Password" required="">
-					<button type="submit" name="submit1">Login</button>
-				</form>
-			</div>
-	</div>
--->
-
-
-      
+        <h1 class="lol">Yani and Tin-tin Catering Service</h1><h3 style=" font-size: 48px; color: white; font-weight: bold; -webkit-text-stroke: 0.2vw rgb(160, 93, 26);">A taste you'll remember.</h3>  
   </div>
   <div class="basic">
   <div class="nah">
-  <span class="forda">
- 
-    <br><br<br><br><br><br><br>
-    <h2>“One of the very nicest things about life<br> is the way we must regularly stop <br>whatever it is we are doing and devote our <br>attention to eating.”<br>
-– Luciano Pavarotti </h2> <br><br><br>
+        <span class="forda">
+        <br><br<br><br><br><br><br>
+        <h2>“One of the very nicest things about life<br> is the way we must regularly stop <br>whatever it is we are doing and devote our <br>attention to eating.”<br>
+–       Luciano Pavarotti </h2> <br><br><br>
+        </span>
+        <span class=" us">
+        <a href="booking.php"><button class="button-81 " role="button">Book  Now</button></a></span><br><br>
 
-</span>
-<span class=" us">
-<a href="booking.php"><button class="button-81 " role="button">Book  Now</button></a></span><br><br>
-
-            </div>
-            </div>
-            <br><br><br><br><br><br><br><br><br><br><br>
+</div>
+</div>
+        <br><br><br><br><br><br><br><br><br><br><br>
 <div class="container0"><br><br>
-<center><h1 style="font-family: fantasy; -webkit-text-stroke: 0.1vw rgb(255, 255, 255); font-size: 4em;">Services Offers</h1></center>
+        <center><h1 style="font-family: fantasy; -webkit-text-stroke: 0.1vw rgb(255, 255, 255); font-size: 4em;">Services Offers</h1></center>
 <div class="container">
-	<img src="https://d12m9erqbesehq.cloudfront.net/wp-content/uploads/sites/2/2018/11/16112551/event-planner.jpg">
-  <a href="#" class="at">Event Packages</a><br><br>
+	      <img src="https://d12m9erqbesehq.cloudfront.net/wp-content/uploads/sites/2/2018/11/16112551/event-planner.jpg">
+        <a href="#" class="at">Event Packages</a><br><br>
 </div>
 <div class="container1">
 	<img src="../img/cam.jpg">
   <a href="#" class="at">Photography</a><br><br>
 </div>
 <div class="container2">
-	<img src="../img/inv.jpg">
-  <a href="#" class="at">Invitations and<br> Giveaways</a><br><br><br><br>
+	      <img src="../img/inv.jpg">
+        <a href="#" class="at">Invitations and<br> Giveaways</a><br><br><br><br>
 </div><br><br><br><br>
-            </div>
+</div>
 <br><br><br>
 
-    </body>
-    <footer>
-  <div class="pap">	 
-  <h1 class="hi"> <img class="img2" src="Add a subheading.png">	Yani and Tin-tin Catering Service</h1><h3>A taste you'll remember.</h3><br><br>
-     </div>
-  <p><button class="butt" type="button"><img class="img2" src="https://www.freepnglogos.com/uploads/black-email-logo-png-0.png"><br></button>
-  <br><a href="gallery.php">Gallery</a><br><a href="design_about.php">About</a><br></p><br>
-  <h3 class="small">You may also Contact Us</h3>
-  <p><i class="fa fa-phone" style="font-size:25px"></i>Mobile: 09663955462<br> 09319919517<br>
-  </p>
-
+</body>
+<footer>
+<div class="pap">	 
+        <h1 class="hi"> <img class="img2" src="Add a subheading.png">	Yani and Tin-tin Catering Service</h1><h3>A taste you'll remember.</h3><br><br>
+</div>
+        <p><button class="butt" type="button"><img class="img2" src="https://www.freepnglogos.com/uploads/black-email-logo-png-0.png"><br></button>
+        <br><a href="gallery.php">Gallery</a><br><a href="design_about.php">About</a><br></p><br>
+        <h3 class="small">You may also Contact Us</h3>
+        <p><i class="fa fa-phone" style="font-size:25px"></i>Mobile: 09663955462<br> 09319919517<br>
+        </p>
 </footer>
 </html>
