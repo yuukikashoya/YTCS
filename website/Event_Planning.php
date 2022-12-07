@@ -51,17 +51,15 @@ include"../database/connecting_to_DB.php";
   }
 </style>
 <body class="me">
-    <center><nav>
-    
-	 		 
+<center>
+      <nav>     
+        <ul>
         
-      <ul>
-        
-        <li><a href="index.php"><i class="fas fa-home"></i></a></li>
-        <li><a href="design_about.php">ABOUT</a></li> 
-        <li><a href="gallery.php">GALLERY</a></li> 
-        <img class="img2" src="https://i.pinimg.com/736x/e9/60/86/e96086161caad546aba41b027daacee4.jpg">	        
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"style="color: white;">SERVICE</a> 
+          <li><a href="index.php"><i class="fas fa-home"></i></a></li>
+          <li><a href="design_about.php">ABOUT</a></li> 
+          <li><a href="gallery.php">GALLERY</a></li>
+          <img class="img2" src="Add a subheading.png">	
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICE<span class="caret"></span></a> 
              <ul class="dropdown-menu"> 
               <li><a href="booking.php">Booking</a></li> 
               <li><a href="chat.php">Chat</a></li> 
@@ -70,7 +68,7 @@ include"../database/connecting_to_DB.php";
 
              </ul> 
              </li> 	
-             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" style="color: white;">NOTIFICATIONS<i class="fas fa-bell"></i></a> 
+             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">NOTIFICATIONS<span class="caret"></span><i class="fas fa-bell"></i></a> 
              <ul class="dropdown-menu" > 
 <?php
 $query =" SELECT * FROM announcement ORDER BY an_id DESC LIMIT 5";
@@ -94,32 +92,41 @@ $result->free();
 
        ?>       
              </ul> 
-             </li>                  		 
-       <li class="dropdown"> 
-       <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fas fa-align-justify"></i></a> 
-           <ul class="dropdown-menu">           
-           <?php
+             </li>  
+                		 
+         <li class="dropdown"> 
+         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret">
+    <?php 
+// if(isset($_SESSION['login'])){ //if login in session is not set
+               
+//   echo $_SESSION['name'],' ';
+// }
 
-if(!isset($_SESSION['login'])){ //if login in session is not set
 
-echo '<li><a href="login.php">Login <br> sign up</a></li> ';
-}
-else{
-echo '  <li><a href="settings.php">Settings</a></li>  ';
-echo '  <li><a href="../code/logout.php">Logout</a></li> ';
-}
+?>
+         </span><i class="fas fa-align-justify"></i></a> 
+             <ul class="dropdown-menu">  
+             
+              <?php
 
-            ?>
-           </ul> 
-       </li>
-     </ul>      
-
-  
-  </nav>
-</center>
-<center>
+              if(!isset($_SESSION['login'])){ //if login in session is not set
+               
+                echo '<li><a href="login.php">Login <br> sign up</a></li> ';
+              }
+              else{
+                echo '  <li><a href="settings.php">Settings</a></li>  ';
+                echo '  <li><a href="../code/logout.php">Logout</a></li> ';
+              }
+              
+                            ?>
+             </ul> 
+         </li>
+       </ul>
+     </nav>
+            </center>
+            
 <div class="p1">
-    <h1>Package Deals</h1>
+  <center> <h1>Package Deals</h1>
     <div class="quotes">
       <a class="card" href="#weddings">
         <div class="box box1">
@@ -142,12 +149,12 @@ echo '  <li><a href="../code/logout.php">Logout</a></li> ';
         </div>
         <div class="bg"></div>
       </a>
-    </div>
+    </div></center> 
   </div>
 </center>
 <div class="weddings" id="weddings">
-<h1>Weddings</h1>
-<center><p>Wedding events were consider to be a hassle work for a upcoming married couples
+    <center>      <h1>Weddings</h1>
+<p>Wedding events were consider to be a hassle work for a upcoming married couples
 It is fonding to provide a service that our catering business could provide in order the<br>
 celebrant itself won't needed much to hassle for the fulfillment of their dream event.</p></center>
 <div class="lab">
@@ -186,88 +193,113 @@ celebrant itself won't needed much to hassle for the fulfillment of their dream 
 </div>
 <br>
 <div class="birthday" id="birthday">
-<h1>Birthdays</h1>
-<center><p>Birthdays are the special occasions which people celebrate with friends and family.
+<center><h1>Birthdays</h1>
+<p>Birthdays are the special occasions which people celebrate with friends and family.
   As this special day comes just once a year, the significance of this day augments
    naturally. <br>No other day can be better than Birthdays to inspire and motivate the 
   people to whom you care for. Many a time, when you think of expressing your feelings 
   <br>while writing a birthday message to a friend or family member, your mind goes blank 
   <br>and you are unable to fetch the most suitable words.</p></center>
-<div class="lab">
-  <div class="packs1">
-    <p>The ideal catering package for soon-to-wed couples for a minimum of 100 guests, which includes:</p>
-    <li>Full-Service Catering</li>
-    <li>Reception Set-Up and Design</li>
-    <li>An Events Planner is assigned to facilitate the planning and execution of your event</li>
-    <li>Choice of complimentary wedding essentials</li>
-    <h3>This package starts at<span>P 1,300 per head</span></h3>
+  <div class="lab">
+<div class="packs1">
+    <p>   <b>Set A</b> <br>   The ideal catering food package for Children's Party for a maximum of 180 guests, which includes:</p>
+    <li>Mini Cheeseburger</li>
+    <li>Spaghetti With Meatballs</li>
+    <li>Chicken Lolopops</li>
+    <li>Buko Fruit Salad</li>
+    <li>Drinks (Coke,Sprite,Pepsi,Rc,Iced Tea)</li>
+    <h3>This package starts at ₱ 350 per head</h3>
   </div>
-  <br>
-  <div class="packs1">
-    <p>The ideal catering package for soon-to-wed couples for 
-    <br>a minimum of 100 guests, which includes:</p> 
-    <li>Full-Service Catering</li>
-    <li>Reception Set-Up and Design</li>
-    <li>An Events Planner is assigned to facilitate the<br> planning and execution of your event</li>
-    <li>Choice of complimentary wedding essentials</li>
-    <h3>This package starts at P 1,100 per head</h3> 
+<br>
+<div class="packs1">
+    <p>   <b>Set B</b> <br>   The ideal catering food package for Children's Party for a maximum of 180 guests, which includes:</p>
+    <li>Hotdog Sandwiches</li>
+    <li>Baked Macaroni</li>
+    <li>Chicken Nuggets</li>
+    <li>Chocolate Cake</li>
+    <li>Drinks (Coke,Sprite,Pepsi,Rc,Iced Tea)</li>
+    <h3>This package starts at ₱ 350 per head</h3>
   </div>
-  <br> 
-  <div class="packs1">
-    <p>The ideal catering package for soon-to-wed couples for a minimum of 100 guests, which includes:</p>
-    <li>Full-Service Catering</li>
-    <li>Reception Set-Up and Design</li>
-    <li>An Events Planner is assigned to facilitate the planning and execution of your event</li>
-    <li>Choice of complimentary wedding essentials</li>
-    <h3>This package starts at<span>P 1,300 per head</span></h3>
-  </div><br><br><br>
-  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <a class="buttonm text-white " href="booking.php">Book Now</a>
-  <div class="packs1" style="background:transparent;">
-  
+<br>
+<div class="packs1">
+    <p>   <b>Set C</b> <br>   The ideal catering food package for Children's Party for a maximum of 180 guests, which includes:</p>
+    <li>Chicken Drumsticks</li>
+    <li>Fettuccine Carbonara</li>
+    <li>Mini Hotdog on Stick</li>
+    <li>Fruit Jello</li>
+    <li>Drinks (Coke,Sprite,Pepsi,Rc,Iced Tea)</li>
+    <h3>This package starts at ₱ 350 per head</h3>
   </div>
+<br><br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <a class="buttonm text-white "href="booking.php">Book Now</a>
+<div class="packs1" style="background:transparent;">
+ 
+</div>
 </div>
 </div>
 <div class="birthday" id="org">
-  <h1>Organizational Events</h1>
-  <center><p>Birthdays are the special occasions which people celebrate with friends and family.
+   <center> <h1>Organizational Events</h1>
+<p>Birthdays are the special occasions which people celebrate with friends and family.
     As this special day comes just once a year, the significance of this day augments
      naturally. <br>No other day can be better than Birthdays to inspire and motivate the 
     people to whom you care for. Many a time, when you think of expressing your feelings 
     <br>while writing a birthday message to a friend or family member, your mind goes blank 
     <br>and you are unable to fetch the most suitable words.</p></center>
-  <div class="lab">
-    <div class="packs1">
-      <p>The ideal catering package for soon-to-wed couples for a minimum of 100 guests, which includes:</p>
-      <li>Full-Service Catering</li>
-      <li>Reception Set-Up and Design</li>
-      <li>An Events Planner is assigned to facilitate the planning and execution of your event</li>
-      <li>Choice of complimentary wedding essentials</li>
-      <h3>This package starts at<span>P 1,300 per head</span></h3>
-    </div>
-    <br>
-    <div class="packs1">
-      <p>The ideal catering package for soon-to-wed couples for 
-      <br>a minimum of 100 guests, which includes:</p> 
-      <li>Full-Service Catering</li>
-      <li>Reception Set-Up and Design</li>
-      <li>An Events Planner is assigned to facilitate the<br> planning and execution of your event</li>
-      <li>Choice of complimentary wedding essentials</li>
-      <h3>This package starts at P 1,100 per head</h3> 
-    </div>
-    <br> 
-    <div class="packs1">
-      <p>The ideal catering package for soon-to-wed couples for a minimum of 100 guests, which includes:</p>
-      <li>Full-Service Catering</li>
-      <li>Reception Set-Up and Design</li>
-      <li>An Events Planner is assigned to facilitate the planning and execution of your event</li>
-      <li>Choice of complimentary wedding essentials</li>
-      <h3>This package starts at<span>P 1,300 per head</span></h3>
-    </div><br><br><br>
-    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <a class="buttonm text-white "href="booking.php">Book Now</a>
-    <div class="packs1" style="background:transparent;">
-    
-    </div>
+    <div class="lab">
+<div class="packs1">
+    <p>   <b>Set A</b> <br>   The ideal catering food package with Friends for a maximum of 180 people, which includes:</p>
+    <li>Patatim</li>
+    <li>Four Season Veg. w/ Ham & Oyster Sauce</li>
+    <li>Fried Chicken</li>
+    <li>Fish Fillet w/ Lemon  Butter Sauce</li>
+    <li>Rice</li>
+    <li>Choice Maja Blanca or Panda Gelatin</li>
+    <h3>This package starts at ₱ 450 per head</h3>
   </div>
+  <br>
+  <div class="packs1">
+    <p>   <b>Set B</b> <br>   The ideal catering food package with Friends for a maximum of 180 people, which includes:</p>
+    <li>Lechon w/ Lemon Grass</li>
+    <li>Chopsuey Guisado</li>
+    <li>Fried Chicken</li>
+    <li>Lumpai Shanghai</li>
+    <li>Rice</li>
+    <li>Choice Maja Blanca or Panda Gelatin</li>
+    <h3>This package starts at ₱ 350 per head</h3>
+  </div>
+  <br> 
+  <div class="packs1">
+    <p>   <b>Set C</b> <br>   The ideal catering food package with Friends for a maximum of 180 people, which includes:</p>
+    <li>Porkloin Chinese Style w/ French Fries</li>
+    <li>Buttered Chicken</li>
+    <li>Chopsuey Guisado</li>
+    <li>Mixed Pork w/ Oyster Sauce</li>
+    <li>Rice</li>
+    <li>Choice Maja Blanca or Panda Gelatin</li>
+    <h3>This package starts at ₱ 450 per head</h3>
+  </div>
+  <br>
+  <div class="packs1">
+    <p>   <b>Set D</b> <br>   The ideal catering food package with Friends for a maximum of 180 people, which includes:</p>
+    <li>Shredded Pork w/ Mushroom & Bell Pepper</li>
+    <li>Roasted Chicken</li>
+    <li>Assorted Veg. w/ Quill Egg </li>
+    <li>Pork Steak</li>
+    <li>Rice</li>
+    <li>Choice Maja Blanca or Panda Gelatin</li>
+    <h3>This package starts at ₱ 450 per head</h3>
+  </div>  <br>
+  <div class="packs1">
+<li>Note!! price will varie from its maximum range</li>
+
+</div>
+  <br>
+  <br><br>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <a class="buttonm text-white " href="booking.php">Book Now</a>
+  <div class="packs1" style="background:transparent;">
+  
+  </div>
+</div>
   </div>
 </body>
 
