@@ -332,7 +332,7 @@ $result->free();
   <div class="pap">	 
   <h1 class="hi"> <img class="img2" src="Add a subheading.png">	Yani and Tin-tin Catering Service</h1><h3>A taste you'll remember.</h3><br>
      </div>
-  <p><a href="login.php"><button class="butt" type="button" ><img class="img2" src="https://www.freepnglogos.com/uploads/black-email-logo-png-0.png"><br></button></a>
+  <p><a href="chat.php"><button class="butt" type="button" ><img class="img2" src="https://www.freepnglogos.com/uploads/black-email-logo-png-0.png"><br></button></a>
   <br><a href="gallery.php">Gallery</a><br><a href="design_about.php">About</a><br></p><br>
   <h3 class="small">You may also Contact Us</h3>
   <p><i class="fa fa-phone" style="font-size:25px"></i>Mobile: 09663955462<br> 09319919517<br>
