@@ -966,13 +966,16 @@ body {
 }
 
 .button-74:hover {
-  background-color: #fff;
+  background-color: rgb(187, 75, 0);
+  color: white;
+  text-decoration: none;
 
 }
 
 .button-74:active {
   box-shadow: #422800 2px 2px 0 0;
   transform: translate(2px, 2px);
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {

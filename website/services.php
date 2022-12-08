@@ -165,14 +165,13 @@ else{
 </body>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <footer>
-  <div class="pap">	 
-  <h1 class="hi"> <img class="img2" src="Add a subheading.png">	Yani and Tin-tin Catering Service</h1><h3>A taste you'll remember.</h3><br><br>
-     </div>
-  <p><a class="butt" type="button" href="chat.php"><img class="img2" src="https://www.freepnglogos.com/uploads/black-email-logo-png-0.png"></a>
-  <br><a href="gallery.php">Gallery</a><br><a href="design_about.php">About</a><br></p><br>
-  <h3 class="small">You may also Contact Us</h3>
-  <p><i class="fa fa-phone" style="font-size:25px"></i>Mobile: 09663955462<br> 09319919517<br>
-  </p>
-
+<div class="pap">	 
+        <h1 class="hi"> <img class="img2" src="Add a subheading.png">	Yani and Tin-tin Catering Service</h1><h3>A taste you'll remember.</h3><br><br><br>
+</div>
+        <p><a class="butt" type="button" href="chat.php"><img class="img2" src="https://www.freepnglogos.com/uploads/black-email-logo-png-0.png"><br></a>
+        <br><a href="gallery.php">Gallery</a><br><a href="design_about.php">About</a><br></p><br><br>
+        <h3 class="small">You may also Contact Us</h3>
+        <p><i class="fa fa-phone" style="font-size:25px"></i>Mobile: 09663955462<br> 09319919517<br>
+        </p>
 </footer>
 </html>
