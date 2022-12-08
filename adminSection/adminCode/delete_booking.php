@@ -86,7 +86,7 @@ if(180 <  $pax){
 else{
    $tper = $per * $pax; 
 }
-
+$tin = $in * $pax;
 $total = $tper + $pg + $tin;
 
 
