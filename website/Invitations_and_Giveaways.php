@@ -52,17 +52,18 @@ include"../database/connecting_to_DB.php";
   }
 </style>
 <body class="me">
-    <nav>
+    <center><nav>
     
-        <img class="img2" src="https://i.pinimg.com/736x/e9/60/86/e96086161caad546aba41b027daacee4.jpg">		 		 
-      <h4 class="title"> Yani and Tin-tin Catering Service</h4> 
+	 		 
+
         
       <ul>
         
         <li><a href="index.php"><i class="fas fa-home"></i></a></li>
         <li><a href="design_about.php">ABOUT</a></li> 
         <li><a href="gallery.php">GALLERY</a></li> 
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICE<span class="caret"></span></a> 
+        <img class="img2" src="https://i.pinimg.com/736x/e9/60/86/e96086161caad546aba41b027daacee4.jpg">	        
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICE</a> 
              <ul class="dropdown-menu"> 
               <li><a href="booking.php">Booking</a></li> 
               <li><a href="chat.php">Chat</a></li> 
@@ -71,7 +72,7 @@ include"../database/connecting_to_DB.php";
 
              </ul> 
              </li> 	
-             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">NOTIFICATIONS<span class="caret"></span><i class="fas fa-bell"></i></a> 
+             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">NOTIFICATIONS<i class="fas fa-bell"></i></a> 
              <ul class="dropdown-menu" > 
 <?php
 $query =" SELECT * FROM announcement ORDER BY an_id DESC LIMIT 5";
@@ -116,7 +117,7 @@ echo '  <li><a href="../code/logout.php">Logout</a></li> ';
      </ul>      
 
     
-  </nav>
+  </nav></center>
 
   <div class="invititle">
     <div class="w3-container w3-center w3-animate-"><p style="text-align: right; font-family: Harrington; font-weight: bold; font-size: 70px;">Invitations and Giveways</p></div>
@@ -153,14 +154,13 @@ echo '  <li><a href="../code/logout.php">Logout</a></li> ';
 
 <br><br><br><br><br><br><br>
 <footer>
-<div class="pap">	               
-  <h1 class="hi"> <img class="img2" src="https://i.pinimg.com/736x/e9/60/86/e96086161caad546aba41b027daacee4.jpg">	Yani and Tin-tin Catering Service</h1><h3>A taste you'll remember.</h3>
+<div class="pap">	 
+        <h1 class="hi"> <img class="img2" src="Add a subheading.png">	Yani and Tin-tin Catering Service</h1><h3>A taste you'll remember.</h3><br><br>
 </div>
-  <p><img class="img2" src="https://cdn-icons-png.flaticon.com/512/49/49354.png"><img class="img2" src="https://www.freepnglogos.com/uploads/black-email-logo-png-0.png"><br>
-  <a href="">Menu<br></a><a href="">Gallery</a><br><a href="">About</a><br><a href="">FAQs</a></p><br>
-  <h3>Contact Us</h3>
-  <p><i class="fa fa-phone"></i>Mobile: 09663955462<br> 09319919517<br>
-  <i class="material-icons">&#xe0be;</i>Email: <a href="">myadmin.123@gmail.com</a>
-  </p> 
-</footer> 
+        <p><button class="butt" type="button"><img class="img2" src="https://www.freepnglogos.com/uploads/black-email-logo-png-0.png"><br></button>
+        <br><a href="gallery.php">Gallery</a><br><a href="design_about.php">About</a><br></p><br>
+        <h3 class="small">You may also Contact Us</h3>
+        <p><i class="fa fa-phone" style="font-size:25px"></i>Mobile: 09663955462<br> 09319919517<br>
+        </p>
+</footer>
 </html>

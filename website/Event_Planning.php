@@ -37,7 +37,7 @@ include"../database/connecting_to_DB.php";
 </head>
 <style>
   body {
-    background-image: url('https://img.freepik.com/premium-photo/baby-s-breath-flowers-pink-background_82740-98.jpg?w=2000');
+    background-image: url('https://img.freepik.com/premium-photo/bouquet-white-pink-peonies-flowers-card-wooden-background-flat-lay-minimalist-aesthetic-peonies-beautiful-card-mother-s-day-women-s-day_176445-7133.jpg?w=2000');
   align-content: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -59,7 +59,7 @@ include"../database/connecting_to_DB.php";
           <li><a href="design_about.php">ABOUT</a></li> 
           <li><a href="gallery.php">GALLERY</a></li>
           <img class="img2" src="Add a subheading.png">	
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICE<span class="caret"></span></a> 
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICE<span></span></a> 
              <ul class="dropdown-menu"> 
               <li><a href="booking.php">Booking</a></li> 
               <li><a href="chat.php">Chat</a></li> 
@@ -68,7 +68,7 @@ include"../database/connecting_to_DB.php";
 
              </ul> 
              </li> 	
-             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">NOTIFICATIONS<span class="caret"></span><i class="fas fa-bell"></i></a> 
+             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">NOTIFICATIONS<span ></span><i class="fas fa-bell"></i></a> 
              <ul class="dropdown-menu" > 
 <?php
 $query =" SELECT * FROM announcement ORDER BY an_id DESC LIMIT 5";
@@ -95,7 +95,7 @@ $result->free();
              </li>  
                 		 
          <li class="dropdown"> 
-         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret">
+         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span >
     <?php 
 // if(isset($_SESSION['login'])){ //if login in session is not set
                
@@ -126,7 +126,7 @@ $result->free();
             </center>
             
 <div class="p1">
-  <center> <h1>Package Deals</h1>
+  <center> <h1 style="font-size: 2.5em; font-weight: bold; -webkit-text-stroke: 0.2vw black; color: white;">Package Deals</h1>
     <div class="quotes">
       <a class="card" href="#weddings">
         <div class="box box1">
@@ -153,8 +153,9 @@ $result->free();
   </div>
 </center>
 <div class="weddings" id="weddings">
-    <center>      <h1>Weddings</h1>
-<p>Wedding events were consider to be a hassle work for a upcoming married couples
+    <center><h1 style="font-size: 5em; font-weight: bold; -webkit-text-stroke: 0.2vw white;">Weddings</h1>
+<p style="font-size: 2em; color: white; margin: 40px auto;color: white;text-align: center;letter-spacing: 5px;
+  text-shadow: 0px 0px 6px rgba(255,255,255,0.7);   background-color: gray;">Wedding events were consider to be a hassle work for a upcoming married couples
 It is fonding to provide a service that our catering business could provide in order the<br>
 celebrant itself won't needed much to hassle for the fulfillment of their dream event.</p></center>
 <div class="lab">
@@ -193,8 +194,12 @@ celebrant itself won't needed much to hassle for the fulfillment of their dream 
 </div>
 <br>
 <div class="birthday" id="birthday">
-<center><h1>Birthdays</h1>
-<p>Birthdays are the special occasions which people celebrate with friends and family.
+<center><h1 style="font-size: 5em; font-weight: bold; -webkit-text-stroke: 0.2vw white;">Birthdays</h1>
+<p style="font-size: 2em; color: white; margin: 40px auto;
+  color: white;
+  text-align: center;
+  letter-spacing: 5px;
+  text-shadow: 0px 0px 6px rgba(255,255,255,0.7); background-color: gray;">Birthdays are the special occasions which people celebrate with friends and family.
   As this special day comes just once a year, the significance of this day augments
    naturally. <br>No other day can be better than Birthdays to inspire and motivate the 
   people to whom you care for. Many a time, when you think of expressing your feelings 
@@ -238,8 +243,13 @@ celebrant itself won't needed much to hassle for the fulfillment of their dream 
 </div>
 </div>
 <div class="birthday" id="org">
-   <center> <h1>Organizational Events</h1>
-<p>Birthdays are the special occasions which people celebrate with friends and family.
+   <center> <h1 style="font-size: 5em; font-weight: bold; -webkit-text-stroke: 0.2vw white;">Organizational Events</h1>
+<p style="font-size: 5em; font-weight: bold; -webkit-text-stroke: 0.2vw white;">Birthdays</h1>
+<p style="font-size: 2em; color: white; margin: 40px auto;
+  color: white;
+  text-align: center;
+  letter-spacing: 5px;
+  text-shadow: 0px 0px 6px rgba(255,255,255,0.7); background-color: gray;">Birthdays are the special occasions which people celebrate with friends and family.
     As this special day comes just once a year, the significance of this day augments
      naturally. <br>No other day can be better than Birthdays to inspire and motivate the 
     people to whom you care for. Many a time, when you think of expressing your feelings 
@@ -305,15 +315,14 @@ celebrant itself won't needed much to hassle for the fulfillment of their dream 
 
 
   <br><br><br><br><br><br><br>
-  <footer>
-  <div class="pap">	               
-    <h1 class="hi"> <img class="img2" src="https://i.pinimg.com/736x/e9/60/86/e96086161caad546aba41b027daacee4.jpg">	Yani and Tin-tin Catering Service</h1><h3>A taste you'll remember.</h3>
-  </div>
-    <p><img class="img2" src="https://cdn-icons-png.flaticon.com/512/49/49354.png"><img class="img2" src="https://www.freepnglogos.com/uploads/black-email-logo-png-0.png"><br>
-    <a href="">Menu<br></a><a href="">Gallery</a><br><a href="">About</a><br><a href="">FAQs</a></p><br>
-    <h3>Contact Us</h3>
-    <p><i class="fa fa-phone"></i>Mobile: 09663955462<br> 09319919517<br>
-    <i class="material-icons">&#xe0be;</i>Email: <a href="">myadmin.123@gmail.com</a>
-    </p> 
-  </footer>
+<footer>
+<div class="pap">	 
+        <h1 class="hi"> <img class="img2" src="Add a subheading.png">	Yani and Tin-tin Catering Service</h1><h3>A taste you'll remember.</h3><br><br>
+</div>
+        <p><button class="butt" type="button"><img class="img2" src="https://www.freepnglogos.com/uploads/black-email-logo-png-0.png"><br></button>
+        <br><a href="gallery.php">Gallery</a><br><a href="design_about.php">About</a><br></p><br>
+        <h3 class="small">You may also Contact Us</h3>
+        <p><i class="fa fa-phone" style="font-size:25px"></i>Mobile: 09663955462<br> 09319919517<br>
+        </p>
+</footer>
 </html>
