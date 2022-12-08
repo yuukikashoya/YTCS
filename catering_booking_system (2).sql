@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Dec 05, 2022 at 04:09 AM
+-- Generation Time: Dec 07, 2022 at 05:53 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -42,7 +42,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`admin_id`, `admin_name`, `admin_username`, `password`, `status`, `unique_id`, `admin_rank`) VALUES
-(1, 'Arriane Asis', 'master', '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8', 'offline', 212121, 2),
+(1, 'Arriane Asis', 'master', '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8', 'online', 212121, 2),
 (2, 'John Lloyd Miranda', 'admin', '356a192b7913b04c54574d18c28d46e6395428ab', 'offline', 212121, 2),
 (19, 'yuki', 'super_admin', '356a192b7913b04c54574d18c28d46e6395428ab', 'offline', 212121, 1),
 (23, 'John Lloyd Miranda', 'john', '356a192b7913b04c54574d18c28d46e6395428ab', 'offline', 212121, 1);
@@ -138,6 +138,30 @@ INSERT INTO `message` (`msg_id`, `incoming_msg_id`, `outgoing_msg_id`, `msg`) VA
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `ref`
+--
+
+CREATE TABLE `ref` (
+  `id` int(255) NOT NULL,
+  `service_id` int(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `event_date` date NOT NULL,
+  `total` int(255) NOT NULL,
+  `event_type` varchar(255) NOT NULL,
+  `date_ref` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `ref`
+--
+
+INSERT INTO `ref` (`id`, `service_id`, `name`, `username`, `event_date`, `total`, `event_type`, `date_ref`) VALUES
+(1, 11, '', 'BSIT', '2022-03-12', 45550, 'Birthday', '2022-12-07');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `service`
 --
 
@@ -156,17 +180,9 @@ CREATE TABLE `service` (
   `city` varchar(255) NOT NULL,
   `postal_zip_code` varchar(255) NOT NULL,
   `photo` varchar(255) NOT NULL,
-  `invitation` varchar(255) NOT NULL
+  `invitation` varchar(255) NOT NULL,
+  `sets` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `service`
---
-
-INSERT INTO `service` (`service_id`, `client_username`, `client_name`, `email`, `contact`, `bundle`, `pax`, `time_start`, `time_ends`, `date`, `street`, `city`, `postal_zip_code`, `photo`, `invitation`) VALUES
-(7, 'BSIT', 'John Lloyd Miranda', '07006728@dwc-legazpi.edu', '21', 'Organizzational Event', 21, '00:33:00', '00:33:00', '1212-02-21', 'gapo', 'leagazpi', '4500', 'no', ''),
-(8, 'BSIT', 'John Lloyd Miranda', '07006728@dwc-legazpi.edu', '312', 'Birthday', 21, '02:21:00', '07:17:00', '0000-00-00', 'gapo', 'leagazpi', '', 'no', 'yes'),
-(9, 'BSIT', 'John Lloyd Miranda', '07006728@dwc-legazpi.edu', '312', 'Weddings', 321, '18:32:00', '19:32:00', '0000-00-00', 'gapo', 'leagazpi', '4500', 'no', 'no');
 
 --
 -- Indexes for dumped tables
@@ -201,6 +217,12 @@ ALTER TABLE `img`
 --
 ALTER TABLE `message`
   ADD PRIMARY KEY (`msg_id`);
+
+--
+-- Indexes for table `ref`
+--
+ALTER TABLE `ref`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `service`
@@ -243,10 +265,16 @@ ALTER TABLE `message`
   MODIFY `msg_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100;
 
 --
+-- AUTO_INCREMENT for table `ref`
+--
+ALTER TABLE `ref`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `service`
 --
 ALTER TABLE `service`
-  MODIFY `service_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `service_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
