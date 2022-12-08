@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Dec 07, 2022 at 05:53 PM
+-- Generation Time: Dec 08, 2022 at 10:33 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -42,7 +42,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`admin_id`, `admin_name`, `admin_username`, `password`, `status`, `unique_id`, `admin_rank`) VALUES
-(1, 'Arriane Asis', 'master', '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8', 'online', 212121, 2),
+(1, 'Arriane Asis', 'master', '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8', 'offline', 212121, 2),
 (2, 'John Lloyd Miranda', 'admin', '356a192b7913b04c54574d18c28d46e6395428ab', 'offline', 212121, 2),
 (19, 'yuki', 'super_admin', '356a192b7913b04c54574d18c28d46e6395428ab', 'offline', 212121, 1),
 (23, 'John Lloyd Miranda', 'john', '356a192b7913b04c54574d18c28d46e6395428ab', 'offline', 212121, 1);
@@ -91,7 +91,7 @@ CREATE TABLE `client` (
 
 INSERT INTO `client` (`client_id`, `client_name`, `client_username`, `password`, `address`, `contact`, `birthday`, `email`, `status`, `unique_id`) VALUES
 (14, 'aron', 'aron', '056eafe7cf52220de2df36845b8ed170c67e23e3', 'qwe', '423423423', '2022-10-26', '34223@gmail.com', 'offline', 1624299434),
-(15, 'John Lloyd Miranda', 'BSIT', '056eafe7cf52220de2df36845b8ed170c67e23e3', 'bahay', '412312312523423', '2022-09-27', '07006728@dwc-legazpi.edu', 'offline', 1178267994),
+(15, 'John Lloyd Miranda', 'BSIT', '056eafe7cf52220de2df36845b8ed170c67e23e3', 'bahay', '412312312523423', '2022-09-27', '07006728@dwc-legazpi.edu', 'online', 1178267994),
 (16, 'local', 'local', '939bb46a04c3640c8c427e92b1b557e882e2d2a0', 'local', '312', '2022-10-31', 'yukimiranda26@gmail.com', 'offline', 163751382);
 
 -- --------------------------------------------------------
@@ -111,8 +111,8 @@ CREATE TABLE `img` (
 --
 
 INSERT INTO `img` (`img_id`, `img_name`, `file`) VALUES
-(21, 'aloha', '6374e0d88f8ff4.19349799.gif'),
-(22, 'uwu', '637589aa60f3a4.45973657.gif');
+(30, 'sample 1', '6391aed0522422.89302940.jpg'),
+(31, 'sample 2', '6391aed94a1b42.71450486.jpg');
 
 -- --------------------------------------------------------
 
@@ -133,7 +133,8 @@ CREATE TABLE `message` (
 
 INSERT INTO `message` (`msg_id`, `incoming_msg_id`, `outgoing_msg_id`, `msg`) VALUES
 (98, 212121, 1178267994, 'hello'),
-(99, 1178267994, 212121, 'gfghdfg');
+(99, 1178267994, 212121, 'gfghdfg'),
+(100, 212121, 1178267994, 'hi');
 
 -- --------------------------------------------------------
 
@@ -157,7 +158,8 @@ CREATE TABLE `ref` (
 --
 
 INSERT INTO `ref` (`id`, `service_id`, `name`, `username`, `event_date`, `total`, `event_type`, `date_ref`) VALUES
-(1, 11, '', 'BSIT', '2022-03-12', 45550, 'Birthday', '2022-12-07');
+(1, 11, '', 'BSIT', '2022-03-12', 45550, 'Birthday', '2022-12-07'),
+(2, 12, 'John Lloyd Miranda', 'BSIT', '2022-09-17', 4500, 'Organizational', '2022-12-08');
 
 -- --------------------------------------------------------
 
@@ -183,6 +185,13 @@ CREATE TABLE `service` (
   `invitation` varchar(255) NOT NULL,
   `sets` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `service`
+--
+
+INSERT INTO `service` (`service_id`, `client_username`, `client_name`, `email`, `contact`, `bundle`, `pax`, `time_start`, `time_ends`, `date`, `street`, `city`, `postal_zip_code`, `photo`, `invitation`, `sets`) VALUES
+(13, 'BSIT', 'John Lloyd Miranda', '07006728@dwc-legazpi.edu', '123', 'Weddings', 200, '16:51:00', '19:51:00', '2022-12-12', 'gapo', 'leagazpi', '4500', 'yes', 'yes', 'Set A');
 
 --
 -- Indexes for dumped tables
@@ -256,25 +265,25 @@ ALTER TABLE `client`
 -- AUTO_INCREMENT for table `img`
 --
 ALTER TABLE `img`
-  MODIFY `img_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `img_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT for table `message`
 --
 ALTER TABLE `message`
-  MODIFY `msg_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100;
+  MODIFY `msg_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
 
 --
 -- AUTO_INCREMENT for table `ref`
 --
 ALTER TABLE `ref`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `service`
 --
 ALTER TABLE `service`
-  MODIFY `service_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `service_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
