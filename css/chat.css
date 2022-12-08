@@ -317,10 +317,19 @@ hr.status:after {
   color: #000000;
 }
 .len{
-  width: 100%;
+  width: 25em;
+  height: 20em;
+}
+.lan{
+  width: 35em;
+  height: 25em;
 }
 .ourgallery{
   background: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm321-adj-26_2.jpg?w=1200&h=1200&dpr=1&fit=clip&crop=default&fm=jpg&q=75&vib=3&con=3&usm=15&cs=srgb&bg=F4F4F3&ixlib=js-2.2.1&s=24f7be555b91dcd45f2bbf88a0525fcc');
   background-size: 100% 100%;
   background-repeat: no-repeat;
+}
+.papata{
+  column-count: 3;
+  min-height: 50em;
 }

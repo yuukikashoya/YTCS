@@ -121,7 +121,7 @@ $result->free();
         <br><br><br><br><br><br><br><br><br><br><br>
 <div class="container0"><br><br>
         <center><h1 style="font-family: fantasy; -webkit-text-stroke: 0.1vw rgb(255, 255, 255); font-size: 4em;">Services Offers</h1></center>
-<div class="container">
+<div class="container3">
 	      <img src="https://d12m9erqbesehq.cloudfront.net/wp-content/uploads/sites/2/2018/11/16112551/event-planner.jpg">
         <a href="#" class="at">Event Packages</a><br><br>
 </div>

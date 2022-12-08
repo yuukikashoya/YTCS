@@ -99,7 +99,22 @@ $result->free();
              </ul> 
          </li>
        </ul>
-     </nav></uwi>s
+       <style>
+.zoom {
+  padding: 1em;
+
+  transition: transform .2s; /* Animation */
+
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.7); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+
+}
+
+</style>
+     </nav></center>    <br><br><br><br><br>       <div class="container kek center papata">
              <!-- Slideshow container -->
 
 
@@ -112,24 +127,24 @@ $result->free();
 					$img_id  = $row1['img_id'];
 			?>
  
-           <div class="container kek center">
 
-            <div >
-                <div class="container">
-             <h2>  
-                <span class="label label-default">  <?php echo $row1['img_name'];?></span> 
-             </h2>
 
-                <img class="len" src="../adminSection/images/<?php echo $row1['file'];?>">
-            </details> 
-            </div>
+
+                <div class="container lan">
+                  <div  >
+
+                <img class="len zoom notDIV" src="../adminSection/images/<?php echo $row1['file'];?>">
+           
+               </div>
+               
+          
              </div>
-                </div>
+        
             
                 <?php		
 				}
 			?>     
-  
+          </div>
   
     </body>
     <footer>
