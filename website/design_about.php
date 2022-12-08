@@ -100,7 +100,7 @@ nav ul ul li{
 }
 
     body{
-      background: url('https://c1.wallpaperflare.com/preview/312/229/301/food-knife-background-wooden.jpg');
+      background: url('https://coolwallpapers.me/picsup/2958276-pattern-wood___mixed-wallpapers.jpg');
       background-repeat: no-repeat;
       background-size: 100% 100%;
     }
@@ -124,20 +124,24 @@ nav ul ul li{
 
     }
     p{
-      font-size: 19px;
+      font-size: 123%;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: justify;
       padding-top: 10px;
       margin-right: 2em;
       margin-left: 2em;
-      color: black;
+      color: white;
+      font-weight: 5em;
     
  
     }
     .about_img{
       width: 350px;
       border-style: solid;
-      box-shadow: 10px 10px 5px rgb(250, 139, 43);
+      border-width: 1em;
+      border-color: white;
+      border-radius: 50%;
+      box-shadow: 10px 10px 5px black;
       float: left;
       margin-left: 8em;
       margin-right: 15em; 
