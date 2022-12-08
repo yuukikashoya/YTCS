@@ -1113,15 +1113,15 @@ body {
   border-radius: 50%;
   background-color: black;
 }
-.container {
+.container3 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
-.container:hover {
+.container3:hover {
 	cursor: pointer;
 }
-.container img {
+.container3 img {
 	filter: grayscale();
 	width: 200px;
 	height: 200px;
@@ -1235,4 +1235,17 @@ body {
   font-weight: 700;
   line-height: 1.5;
   text-decoration: none;
+}
+
+.zoom {
+  padding: 1em;
+
+  transition: transform .2s; /* Animation */
+
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.7); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+
 }
