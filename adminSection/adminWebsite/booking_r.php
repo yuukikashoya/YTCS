@@ -128,7 +128,85 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
 		$result = $conn -> query($sql_query);
 		
 		while($row = $result -> fetch_assoc()){
-			$service_id  = $row['service_id'];
+
+      $service_id  = $row['service_id'];
+      $client_name  = $row['client_name'];
+      $bundle  = $row['bundle'];
+      $pax  = $row['pax'];
+      $photo  = $row['photo'];
+      $date  = $row['date'];
+      $today =  date("Y-m-d");
+      $invitation = $row['invitation'];
+      $sets = $row['sets'];
+      $username = $row['client_username'];
+
+
+
+      // setting up dathe price
+	$wedding = "Weddings";
+  $birthday = "Birthday";
+  $org = "Organizational";
+  
+  if($wedding == $bundle){
+      if("Set A" == $sets){
+          $per = 500;
+      }
+      else if("Set B" == $sets){
+          $per = 600;
+      }
+  }
+  else if($birthday == $bundle){
+      if("Set A" == $sets){
+          $per = 350;
+      }
+      else if("Set B" == $sets){
+          $per = 350;
+      }
+      else if("Set C" == $sets){
+          $per = 350;
+      }
+  }
+  else if($org == $bundle){
+      if("Set A" == $sets){
+          $per = 450;
+      }
+      else if("Set B" == $sets){
+          $per = 350;
+      }
+      else if("Set C" == $sets){
+          $per = 450;
+      }
+      else if("Set D" == $sets){
+          $per = 450;
+      }
+  }
+  
+  if("yes" == $photo){
+      $pg = 2500;
+  }
+  else if("no" == $photo){
+      $pg = 0;
+  }
+  if("yes" == $invitation){
+      $in = 25;
+  }
+  else if("no" == $invitation){
+      $in = 0;
+  }
+  
+  
+  // math
+  if(180 <  $pax){
+      $sad = $pax - 180;
+      $asd = $sad * 250;
+      $dsa = $per * $pax; 
+      $tper = $dsa + $asd;
+  }
+  else{
+     $tper = $per * $pax; 
+  }
+  $tin = $in * $pax;
+  $total = $tper + $pg + $tin;
 	?>
 
                 <div class="jumbotron jumbotron-fluid">
@@ -178,20 +256,20 @@ if(!isset($_SESSION['adminLogin'])){ //if login in session is not set
 <table>
 <tr >
   <th  style="border-left: solid;border-top:solid;">Bundle </th><th style="border-top:solid;"><?php echo $row['bundle'];?> for <?php echo $row['pax'];?> people  <?php echo $row['sets'];?></th>
-  <th style="border-left: solid;border-top: solid;border-right: solid;">Php 1000</th>
+  <th style="border-left: solid;border-top: solid;border-right: solid;">Php <?php echo  $tper;?></th>
 </tr>
 
 <tr>
    <th style=";border-left:solid;">Photography </th><th ><?php echo $row['photo'];?></th>
-   <th style="border-left: solid;border-bottom: solid;border-right: solid;">Php 500</th>
+   <th style="border-left:  solid;border-right: solid;">Php <?php echo  $pg;?></th>
 </tr>
 <tr>
    <th style=";border-left:solid;border-bottom:solid;">invitation and Giveaways </th><th style="border-bottom:solid;"><?php echo $row['invitation'];?></th>
-   <th style="border-left: solid;border-bottom: solid;border-right: solid;">Php 500</th>
+   <th style="border-left: solid;border-bottom: solid;border-right: solid;">Php <?php echo  $tin;?></th>
 </tr>
 <tr>
    <th ></th><th style="border-left:solid;border-bottom:solid;">Total :</th>
-   <th style="border-left: solid;border-bottom: solid;border-right: solid;">Php 1500</th>
+   <th style="border-left: solid;border-bottom: solid;border-right: solid;">Php <?php echo  $total;?></th>
 </tr>
 
 
