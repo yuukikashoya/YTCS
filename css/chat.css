@@ -330,6 +330,7 @@ hr.status:after {
   background-repeat: no-repeat;
 }
 .papata{
-  column-count: 3;
-  min-height: 50em;
+  column-count: 2;
+  min-height: 60em;
+  max-height: auto;
 }
