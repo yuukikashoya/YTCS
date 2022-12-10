@@ -478,9 +478,11 @@ html, body {
   font-size: 40px;
   color: #fff;
   cursor: pointer;
+  text-decoration: none;
   }
   .buttonm:hover {
-  background: #0666a3;
+  background: #000000;
+  text-decoration: none;
   }
   @media (min-width: 568px) {
   .name-item, .city-item {
