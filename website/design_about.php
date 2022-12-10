@@ -18,11 +18,15 @@ include"../database/connecting_to_DB.php";
 
 
 <style>
+footer{
+
+}
 .img2{
   height: 80px;
   width: 80px;
   border-radius: 50%;
   border: 2px solid #000;
+  
 }
 nav{
   height: 55px;
@@ -173,8 +177,8 @@ nav ul ul li{
   }
   .hi{
     font-weight: bold;
-    margin-bottom: .5px;
-    margin-top: 8px;
+    margin-bottom: .3px;
+    /* margin-top: 3px; */
     text-align: center;
     font-family: fantasy;
     color: rgb(160, 93, 26);
@@ -183,10 +187,10 @@ nav ul ul li{
     -webkit-text-stroke: 0.1vw rgb(255, 255, 255);
     text-transform:uppercase;
   }
-  h3 {
+  /* h3 {
     color: white;
     text-shadow: 2px 2px black;
-}
+} */
   .img2{
   height: 60px;
   width: 60px;
@@ -194,7 +198,6 @@ nav ul ul li{
 }
 footer {
       text-align: center;
-      padding: 1px;
       background-color: #d97f3c;
       color: black;
       width: 100%;
@@ -202,6 +205,7 @@ footer {
       margin-top: -90px;
       columns: 70px 3;    
       position: relative;
+      padding-top: 25px;
     }
     .contactf {
     outline: none;
@@ -211,7 +215,9 @@ footer {
     line-height: 22px;
 }
 h3{
-  font-family: 'Lily Script One';
+  font-family: Arial;
+  font-size: 25px;
+  color: black;
 }
 .butt{
   border-radius: 50%;
@@ -329,14 +335,14 @@ $result->free();
 
     </body>
     <footer>
-  <div class="pap">	 
-  <h1 class="hi"> <img class="img2" src="Add a subheading.png">	Yani and Tin-tin Catering Service</h1><h3>A taste you'll remember.</h3><br>
-     </div>
-  <p><a href="login.php"><button class="butt" type="button" ><img class="img2" src="https://www.freepnglogos.com/uploads/black-email-logo-png-0.png"><br></button></a>
-  <br><a href="gallery.php">Gallery</a><br><a href="design_about.php">About</a><br></p><br>
-  <h3 class="small">You may also Contact Us</h3>
-  <p><i class="fa fa-phone" style="font-size:25px"></i>Mobile: 09663955462<br> 09319919517<br>
-  </p>
+<div class="pap">	 
+        <h1 class="hi"> <img class="img2" src="Add a subheading.png">	Yani and Tin-tin Catering Service</h1><h3 >A taste you'll remember.</h3>
+</div>
+        <p style="margin-left: 8em;"><a class="butt" type="button" href="chat.php"><img class="img2" src="https://www.freepnglogos.com/uploads/black-email-logo-png-0.png"><br></a>
+        <br><a href="gallery.php">Gallery</a><br><a href="design_about.php">About</a><br></p><br>
+        <h3 class="small">You may also Contact Us</h3>
+        <p style="color: black; font-size: 15px; font-weight: bold;"><i class="fa fa-phone" style="font-size:25px"></i>Mobile: 09663955462<br> 09319919517<br><br><br>
+        </p>
 </footer>
 </html>
 
