@@ -28,33 +28,34 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    <link rel="stylesheet" href="../css/main.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/main.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <style>
-  body {
-    background-image: url('https://img.freepik.com/premium-photo/baby-s-breath-flowers-pink-background_82740-98.jpg?w=2000');
-  align-content: center;
-  }
-  /* .h{
-    text-align: center;
-    margin: auto;
-  width: 50%;
-  padding: 10px;
  
   } */
 </style>
 <body class="me">
-    <nav>
+<center><nav>
     
-        <img class="img2" src="https://i.pinimg.com/736x/e9/60/86/e96086161caad546aba41b027daacee4.jpg">		 		 
-      <h4 class="title"> Yani and Tin-tin Catering Service</h4> 
+		 		 
+
         
         <ul>
         
           <li><a href="index.php"><i class="fas fa-home"></i></a></li>
           <li><a href="design_about.php">ABOUT</a></li> 
-          <li><a href="#">GALLERY</a></li> 
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"style="color: white;">SERVICE<span class="caret"></span></a> 
+          <li><a href="gallery.php">GALLERY</a></li> 
+        <img class="img2" src="https://i.pinimg.com/736x/e9/60/86/e96086161caad546aba41b027daacee4.jpg">          
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICES<span></span></a> 
             <ul class="dropdown-menu"> 
              <li><a href="booking.php">Booking</a></li> 
              <li><a href="chat.php">Chat</a></li> 
@@ -63,7 +64,7 @@
 
             </ul> 
             </li> 	
-            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" style="color: white;">NOTIFICATIONS<span class="caret"></span><i class="fas fa-bell"></i></a> 
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" style="color: white;">NOTIFICATIONS<span></span><i class="fas fa-bell"></i></a> 
             <ul class="dropdown-menu" > 
 <?php
 include"../database/connecting_to_DB.php";
@@ -97,7 +98,7 @@ $result->free();
              </ul> 
          </li>
        </ul>      
-    </nav>
+    </nav></center>
     <div class="nemo">
     <p class="title1">PHOTOGRAPHY</p>
     
@@ -112,15 +113,14 @@ $result->free();
   </body>
 
 
-<footer>
-<div class="pap">	               
-  <h1 class="hi"> <img class="img2" src="https://i.pinimg.com/736x/e9/60/86/e96086161caad546aba41b027daacee4.jpg">	Yani and Tin-tin Catering Service</h1><h3>A taste you'll remember.</h3>
+  <footer>
+<div class="pap">	 
+        <h1 class="hi"> <img class="img2" src="Add a subheading.png">	Yani and Tin-tin Catering Service</h1><h3>A taste you'll remember.</h3><br><br>
 </div>
-  <p><img class="img2" src="https://cdn-icons-png.flaticon.com/512/49/49354.png"><img class="img2" src="https://www.freepnglogos.com/uploads/black-email-logo-png-0.png"><br>
-  <a href="">Menu<br></a><a href="">Gallery</a><br><a href="">About</a><br><a href="">FAQs</a></p><br>
-  <h3>Contact Us</h3>
-  <p><i class="fa fa-phone"></i>Mobile: 09663955462<br> 09319919517<br>
-  <i class="material-icons">&#xe0be;</i>Email: <a href="">myadmin.123@gmail.com</a>
-  </p> 
-</footer> 
+        <p><button class="butt" type="button"><img class="img2" src="https://www.freepnglogos.com/uploads/black-email-logo-png-0.png"><br></button>
+        <br><a href="gallery.php">Gallery</a><br><a href="design_about.php">About</a><br></p><br>
+        <h3 class="small">You may also Contact Us</h3>
+        <p><i class="fa fa-phone" style="font-size:25px"></i>Mobile: 09663955462<br> 09319919517<br>
+        </p>
+</footer>
 </html>
