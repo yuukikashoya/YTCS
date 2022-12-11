@@ -71,11 +71,6 @@ $result->free();
          <li class="dropdown"> 
          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret">
     <?php 
-// if(isset($_SESSION['login'])){ //if login in session is not set
-               
-//   echo $_SESSION['name'],' ';
-// }
-
 
 ?>
          </span><i class="fas fa-align-justify"></i></a> 
@@ -98,9 +93,7 @@ $result->free();
        </ul>
      </nav>
             </center>
-             <!-- Slideshow container -->
-  
-  <!-- The dots/circles -->
+
   <div class="wala" >
         <br><br><br>
 

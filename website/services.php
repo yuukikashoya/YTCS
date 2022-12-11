@@ -4,11 +4,11 @@ include"../database/connecting_to_DB.php";
 ?>
 <!DOCTYPE html>
 <html>
-    <head>
-  <meta charset="utf-8">
-  <title>Homepage</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round">
+<head>
+<meta charset="utf-8">
+<title>Services</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -77,12 +77,6 @@ $result->free();
          <li class="dropdown"> 
          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret">
     <?php 
-// if(isset($_SESSION['login'])){ //if login in session is not set
-               
-//   echo $_SESSION['name'],' ';
-// }
-
-
 ?>
          </span><i class="fas fa-align-justify"></i></a> 
              <ul class="dropdown-menu">  

@@ -5,7 +5,7 @@ include"../database/connecting_to_DB.php";
 ?>
 <!DOCTYPE html>
 <html>
-    <head>
+  <head>
   <meta charset="utf-8">
   <title>About Us</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
@@ -33,10 +33,6 @@ nav{
   background: url('../img/pud2.png');
   background-repeat: no-repeat;
   background-size: auto;
-  /* background-position: center; */
-  /* background: transparent; */
-  /* background-size: 120px; */
-  /* box-shadow: 0 3px 15px rgba(0,0,0,.4); */
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-decoration: none;
 }
@@ -57,9 +53,7 @@ nav ul li a{
   padding: 5px 15px;
   line-height: 40px;
   font-size: 18px;
-  /* background: #db6a1a; */
   transition: all .5s ease;
-  /* border-radius: 25px; */
   text-decoration: none;
 }
 nav ul li a:hover{
@@ -116,13 +110,6 @@ nav ul ul li{
       -webkit-text-stroke: 0.1vw rgb(255, 255, 255);
     }
 
-    /* .container1{
-      height: 20%;
-
-      border-radius: 10px;    
-      margin-left: auto;
-      margin-right: auto;
-    } */
     .oppo{
       text-align: center;
 
@@ -130,7 +117,7 @@ nav ul ul li{
     p{
       font-size: 123%;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  text-align: justify;
+      text-align: justify;
       padding-top: 10px;
       margin-right: 2em;
       margin-left: 2em;
@@ -159,7 +146,6 @@ nav ul ul li{
     }
     .map{
       border-style: solid;
-      /* box-shadow: 10px 10px 5px grey; */
       float: right;
       margin-left: 8em;
       margin-right: 2em;
@@ -175,10 +161,10 @@ nav ul ul li{
     color: black;
     font-family: Calibri;
   }
+
   .hi{
     font-weight: bold;
     margin-bottom: .3px;
-    /* margin-top: 3px; */
     text-align: center;
     font-family: fantasy;
     color: rgb(160, 93, 26);
@@ -187,10 +173,7 @@ nav ul ul li{
     -webkit-text-stroke: 0.1vw rgb(255, 255, 255);
     text-transform:uppercase;
   }
-  /* h3 {
-    color: white;
-    text-shadow: 2px 2px black;
-} */
+
   .img2{
   height: 60px;
   width: 60px;
@@ -235,11 +218,7 @@ h3{
 <body>
   <center>
 <nav>
-	 
-      
-        
         <ul>
-        
           <li><a href="index.php"><i class="fas fa-home"></i></a></li>
           <li><a href="design_about.php">ABOUT</a></li> 
           <li><a href="gallery.php">GALLERY</a></li> 
@@ -248,9 +227,7 @@ h3{
              <ul class="dropdown-menu"> 
               <li><a href="booking.php">Booking</a></li> 
               <li><a href="chat.php">Chat</a></li> 
-
               <li><a href="services.php">Other Services</a></li> 
-
              </ul> 
              </li> 	
              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" style="color: white;">NOTIFICATIONS<span class="caret"></span><i class="fas fa-bell"></i></a> 
@@ -281,12 +258,6 @@ $result->free();
          <li class="dropdown"> 
          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret">
     <?php 
-// if(isset($_SESSION['login'])){ //if login in session is not set
-               
-//   echo $_SESSION['name'],' ';
-// }
-
-
 ?>
          </span><i class="fas fa-align-justify"></i></a> 
              <ul class="dropdown-menu">  
@@ -326,11 +297,11 @@ $result->free();
     <div class="ummmm">
     <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d220.9606822557443!2d123.75840021998812!3d13.19886645151466!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sph!4v1669300050382!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       <p style="color: white; font-size: 60px; font-weight: bolder; -webkit-text-stroke: 3.5px black; text-position: left;"><br>Location<br></p><p style="color: white;">Zone 7. Tinago St. Bigaa, Legazpi city. Albay<br>
-    Postal code: 4501<br>
-  Contact No.<br>
-  Mobile: 09663955462<br>
-  09319919517<br>
-  Email: myadmin.123@gmail.com<br><br><br><br><br><br><br></p>
+      Postal code: 4501<br>
+      Contact No.<br>
+      Mobile: 09663955462<br>
+      09319919517<br>
+      Email: myadmin.123@gmail.com<br><br><br><br><br><br><br></p>
     </div>
 
     </body>
